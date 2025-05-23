@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<!-- saved from url=(0136)#!/#collapse1 -->
+<html ng-app="CoursesApp"
+    class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths ng-scope fontawesome-i2svg-active fontawesome-i2svg-complete"
+    lang="es"><!--<![endif]-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style data-merge-styles="true"></style>
+    <style data-merge-styles="true"></style>
+    <style type="text/css">
+        svg:not(:root).svg-inline--fa {
+            overflow: visible
+        }
+
+        .svg-inline--fa {
+            display: inline-block;
+            font-size: inherit;
+            height: 1em;
+            overflow: visible;
+            vertical-align: -.125em
+        }
+
+        .svg-inline--fa.fa-lg {
+            vertical-align: -.225em
+        }
+
+        .svg-inline--fa.fa-w-1 {
+            width: .0625em
+        }
+
+        .svg-inline--fa.fa-w-2 {
+            width: .125em
+        }
+
+        .svg-inline--fa.fa-w-3 {
+            width: .1875em
+        }
+
+        .svg-inline--fa.fa-w-4 {
+            width: .25em
+        }
+
+        .svg-inline--fa.fa-w-5 {
+            width: .3125em
+        }
+
+        .svg-inline--fa.fa-w-6 {
+            width: .375em
+        }
+
+        .svg-inline--fa.fa-w-7 {
+            width: .4375em
+        }
+
+        .svg-inline--fa.fa-w-8 {
+            width: .5em
+        }
+
+        .svg-inline--fa.fa-w-9 {
+            width: .5625em
+        }
+
+        .svg-inline--fa.fa-w-10 {
+            width: .625em
+        }
+
+        .svg-inline--fa.fa-w-11 {
+            width: .6875em
+        }
+
+        .svg-inline--fa.fa-w-12 {
+            width: .75em
+        }
+
+        .svg-inline--fa.fa-w-13 {
+            width: .8125em
+        }
+
+        .svg-inline--fa.fa-w-14 {
+            width: .875em
+        }
+
+        .svg-inline--fa.fa-w-15 {
+            width: .9375em
+        }
+
+        .svg-inline--fa.fa-w-16 {
+            width: 1em
+        }
+
+        .svg-inline--fa.fa-w-17 {
+            width: 1.0625em
+        }
+
+        .svg-inline--fa.fa-w-18 {
+            width: 1.125em
+        }
+
+        .svg-inline--fa.fa-w-19 {
+            width: 1.1875em
+        }
+
+        .svg-inline--fa.fa-w-20 {
+            width: 1.25em
+        }
+
+        .svg-inline--fa.fa-pull-left {
+            margin-right: .3em;
+            width: auto
+        }
+
+        .svg-inline--fa.fa-pull-right {
+            margin-left: .3em;
+            width: auto
+        }
+
+        .svg-inline--fa.fa-border {
+            height: 1.5em
+        }
+
+        .svg-inline--fa.fa-li {
+            width: 2em
+        }
+
+        .svg-inline--fa.fa-fw {
+            width: 1.25em
+        }
+
+        .fa-layers svg.svg-inline--fa {
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0
+        }
+
+        .fa-layers {
+            display: inline-block;
+            height: 1em;
+            position: relative;
+            text-align: center;
+            vertical-align: -.125em;
+            width: 1em
+        }
+
+        .fa-layers svg.svg-inline--fa {
+            -webkit-transform-origin: center center;
+            transform-origin: center center
+        }
+
+        .fa-layers-counter,
+        .fa-layers-text {
+            display: inline-block;
+            position: absolute;
+            text-align: center
+        }
+
+        .fa-layers-text {
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transform-origin: center center;
+            transform-origin: center center
+        }
+
+        .fa-layers-counter {
+            background-color: #ff253a;
+            border-radius: 1em;
+            color: #fff;
+            height: 1.5em;
+            line-height: 1;
+            max-width: 5em;
+            min-width: 1.5em;
+            overflow: hidden;
+            padding: .25em;
+            right: 0;
+            text-overflow: ellipsis;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top right;
+            transform-origin: top right
+        }
+
+        .fa-layers-bottom-right {
+            bottom: 0;
+            right: 0;
+            top: auto;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: bottom right;
+            transform-origin: bottom right
+        }
+
+        .fa-layers-bottom-left {
+            bottom: 0;
+            left: 0;
+            right: auto;
+            top: auto;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: bottom left;
+            transform-origin: bottom left
+        }
+
+        .fa-layers-top-right {
+            right: 0;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top right;
+            transform-origin: top right
+        }
+
+        .fa-layers-top-left {
+            left: 0;
+            right: auto;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top left;
+            transform-origin: top left
+        }
+
+        .fa-lg {
+            font-size: 1.33333em;
+            line-height: .75em;
+            vertical-align: -.0667em
+        }
+
+        .fa-xs {
+            font-size: .75em
+        }
+
+        .fa-sm {
+            font-size: .875em
+        }
+
+        .fa-1x {
+            font-size: 1em
+        }
+
+        .fa-2x {
+            font-size: 2em
+        }
+
+        .fa-3x {
+            font-size: 3em
+        }
+
+        .fa-4x {
+            font-size: 4em
+        }
+
+        .fa-5x {
+            font-size: 5em
+        }
+
+        .fa-6x {
+            font-size: 6em
+        }
+
+        .fa-7x {
+            font-size: 7em
+        }
+
+        .fa-8x {
+            font-size: 8em
+        }
+
+        .fa-9x {
+            font-size: 9em
+        }
+
+        .fa-10x {
+            font-size: 10em
+        }
+
+        .fa-fw {
+            text-align: center;
+            width: 1.25em
+        }
+
+        .fa-ul {
+            list-style-type: none;
+            margin-left: 2.5em;
+            padding-left: 0
+        }
+
+        .fa-ul>li {
+            position: relative
+        }
+
+        .fa-li {
+            left: -2em;
+            position: absolute;
+            text-align: center;
+            width: 2em;
+            line-height: inherit
+        }
+
+        .fa-border {
+            border: solid .08em #eee;
+            border-radius: .1em;
+            padding: .2em .25em .15em
+        }
+
+        .fa-pull-left {
+            float: left
+        }
+
+        .fa-pull-right {
+            float: right
+        }
+
+        .fa.fa-pull-left,
+        .fab.fa-pull-left,
+        .fal.fa-pull-left,
+        .far.fa-pull-left,
+        .fas.fa-pull-left {
+            margin-right: .3em
+        }
+
+        .fa.fa-pull-right,
+        .fab.fa-pull-right,
+        .fal.fa-pull-right,
+        .far.fa-pull-right,
+        .fas.fa-pull-right {
+            margin-left: .3em
+        }
+
+        .fa-spin {
+            -webkit-animation: fa-spin 2s infinite linear;
+            animation: fa-spin 2s infinite linear
+        }
+
+        .fa-pulse {
+            -webkit-animation: fa-spin 1s infinite steps(8);
+            animation: fa-spin 1s infinite steps(8)
+        }
+
+        @-webkit-keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+
+        .fa-rotate-90 {
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg)
+        }
+
+        .fa-rotate-180 {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg)
+        }
+
+        .fa-rotate-270 {
+            -webkit-transform: rotate(270deg);
+            transform: rotate(270deg)
+        }
+
+        .fa-flip-horizontal {
+            -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1)
+        }
+
+        .fa-flip-vertical {
+            -webkit-transform: scale(1, -1);
+            transform: scale(1, -1)
+        }
+
+        .fa-flip-horizontal.fa-flip-vertical {
+            -webkit-transform: scale(-1, -1);
+            transform: scale(-1, -1)
+        }
+
+        :root .fa-flip-horizontal,
+        :root .fa-flip-vertical,
+        :root .fa-rotate-180,
+        :root .fa-rotate-270,
+        :root .fa-rotate-90 {
+            -webkit-filter: none;
+            filter: none
+        }
+
+        .fa-stack {
+            display: inline-block;
+            height: 2em;
+            position: relative;
+            width: 2em
+        }
+
+        .fa-stack-1x,
+        .fa-stack-2x {
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0
+        }
+
+        .svg-inline--fa.fa-stack-1x {
+            height: 1em;
+            width: 1em
+        }
+
+        .svg-inline--fa.fa-stack-2x {
+            height: 2em;
+            width: 2em
+        }
+
+        .fa-inverse {
+            color: #fff
+        }
+
+        .sr-only {
+            border: 0;
+            clip: rect(0, 0, 0, 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px
+        }
+
+        .sr-only-focusable:active,
+        .sr-only-focusable:focus {
+            clip: auto;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            position: static;
+            width: auto
+        }
+    </style>
+    <style type="text/css">
+        [ng\:cloak],
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak,
+        .ng-hide:not(.ng-hide-animate) {
+            display: none !important;
+        }
+
+        ng\:form {
+            display: block;
+        }
+
+        .ng-animate-shim {
+            visibility: hidden;
+        }
+
+        .ng-anchor {
+            position: absolute;
+        }
+    </style>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tecnologías de la información</title>
+    <meta name="description" content="Plataforma de arranque para los cursos de Formación Docente.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../../assets/ircfavicon.ico">
+    <!-- or, set /favicon.ico for IE10 win -->
+    <meta name="msapplication-TileColor" content="#D83434">
+
+    <!-- font -->
+    <link href="../../assets/css" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../../assets/bootstrap.min.css">
+
+    <script src="../../assets/jquery.min.js.descarga"></script>
+
+    <!--scripts -->
+    <!--bootstrap -->
+    <script src="../../assets/bootstrap.min.js.descarga"></script>
+
+
+    <link rel="stylesheet" href="../../assets/normalize.css">
+    <link rel="stylesheet" href="../../assets/milligram.min.css">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <script src="../../assets/modernizr-2.7.1.min.js.descarga"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="menu-accesibilidad">
+        </div>
+        <div>
+            Probabilidad y estadística
+        </div>
+    </header>
+
+    <nav>
+        <div class="container menu-principal">
+            <div class="row">
+                <div class="column">
+                    <ul class="menu">
+
+                        <li class="unidad-activa"><a href="#unidad-1" title="unidad 1">U1</a></li>
+
+                    </ul>
+                </div>
+                <div class="column">
+
+                </div>
+            </div>
+        </div>
+        <div id="submenu">
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <ul id="unidad-1" style="display: none;">
+                            <li><a href="#pagina-1">Presentación y objetivo de unidad</a></li>
+                            <li><a href="#pagina-2">1.1 Introducción</a></li>
+                            <li><a href="#pagina-3">1.2 Variables y tipos de datos</a></li>
+                            <li><a href="#pagina-4">1.3 Estadística Descriptiva</a></li>
+                            <li><a href="#pagina-5">1.4 Muestras Aleatorias y Estadísticas</a></li>
+                            <li><a href="#pagina-6">Cierre de unidad</a></li>
+                            <li><a href="#pagina-7">Fuentes de consulta</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="pagina-1"></div>
+    <section class="wrapper">
+        <div class="contenido-principal">
+
+            <article>
+                <h1><span>Unidad 1: </span>Estadística</h1>
+
+                <h2><img class="icono-link" src="assets/images/presentacion_unidad.svg" width="15%"> Presentación de
+                    unidad</h2>
+            </article>
+
+
+            <article class="row">
+
+                <div class="column">
+
+                    <blockquote class="blockquote text-right">
+                        <p style="margin-bottom:5px; color:#666;"> “Dime y lo olvido, enséñame y lo recuerdo,
+                            <br>involúcrame y lo aprendo”.
+                        </p>
+                        <p class="autor" style="text-align: right;">Someone famous in Source Title</p>
+
+                    </blockquote>
+
+                    <p>
+                        Apreciable estudiante te damos la más cordial bienvenida a la unidad 1 Estadística,
+                        correspondiente a de la asignatura de Estadística I. Todos los días, hacemos muchas cosas y
+                        tomamos decisiones a partir de un pensamiento estadístico y casi nunca nos damos cuenta o somos
+                        conscientes de ello. Cuando no abordamos el transporte público en las horas pico es porque
+                        sabemos que ése no es el mejor momento para hacerlo. Esta decisión es tomada partir de la
+                        experiencia y de la información que hemos ido recopilando con anterioridad sobre una situación
+                        similar.
+                    </p>
+
+                    <p>
+                        La estadística impacta prácticamente todos los aspectos de nuestra vida, porque a partir de la
+                        mayor parte de nuestras actividades es posible reunir datos que, después al ser analizados, nos
+                        permiten tomar decisiones. Ésta es la ciencia que estudia los fenómenos inciertos o las
+                        situaciones que no se pueden predecir con certeza, pero sobre las cuales podemos recabar
+                        información.
+                    </p>
+                    <p>
+                        En esta unidad iniciaremos con una breve introducción a lo que es la estadística y su uso,
+                        continuaremos describiendo las Variables y los tipos de datos estadísticos, después conoceremos
+                        una breve definición de estadística descriptiva y en qué consiste, y finalmente; leeremos sobre
+                        muestras aleatorias y estadísticas.
+
+                    </p>
+                    <p>
+                        Te exhortamos a seguir adelante con tus sueños, esta unidad es un paso más en el logro de tus
+                        metas.
+                    </p>
+
+
+
+                </div>
+
+            </article>
+
+            <article class="row objetivo">
+
+                <div class="column">
+                    <h2><img class="icono-link" src="assets/images/objetivo.svg" width="18%"> Objetivo de unidad</h2>
+
+                    <p>Identificar el concepto de estadística descriptiva, sus objetivos y herramientas para reconocer
+                        su aplicación en la vida cotidiana.</p>
+                </div>
+            </article>
+            <p class="bienvenida">¡Bienvenidos a esta unidad!</p>
+
+        </div>
+    </section>
+
+    <div id="pagina-2"></div>
+    <section class="wrapper">
+        <div class="contenido-principal">
+            <article>
+                <h3>1.1 Introducción</h3>
+            </article>
+
+            <article class="row">
+                <div class="column">
+
+                    <p>La estadística es una disciplina científica que se ocupa de la obtención, orden y análisis de un
+                        conjunto de datos con el fin de obtener explicaciones y predicciones sobre fenómenos observados.
+                        Su etimología es un neologismo que se ubica en el alemán statistik (la forma femenina del
+                        término alemán Statistik, derivado a su vez del italiano statista, "hombre de Estado").</p>
+
+                    <p>Podemos decir que la estadística es la ciencia que le facilita al hombre el estudio de datos
+                        masivos, pasa de esa manera sacar conclusiones y efectuar predicciones razonables de ellos; y
+                        así mostrar una visión de conjunto clara y de más fácil apreciación, así como para describirlos
+                        y compararlos. Esta ciencia nos proporciona los métodos científicos para la recopilación,
+                        organización, resumen, representación y <strong>análisis de datos</strong>, o análisis de
+                        hechos, que se presenten a una valuación numérica; tales como son: Características biológicas o
+                        sociológicas, fenómenos físicos, producción, calidad, población riqueza, impuestos, cosechas,
+                        etc. </p>
+
+
+                    <p><img class="icono-link" width="10%" src="./assets/images/video.svg">Para una explicación de lo
+                        que es la estadística revisa el video: </p>
+
+                    <div style="text-align: center;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lJT4-OmnPPY" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                        <figcaption>Educativa2 (2012). Conceptos básicos de estadística - Probabilidad y estadística –
+                            Educatina.<br> [Archivo de video] Disponoble en: <a class="link"
+                                href="https://youtu.be/lJT4-OmnPPY" target="_blank">https://youtu.be/lJT4-OmnPPY</a>
+                        </figcaption>
+                    </div>
+                    <br><br>
+
+                    <h4>Importancia de la Estadística </h4>
+
+                    <p>La metodología estadística se emplea en muchos campos. Se ha visto que la estadística es una
+                        disciplina que ayuda a diseñar el esquema de búsqueda y registro de información para describirla
+                        y analizarla con facilidad y mediante estimaciones, obtener conclusiones que enriquecen el
+                        conocimiento de la realidad.</p>
+
+                    <p>La estadística día a día gana terreno en su aplicación en toda actividad humana por simple que
+                        ésta sea. Algunos ejemplos del uso de la estadística son:</p>
+
+                    <figure>
+                        <img class="imagen" src="./assets/images/u1_p2_ejemplo.png">
+
+                    </figure>
+
+                    <p>Todos estos aspectos y muchos más en otros campos del conocimiento y la sociedad que se estudian,
+                        se reportan e informan, no solamente describen el estado actual de la economía sino que trazan y
+                        predice el camino de las futuras tendencias. Así mismo sirve a los encargados de las agencias,
+                        para tomar decisiones acertadas en sus operaciones.</p>
+
+
+
+                </div>
+            </article>
+
+
+        </div>
+    </section>
+
+    <div id="pagina-3"></div>
+    <section class="wrapper">
+        <div class="contenido-principal">
+            <article>
+                <h3><span>1.2 </span> Variables y tipos de datos</h3>
+
+            </article>
+
+            <article class="row">
+                <div class="column">
+
+                    <p>La estadística descriptiva es la rama de las Matemáticas que recolecta, presenta y caracteriza un
+                        conjunto de datos (por ejemplo, edad de una población, altura de los estudiantes de una escuela,
+                        temperatura en los meses de verano, etc.) con el fin de describir apropiadamente las diversas
+                        características de ese conjunto.</p>
+
+                    <p> Al conjunto de los distintos valores numéricos que adopta un carácter cuantitativo se llama
+                        variable estadística. </p>
+
+                    <p><i>Definición:</i> Una variable es una característica que cambia o varía con el tiempo y/o para
+                        diferentes personas u objetos bajo consideración.</p>
+
+                    <figure>
+                        <img class="imagen" src="./assets/images/u1_p3_ejemplo1.png">
+
+                    </figure>
+
+                    <!-- recurso de pestañas -->
+                    <article class="pestanas margen-recursos">
+                        <p class="etiqueta-recurso"><img class="icono-link" width="22px"
+                                src="./assets/images/mano.svg">Da clic en cada uno de los títulos para obtener más
+                            información.</p>
+                        <div class="container">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#p3-tabs-t1">Variables cualitativas o
+                                        categóricas</a></li>
+                                <li><a data-toggle="tab" href="#p3-tabs-t2">Variables cuantitativas</a></li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div id="p3-tabs-t1" class="tab-pane active sombra">
+                                    <h3 class="tab-title">Variables cualitativas o categóricas</h3>
+                                    <p>Miden una cualidad o característica en cada unidad experimental (individuo), no
+                                        se pueden medir numéricamente (por ejemplo: nacionalidad, color de la piel,
+                                        sexo). </p>
+
+                                    <ul>
+                                        <li><i>Nominal </i> - No existen diferencias de Magnitud entre sus categorías, y
+                                            no siguen ningún orden específico.</li>
+                                        <li><i>Ordinal</i> – Llevan implícito diferencias de magnitud o intensidad entre
+                                            sus categorías, lo que le confiere cierto orden.</li>
+                                        <li><i>Binaria</i> – Estas variables solo permiten dos resultados Por ejemplo,
+                                            sí o no; hombre o mujer.</li>
+
+                                    </ul>
+                                </div>
+                                <div id="p3-tabs-t2" class="tab-pane fade sombra">
+                                    <h3 class="tab-title">Variables cuantitativas</h3>
+                                    <p>Miden una cantidad numérica en cada unidad experimental, tienen valor numérico
+                                        (edad, precio de un producto, ingresos anuales). </p>
+
+                                    <p>Y se pueden clasificar en discretas y continuas: </p>
+                                    <ul>
+                                        <li><i>Discretas:</i> puede tomar sólo un número finito o contable de valores,
+                                            sólo pueden tomar valores enteros (1, 2, 8, -4, etc.). Por ejemplo: número
+                                            de hermanos (puede ser 1, 2, 3...., etc., pero, por ejemplo, nunca podrá ser
+                                            3.45). </li>
+
+                                        <li><i>Continuas: </i>puede tomar inﬁnitamente muchos valores correspondientes a
+                                            los puntos en un intervalo de recta; pueden tomar cualquier valor real
+                                            dentro de un intervalo. Por ejemplo, la velocidad de un vehículo puede ser
+                                            90.4 km/h, 94.57 km/h...etc. </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- fin recurso de pestañas -->
+                    <br><br>
+
+                    <figure>
+                        <img class="imagen" src="./assets/images/u1_p3_variables.png">
+                        <figcaption>Esquema 1. IRC (2020). Variables [Imagen]</figcaption>
+
+                    </figure>
+
+                    <br>
+                    <p>Las variables también se pueden clasificar en: </p>
+
+                    <!-- acordeon 1 -->
+                    <article class="accordion1">
+                        <p class="etiqueta-recurso"><img class="icono-link" width="22px"
+                                src="./assets/images/mano.svg">Da clic en cada uno de los títulos para obtener más
+                            información.</p>
+                        <div class="panel-group sombra" id="p3-accordion1">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#p3-accordion1"
+                                            href="#p3-collapse1">Variables
+                                            unidimensionales</a>
+                                    </h3>
+                                </div>
+                                <div id="p3-collapse1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>Solo recogen información sobre una característica (por ejemplo: edad de los
+                                            alumnos de una clase). </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#p3-accordion2"
+                                            href="#p3-collapse2">Variables
+                                            bidimensionales</a>
+                                    </h3>
+                                </div>
+                                <div id="p3-collapse2" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>Recogen información sobre dos características de la población (por ejemplo:
+                                            edad y altura de los alumnos de una clase). </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion"
+                                            href="#p3-collapse3">Variables
+                                            pluridimensionales</a>
+                                    </h3>
+                                </div>
+                                <div id="p3-collapse3" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>Recogen información sobre tres o más características (por ejemplo: edad,
+                                            altura y peso de los alumnos de una clase). </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- fin acordeon 1 -->
+                    <br>
+
+                    <!-- acordeon 1 -->
+                    <article class="accordion1">
+                        <p class="etiqueta-recurso"><img class="icono-link" width="22px"
+                                src="./assets/images/mano.svg">Da clic en cada uno de los títulos para obtener más
+                            información.</p>
+                        <div class="panel-group sombra" id="p3-accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#p3-accordion"
+                                            href="#p3-collapse4">Individuo</a>
+                                    </h3>
+                                </div>
+                                <div id="p3-collapse4" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>Cualquier elemento que porte información sobre el fenómeno que se estudia.
+                                            Así, si estudiamos la altura de los niños de una clase, cada alumno es un
+                                            individuo; si se estudia el precio de la vivienda, cada vivienda es un
+                                            individuo. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#p3-accordion"
+                                            href="#p3-collapse5">Población</a>
+                                    </h3>
+                                </div>
+                                <div id="p3-collapse5" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>Conjunto de todos los individuos (personas, objetos, animales, etc.) que
+                                            porten información sobre el fenómeno que se estudia. Por ejemplo, si se
+                                            estudia el precio de la vivienda en una ciudad, la población será el total
+                                            de las viviendas de dicha ciudad. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#p3-accordion"
+                                            href="#p3-collapse6">Muestra</a>
+                                    </h3>
+                                </div>
+                                <div id="p3-collapse6" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>Subconjunto que seleccionado de una población. Por ejemplo, si se estudia el
+                                            precio de la vivienda de una ciudad, lo normal será no recoger información
+                                            sobre todas las viviendas de la ciudad (sería una labor muy compleja), sino
+                                            que se suele seleccionar un subgrupo (muestra) que se entienda que es
+                                            suficientemente representativo. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- fin acordeon 1 -->
+                    <br>
+                    <figure>
+                        <img class="imagen" src="./assets/images/u1_p3_esquema.png">
+                        <figcaption>Imagen 1. Daniel, (2019). Población, Muestras, Individuos y Variables [Imagen].
+                            Recuperado de:<br> <a class="link"
+                                href="https://www.datalaria.com/post/fundamentos/2018-10-07-estadistica-descriptiva/"
+                                target="_blank">https://www.datalaria.com/post/fundamentos/2018-10-07-estadistica-descriptiva/</a>
+                        </figcaption>
+
+                    </figure>
+
+                    <p>Las variables aleatorias son variables que son seleccionadas al azar o por procesos aleatorios;
+                        mientras que los datos son medidas y/o números recopilados a partir de la observación. Los datos
+                        pueden concebirse como información numérica necesaria para ayudar a tomar una decisión con más
+                        bases en una situación particular.</p>
+
+                    <p>Existen muchos métodos mediante los cuales se pueden obtener datos necesarios. Primero, se puede
+                        buscar datos ya publicados por otras fuentes. Segundo, se puede diseñar un experimento. En
+                        tercer lugar, se puede conducir un estudio. Cuarto, se pueden hacer observaciones del
+                        comportamiento, actitudes u opiniones de los individuos en los que se está interesado. </p>
+
+                    <p>Los datos se pueden clasificar en:</p>
+
+                    <ul class="bando">
+
+                        <li><strong>Datos discretos: </strong>Son respuestas numéricas que surgen de un proceso de
+                            conteo. </li>
+
+                        <li><strong>Datos continuos: </strong>Son respuestas numéricas que surgen de un proceso de
+                            medición</li>
+                    </ul>
+
+
+
+                    <figure>
+                        <img class="imagen" src="./assets/images/u1_p3_diagrama2.png">
+
+                        <figcaption>Esquema 2. IRC (2020). Datos [Imagen]</figcaption>
+
+                    </figure>
+
+                    <p>Abundaremos sobre los que surgen de un proceso de medición. Medir en el campo de las ciencias
+                        exactas es comparar una magnitud con otra, tomada de manera arbitraria como referencia,
+                        denominada patrón y expresar cuántas veces la contiene. En el campo de las ciencias sociales
+                        medir es “el proceso de vincular conceptos abstractos con indicadores empíricos”. Al resultado
+                        de medir lo se le llama medida. </p>
+
+                    <p>La medición de las variables puede realizarse por medio de cuatro escalas de medición: la
+                        nominal, ordinal, de intervalo y de razón. Se utilizan para ayudar en la clasificación de las
+                        variables, el diseño de las preguntas para medir variables, e incluso indican el tipo de
+                        análisis estadístico apropiado para el tratamiento de los datos. </p>
+
+                    <p>Una característica esencial de la medición es la dependencia que tiene de la posibilidad de
+                        variación. La validez y la confiabilidad de la medición de una variable depende de las
+                        decisiones que se tomen para operarla y lograr una adecuada comprensión del concepto evitando
+                        imprecisiones y ambigüedades, en caso contrario, la variable corre el riesgo inherente de ser
+                        invalidada debido a que no produce información confiable. </p>
+
+
+                    <!-- recurso de pestañas -->
+                    <article class="pestanas margen-recursos">
+                        <p class="etiqueta-recurso"><img class="icono-link" width="22px"
+                                src="./assets/images/mano.svg">Da clic en cada uno de los títulos para obtener más
+                            información.</p>
+                        <div class="container">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#p3-tabs-t3">Medición Nominal</a></li>
+                                <li><a data-toggle="tab" href="#p3-tabs-t4">Medición Ordinal</a></li>
+                                <li><a data-toggle="tab" href="#p3-tabs-t5">Medición de Intervalo</a></li>
+                                <li><a data-toggle="tab" href="#p3-tabs-t6">Medición de Razón</a></li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div id="p3-tabs-t3" class="tab-pane active sombra">
+                                    <h3 class="tab-title">Medición Nominal</h3>
+                                    <p>En este nivel de medición se establecen categorías distintivas que no implican un
+                                        orden específico. Por ejemplo, si la unidad de análisis es un grupo de personas,
+                                        para clasificarlas se puede establecer la categoría sexo con dos niveles,
+                                        masculino (M) y femenino (F), los encuestados sólo tienen que señalar su género,
+                                        no se requiere de un orden real. Así, se pueden asignar números a estas
+                                        categorías para su identificación: 1=M, 2=F o bien, se pueden invertir los
+                                        números sin que afecte la medición: 1=F y 2=M. </p>
+
+                                    <p>En resumen, en la escala nominal se asignan números a eventos con el propósito de
+                                        identificarlos. </p>
+
+
+                                </div>
+                                <div id="p3-tabs-t4" class="tab-pane fade sombra">
+                                    <h3 class="tab-title">Medición Ordinal</h3>
+                                    <p>Se establecen categorías con dos o más niveles que implican un orden inherente
+                                        entre sí. La escala de medición ordinal es cuantitativa porque permite ordenar a
+                                        los eventos en función de la mayor o menor posesión de un atributo o
+                                        característica. </p>
+
+                                    <p>Por ejemplo, en las instituciones escolares de nivel básico suelen formar por
+                                        estatura a los estudiantes, se desarrolla un orden cuantitativo pero no
+                                        suministra medidas de los sujetos. Estas escalas admiten la asignación de
+                                        números en función de un orden prescrito. Las formas más comunes de variables
+                                        ordinales son ítems (reactivos) actitudinales estableciendo una serie de niveles
+                                        que expresan una actitud de acuerdo o desacuerdo con respecto a algún referente.
+                                        Por ejemplo, ante el reactivo: Pemex debe privatizarse, el respondiente puede
+                                        marcar su respuesta de acuerdo a las siguientes alternativas: </p>
+
+                                    <p class="bando">__ Totalmente de acuerdo __ De acuerdo __ Indiferente __ En
+                                        desacuerdo __ Totalmente en desacuerdo </p>
+
+                                    <p>Las anteriores alternativas de respuesta pueden codificarse con números que van
+                                        del uno al cinco que sugieren un orden preestablecido pero no implican una
+                                        distancia entre un número y otro. </p>
+
+                                </div>
+
+
+                                <div id="p3-tabs-t5" class="tab-pane fade sombra">
+                                    <h3 class="tab-title">Medición de Intervalo</h3>
+                                    <p>La medición de intervalo posee las características de la medición nominal y
+                                        ordinal. Establece la distancia entre una medida y otra. La escala de intervalo
+                                        se aplica a variables continuas pero carece de un punto cero absoluto. El
+                                        ejemplo más representativo de este tipo de medición es un termómetro, cuando
+                                        registra cero grados centígrados de temperatura indica el nivel de congelación
+                                        del agua y cuando registra 100 grados centígrados indica el nivel de ebullición,
+                                        el punto cero es arbitrario no real, lo que significa que en este punto no hay
+                                        ausencia de temperatura. </p>
+
+                                </div>
+
+                                <div id="p3-tabs-t6" class="tab-pane fade sombra">
+                                    <h3 class="tab-title">Medición de Razón</h3>
+                                    <p>Una escala de medición de razón incluye las características de los tres
+                                        anteriores niveles de medición (nominal, ordinal e intervalo). Determina la
+                                        distancia exacta entre los intervalos de una categoría. Adicionalmente tiene un
+                                        punto cero absoluto, es decir, en el punto cero no existe la característica o
+                                        atributo que se mide. Las variables de ingreso, edad, número de hijos, etc. son
+                                        ejemplos de este tipo de escala. El nivel de medición de razón se aplica tanto a
+                                        variables continuas como discretas.</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- fin recurso de pestañas -->
+                    <br><br>
+
+                    <div style="text-align: center;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nCszHELuwxk" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                        <figcaption>Matemáticas profe Alex (2018). Tipos de variables estadísticas | Cuantitativas
+                            Cualitativas. [Archivo de video] <br>Disponoble en: <a class="link"
+                                href="https://youtu.be/nCszHELuwxk" target="_blank">https://youtu.be/nCszHELuwxk</a>
+                        </figcaption>
+                    </div>
+                </div>
+            </article>
+
+
+        </div>
+    </section>
+
+    <div id="pagina-4"></div>
+    <section class="wrapper">
+        <div class="contenido-principal">
+            <article>
+                <h3><span>1.3 </span>Estadística Descriptiva</h3>
+            </article>
+
+            <article class="row">
+                <div class="column">
+
+                    <p>La estadística descriptiva es rama de la estadística que analiza series de datos (por ejemplo,
+                        edad de una población, peso de los trabajadores de un determinado centro de trabajo, temperatura
+                        en los meses de verano, entre otros) y trata de extraer conclusiones sobre el comportamiento de
+                        estos elementos o variables. Para poder describirlos o explicarlos a través del análisis y
+                        resumen de datos. </p>
+
+                    <p>Las variables que se observan y analizan pueden ser de dos tipos:</p>
+
+                    <ul class="bando">
+
+                        <li><strong>Variables cualitativas o atributos:</strong> no se pueden medir numéricamente,
+                            representan características atributos de las variables (por ejemplo: nacionalidad, sexo,
+                            religión).</li>
+
+                        <li><strong>Variables cuantitativas:</strong> tienen valor numérico (edad, altura, precio de un
+                            producto, ingresos anuales).</li>
+
+
+                    </ul>
+
+                    <p>El proceso que sigue la estadística descriptiva para el estudio de una cierta población consta de
+                        los siguientes pasos:</p>
+
+                    <ul class="bando">
+                        <li>Selección de caracteres dignos de ser estudiados.</li>
+
+                        <li>Mediante encuesta o medición, obtención del valor de cada individuo en los caracteres
+                            seleccionados.</li>
+
+                        <li>Elaboración de tablas de frecuencias, mediante la adecuada clasificación de los individuos
+                            dentro de cada carácter.</li>
+
+                        <li>Representación gráfica de los resultados (elaboración de gráficas estadísticas).</li>
+
+                        <li>Obtención de parámetros estadísticos, números que sintetizan los aspectos más relevantes de
+                            una distribución estadística.</li>
+
+                    </ul>
+
+                    <p>Se emplea para resumir de forma numérica o gráfica un conjunto de datos, se restringe a describir
+                        los datos que se analizan. Si aplicamos las herramientas ofrecidas por la estadística
+                        descriptiva a una muestra, solo nos limitaremos a describir los datos encontrados en dicha
+                        muestra, no se podrá generalizar la información hacia la población.</p>
+
+
+                    <p><img class="icono-link" width="10%" src="./assets/images/video.svg"> Te invitamos a ver el
+                        siguiente video para terminar de formarte una idea de lo que es la estadística Descriptiva: </p>
+
+                    <div style="text-align: center;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/buKDQZG5phM" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                        <figcaption>Luis Rincón (2017). 0398D ¿Qué es la estadística descriptiva?. [Archivo de video]
+                            Disponoble en: <a class="link" href="https://youtu.be/buKDQZG5phM"
+                                target="_blank">https://youtu.be/buKDQZG5phM</a></figcaption>
+                    </div>
+
+
+
+                </div>
+            </article>
+
+
+
+        </div>
+    </section>
+
+    <div id="pagina-5"></div>
+    <section class="wrapper">
+        <div class="contenido-principal">
+            <article>
+                <h3><span>1.4 </span> Muestras Aleatorias y Estadísticas</h3>
+            </article>
+
+            <article class="row">
+                <div class="column">
+
+                    <p>El muestreo es una herramienta de la investigación científica, cuya función básica es determinar
+                        que parte de una población debe examinarse, con la finalidad de hacer inferencias sobre dicha
+                        población. </p>
+
+
+
+                    <p>La muestra debe lograr una representación adecuada de la población, en la que se reproduzca de la
+                        mejor manera los rasgos esenciales de dicha población que son importantes para la investigación.
+                        Para que una muestra sea representativa, y por lo tanto útil, debe de reflejar las similitudes y
+                        diferencias encontradas en la población, es decir ejemplificar las características de ésta.</p>
+
+                    <p>Existen diferentes criterios de clasificación de los diferentes tipos de muestreo, aunque en
+                        general pueden dividirse en dos grandes grupos: métodos de muestreo probabilísticos y métodos de
+                        muestreo no probabilísticos. </p>
+
+                    <h4>I. Muestreo probabilístico </h4>
+
+                    <p>Los métodos de muestreo probabilísticos son aquellos que se basan en el principio de
+                        equiprobabilidad. Es decir, aquellos en los que todos los individuos tienen la misma
+                        probabilidad de ser elegidos para formar parte de una muestra y, consiguientemente, todas las
+                        posibles muestras de tamaño n tienen la misma probabilidad de ser seleccionadas. Sólo estos
+                        métodos de muestreo probabilísticos nos aseguran la representatividad de la muestra extraída y
+                        son, por tanto, los más recomendables. Dentro de los métodos de muestreo probabilísticos
+                        encontramos los siguientes tipos: </p>
+
+
+                    <!-- recurso de pestañas -->
+                    <article class="pestanas margen-recursos">
+                        <p class="etiqueta-recurso"><img class="icono-link" width="22px"
+                                src="./assets/images/mano.svg">Da clic en cada uno de los títulos para obtener más
+                            información.</p>
+                        <div class="container">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#p5-tabs-t1">Muestreo aleatorio simple</a>
+                                </li>
+                                <li><a data-toggle="tab" href="#p5-tabs-t2">Muestreo aleatorio sistemático</a></li>
+                                <li><a data-toggle="tab" href="#p5-tabs-t3">Muestreo aleatorio estratificado</a></li>
+
+                                <li><a data-toggle="tab" href="#p5-tabs-t4">Muestreo aleatorio por conglomerados</a>
+                                </li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div id="p5-tabs-t1" class="tab-pane active sombra">
+                                    <h3 class="tab-title">Muestreo aleatorio simple</h3>
+                                    <p>El procedimiento empleado es el siguiente: </p>
+
+                                    <p class="bando">a. Se asigna un número a cada individuo de la población y</p>
+
+                                    <p class="bando">b. A través de algún medio mecánico (bolas dentro de una bolsa,
+                                        tablas de números aleatorios, números aleatorios generados con una calculadora u
+                                        ordenador, etc.) se eligen tantos sujetos como sea necesario para completar el
+                                        tamaño de muestra requerido.</p>
+
+                                    <p>Este procedimiento, atractivo por su simpleza, tiene poca o nula utilidad
+                                        práctica cuando la población que estamos manejando es muy grande. </p>
+                                </div>
+                                <div id="p5-tabs-t2" class="tab-pane fade sombra">
+                                    <h3 class="tab-title">Muestreo aleatorio sistemático</h3>
+                                    <p>Este procedimiento exige, como el anterior, numerar todos los elementos de la
+                                        población, pero en lugar de extraer n números aleatorios sólo se extrae uno. Se
+                                        parte de ese número aleatorio i, que es un número elegido al azar, y los
+                                        elementos que integran la muestra son los que ocupa los lugares i, i+k, i+2k,
+                                        i+3k,...,i+(n-1) k, es decir se toman los individuos de k en k, siendo k el
+                                        resultado de dividir el tamaño de la población entre el tamaño de la muestra: k=
+                                        N/n. El número i que empleamos como punto de partida será un número al azar
+                                        entre 1 y k. </p>
+
+                                    <p>El riesgo este tipo de muestreo está en los casos en que se dan periodicidades en
+                                        la población ya que al elegir a los miembros de la muestra con una periodicidad
+                                        constante (k) podemos introducir una homogeneidad que no se da en la población.
+                                        Imaginemos que estamos seleccionando una muestra sobre listas de 10 individuos
+                                        en los que los 5 primeros son varones y los 5 últimos mujeres, si empleamos un
+                                        muestreo aleatorio sistemático con k=10 siempre seleccionaríamos o sólo hombres
+                                        o sólo mujeres, no podría haber una representación de los dos sexos. </p>
+
+                                </div>
+
+                                <div id="p5-tabs-t3" class="tab-pane fade sombra">
+                                    <h3 class="tab-title">Muestreo aleatorio estratificado</h3>
+                                    <p>Trata de obviar las dificultades que presentan los anteriores ya que simplifican
+                                        los procesos y suelen reducir el error muestral para un tamaño dado de la
+                                        muestra. Consiste en considerar categorías típicas diferentes entre sí
+                                        (estratos) que poseen gran homogeneidad respecto a alguna característica (se
+                                        puede estratificar, por ejemplo, según la profesión, el municipio de residencia,
+                                        el sexo, el estado civil, etc.). Lo que se pretende con este tipo de muestreo es
+                                        asegurarse de que todos los estratos de interés estarán representados
+                                        adecuadamente en la muestra. Cada estrato funciona independientemente, pudiendo
+                                        aplicarse dentro de ellos el muestreo aleatorio simple o el estratificado para
+                                        elegir los elementos concretos que formarán parte de la muestra. En ocasiones
+                                        las dificultades que plantean son demasiado grandes, pues exige un conocimiento
+                                        detallado de la población. </p>
+
+                                    <p>La distribución de la muestra en función de los diferentes estratos se denomina
+                                        afijación, y puede ser de diferentes tipos: </p>
+
+                                    <ul class="bando">
+                                        <li><i>Afijación Simple:</i> A cada estrato le corresponde igual número de
+                                            elementos muéstrales. </li>
+
+                                        <li><i>Afijación Proporcional:</i> La distribución se hace de acuerdo con el
+                                            peso (tamaño) de la población en cada estrato.</li>
+
+                                        <li><i>Afijación Óptima:</i> Se tiene en cuenta la previsible dispersión de los
+                                            resultados, de modo que se considera la proporción y la desviación típica.
+                                            Tiene poca aplicación ya que no se suele conocer la desviación. </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div id="p5-tabs-t4" class="tab-pane fade sombra">
+                                    <h3 class="tab-title">Muestreo aleatorio por conglomerados</h3>
+                                    <p>Los métodos presentados hasta ahora están pensados para seleccionar directamente
+                                        los elementos de la población, es decir, que las unidades muéstrales son los
+                                        elementos de la población.</p>
+                                    <p>En el muestreo por conglomerados la unidad muestral es un grupo de elementos de
+                                        la población que forman una unidad, a la que llamamos conglomerado. Las unidades
+                                        hospitalarias, los departamentos universitarios, una caja de determinado
+                                        producto, etc., son conglomerados naturales. En otras ocasiones se pueden
+                                        utilizar conglomerados no naturales como, por ejemplo, las urnas electorales.
+                                        Cuando los conglomerados son áreas geográficas suele hablarse de "muestreo por
+                                        áreas". </p>
+
+                                    <p>El muestreo por conglomerados consiste en seleccionar aleatoriamente un cierto
+                                        número de conglomerados (el necesario para alcanzar el tamaño muestral
+                                        establecido) y en investigar después todos los elementos pertenecientes a los
+                                        conglomerados elegidos.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- fin recurso de pestañas -->
+                    <br><br>
+
+                    <h4>II- Métodos de muestreo no probabilísticos </h4>
+
+                    <p>A veces, para estudios exploratorios, el muestreo probabilístico resulta excesivamente costoso y
+                        se acude a métodos no probabilísticos, aun siendo conscientes de que no sirven para realizar
+                        generalizaciones (estimaciones inferenciales sobre la población), pues no se tiene certeza de
+                        que la muestra extraída sea representativa, ya que no todos los sujetos de la población tienen
+                        la misma probabilidad de se elegidos. En general se seleccionan a los sujetos siguiendo
+                        determinados criterios procurando, en la medida de lo posible, que la muestra sea
+                        representativa. </p>
+
+                    <p>En algunas circunstancias los métodos estadísticos y epidemiológicos permiten resolver los
+                        problemas de representatividad aun en situaciones de muestreo no probabilístico, por ejemplo los
+                        estudios de caso-control, donde los casos no son seleccionados aleatoriamente de la población.
+                    </p>
+
+                    <p>Entre los métodos de muestreo no probabilísticos más utilizados en investigación encontramos:</p>
+
+
+                    <!-- recurso de pestañas -->
+                    <article class="pestanas margen-recursos">
+                        <p class="etiqueta-recurso"><img class="icono-link" width="22px"
+                                src="./assets/images/mano.svg">Da clic en cada uno de los títulos para obtener más
+                            información.</p>
+                        <div class="container">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#p5-tabs-t5">Muestreo por cuotas</a></li>
+                                <li><a data-toggle="tab" href="#p5-tabs-t6">Muestreo intencional o de conveniencia</a>
+                                </li>
+                                <li><a data-toggle="tab" href="#p5-tabs-t7">Bola de nieve</a></li>
+
+                                <li><a data-toggle="tab" href="#p5-tabs-t8">Muestreo Discrecional </a></li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div id="p5-tabs-t5" class="tab-pane active sombra">
+                                    <h3 class="tab-title">Muestreo por cuotas</h3>
+                                    <p>También denominado en ocasiones "accidental". Se asienta generalmente sobre la
+                                        base de un buen conocimiento de los estratos de la población y/o de los
+                                        individuos más "representativos" o "adecuados" para los fines de la
+                                        investigación. Mantiene, por tanto, semejanzas con el muestreo aleatorio
+                                        estratificado, pero no tiene el carácter de aleatoriedad de aquél. </p>
+                                    <p>En este tipo de muestreo se fijan unas "cuotas" que consisten en un número de
+                                        individuos que reúnen unas determinadas condiciones, por ejemplo: 20 individuos
+                                        de 25 a 40 años, de sexo femenino y residentes en Gijón. Una vez determinada la
+                                        cuota se eligen los primeros que se encuentren que cumplan esas características.
+                                        Este método se utiliza mucho en las encuestas de opinión. </p>
+                                </div>
+
+                                <div id="p5-tabs-t6" class="tab-pane fade sombra">
+                                    <h3 class="tab-title">Muestreo intencional o de conveniencia</h3>
+                                    <p>Este tipo de muestreo se caracteriza por un esfuerzo deliberado de obtener
+                                        muestras "representativas" mediante la inclusión en la muestra de grupos
+                                        supuestamente típicos. Es muy frecuente su utilización en sondeos preelectorales
+                                        de zonas que en anteriores votaciones han marcado tendencias de voto. </p>
+
+                                    <p>También puede ser que el investigador seleccione directa e intencionadamente los
+                                        individuos de la población. El caso más frecuente de este procedimiento el
+                                        utilizar como muestra los individuos a los que se tiene fácil acceso (los
+                                        profesores de universidad emplean con mucha frecuencia a sus propios alumnos).
+                                    </p>
+
+                                </div>
+
+                                <div id="p5-tabs-t7" class="tab-pane fade sombra">
+                                    <h3 class="tab-title">Bola de nieve</h3>
+                                    <p>Se localiza a algunos individuos, los cuales conducen a otros, y estos a otros, y
+                                        así hasta conseguir una muestra suficiente. Este tipo se emplea muy
+                                        frecuentemente cuando se hacen estudios con poblaciones "marginales",
+                                        delincuentes, sectas, determinados tipos de enfermos, etc. </p>
+
+
+                                </div>
+
+                                <div id="p5-tabs-t8" class="tab-pane fade sombra">
+                                    <h3 class="tab-title">Muestreo Discrecional </h3>
+                                    <p>A criterio del investigador los elementos son elegidos sobre lo que él cree que
+                                        pueden aportar al estudio.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- fin recurso de pestañas -->
+
+                    <br><br>
+
+                    <div style="text-align: center;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fnFEpFkqQpI" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                        <figcaption>UVa_Online (2015). 06. MUESTREO ESTADÍSTICO. [Archivo de video] <br>Disponoble en:
+                            <a class="link" href="https://youtu.be/fnFEpFkqQpI"
+                                target="_blank">https://youtu.be/fnFEpFkqQpI</a>
+                        </figcaption>
+                    </div>
+
+                </div>
+            </article>
+
+
+
+        </div>
+    </section>
+
+    <div id="pagina-6"></div>
+    <section class="wrapper">
+        <div class="contenido-principal">
+            <article>
+                <h2>Cierre de unidad</h2>
+            </article>
+
+            <article class="row">
+                <div class="column">
+
+                    <p>Esta unidad vimos como primer que la estadística es la ciencia cuyo objetivo es reunir una
+                        información cuantitativa concerniente a individuos, grupos, series de hechos, etc. y deducir de
+                        ello gracias al análisis de estos datos unos significados precisos o unas previsiones para el
+                        futuro.</p>
+
+
+                    <p>Y que la estadística es muy importante ya que se emplea en muchos campos y ayuda a diseñar el
+                        esquema de búsqueda y registro de información para describirla y analizarla con facilidad y
+                        mediante estimaciones, obtener conclusiones que enriquezcan el conocimiento de la realidad.</p>
+
+                    <p>Conocimos acerca de las variables estadísticas y su clasificación y de los tipos de datos y que
+                        estos miden, analizan y resumen para su presentación e interpretación los datos; son
+                        clasificados en cualitativos y cuantitativos.</p>
+
+                    <p>Hablamos de la estadística descriptiva como una rama de la estadística que analiza series de
+                        datos (por ejemplo, edad de una población, peso de los trabajadores de un determinado centro de
+                        trabajo, temperatura en los meses de verano, etc.) y trata de extraer conclusiones sobre el
+                        comportamiento de estos elementos o variables. </p>
+
+                    <p>Y para cerrar la unidad abordamos el tema del muestreo aleatorio y estadístico. Se conoce como
+                        muestreo a la técnica para la selección de una muestra a partir de una población estadística, al
+                        elegir una muestra aleatoria se espera conseguir que sus propiedades sean extrapolables a la
+                        población. Este proceso permite ahorrar recursos, y a la vez obtener resultados parecidos a los
+                        que se alcanzarían si se realiza un estudio de toda la población. Vimos las diferentes
+                        clasificaciones de muestreo probabilístico y no probabilístico. </p>
+
+                    <p style="text-align: center;">Sigue adelante.</p>
+
+
+                </div>
+            </article>
+
+
+
+        </div>
+    </section>
+
+    <div id="pagina-7"></div>
+    <section class="wrapper">
+        <div class="contenido-principal">
+
+            <article class="">
+
+            </article>
+
+            <article class="row">
+                <div class="column">
+
+                    <h2><img class="icono-link" src="./assets/images/fuentes.svg" width="15%"> Fuentes de Consulta</h2>
+
+                    <p>Díaz, A. (2013). Estadística aplicada a la administración y la economía. México. McGraw-Hill
+                        Interamericana. </p>
+                    <p>Educativa. (2012). Conceptos básicos de estadística - Probabilidad y estadística – Educatina
+                        [Video]. Consultado en:
+                        https://www.youtube.com/watch?time_continue=622&amp;v=lJT4-OmnPPY&amp;feature=emb_logo</p>
+
+                    <p>GestioPolis. (2002). ¿Qué es estadística? Tipos y objetivos. Recuperado de
+                        https://www.gestiopolis.com/que-es-estadistica-tipos-y-objetivos/</p>
+
+                    <p>Gil, P. (2006). Estadística e informática (SPSS) en la investigación descriptiva e inferencial.
+                        Madrid: Universidad Nacional de Educación a Distancia.</p>
+
+                    <p>Gondar, J. (2003). Estadística inferencial. Madrid: Data Mining Institute.</p>
+
+                    <p>Matemáticas profe Alex. (2018). Tipos de variables estadísticas | Cuantitativas Cualitativas
+                        [video]. Consultado en: https://www.youtube.com/watch?v=nCszHELuwxk</p>
+
+                    <p>Rincón. L. (2017). ¿Qué es la estadística descriptiva? [video]. Consultado en:
+                        https://www.youtube.com/watch?v=buKDQZG5phM</p>
+                    <p>Sarmiento, T., y Llerena, P. (2014). Introducción a la estadística básica. Recuperado de:
+                        https://www.monografias.com/trabajos98/introduccion-estadistica-basica/introduccion-estadistica-basica.shtml
+                    </p>
+
+                    <p>(S.f). Generalidades del muestreo. Recuperado de:
+                        http://www.estadistica.mat.uson.mx/Material/elmuestreo.pdf</p>
+
+                    <p>UVa_Online. (2015). Muestreo estadístico [video]. Consultado en: https://youtu.be/fnFEpFkqQpI</p>
+
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="logotipos">
+                        <img src="../../assets/logos_encabezado.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script> -->
+    <script src="../../assets/fontawesome-all.min.js.descarga"></script>
+    <script src="../../assets/plugins.js.descarga"></script>
+    <script src="../../assets/main.js.descarga"></script>
+
+
+</body>
+
+</html>

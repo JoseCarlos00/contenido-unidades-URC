@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<!-- saved from url=(0136)#!/#collapse1 -->
+<html ng-app="CoursesApp"
+  class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths ng-scope fontawesome-i2svg-active fontawesome-i2svg-complete"
+  lang="es"><!--<![endif]-->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style data-merge-styles="true"></style>
+  <style data-merge-styles="true"></style>
+  <style type="text/css">
+    svg:not(:root).svg-inline--fa {
+      overflow: visible
+    }
+
+    .svg-inline--fa {
+      display: inline-block;
+      font-size: inherit;
+      height: 1em;
+      overflow: visible;
+      vertical-align: -.125em
+    }
+
+    .svg-inline--fa.fa-lg {
+      vertical-align: -.225em
+    }
+
+    .svg-inline--fa.fa-w-1 {
+      width: .0625em
+    }
+
+    .svg-inline--fa.fa-w-2 {
+      width: .125em
+    }
+
+    .svg-inline--fa.fa-w-3 {
+      width: .1875em
+    }
+
+    .svg-inline--fa.fa-w-4 {
+      width: .25em
+    }
+
+    .svg-inline--fa.fa-w-5 {
+      width: .3125em
+    }
+
+    .svg-inline--fa.fa-w-6 {
+      width: .375em
+    }
+
+    .svg-inline--fa.fa-w-7 {
+      width: .4375em
+    }
+
+    .svg-inline--fa.fa-w-8 {
+      width: .5em
+    }
+
+    .svg-inline--fa.fa-w-9 {
+      width: .5625em
+    }
+
+    .svg-inline--fa.fa-w-10 {
+      width: .625em
+    }
+
+    .svg-inline--fa.fa-w-11 {
+      width: .6875em
+    }
+
+    .svg-inline--fa.fa-w-12 {
+      width: .75em
+    }
+
+    .svg-inline--fa.fa-w-13 {
+      width: .8125em
+    }
+
+    .svg-inline--fa.fa-w-14 {
+      width: .875em
+    }
+
+    .svg-inline--fa.fa-w-15 {
+      width: .9375em
+    }
+
+    .svg-inline--fa.fa-w-16 {
+      width: 1em
+    }
+
+    .svg-inline--fa.fa-w-17 {
+      width: 1.0625em
+    }
+
+    .svg-inline--fa.fa-w-18 {
+      width: 1.125em
+    }
+
+    .svg-inline--fa.fa-w-19 {
+      width: 1.1875em
+    }
+
+    .svg-inline--fa.fa-w-20 {
+      width: 1.25em
+    }
+
+    .svg-inline--fa.fa-pull-left {
+      margin-right: .3em;
+      width: auto
+    }
+
+    .svg-inline--fa.fa-pull-right {
+      margin-left: .3em;
+      width: auto
+    }
+
+    .svg-inline--fa.fa-border {
+      height: 1.5em
+    }
+
+    .svg-inline--fa.fa-li {
+      width: 2em
+    }
+
+    .svg-inline--fa.fa-fw {
+      width: 1.25em
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .fa-layers {
+      display: inline-block;
+      height: 1em;
+      position: relative;
+      text-align: center;
+      vertical-align: -.125em;
+      width: 1em
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      -webkit-transform-origin: center center;
+      transform-origin: center center
+    }
+
+    .fa-layers-counter,
+    .fa-layers-text {
+      display: inline-block;
+      position: absolute;
+      text-align: center
+    }
+
+    .fa-layers-text {
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transform-origin: center center;
+      transform-origin: center center
+    }
+
+    .fa-layers-counter {
+      background-color: #ff253a;
+      border-radius: 1em;
+      color: #fff;
+      height: 1.5em;
+      line-height: 1;
+      max-width: 5em;
+      min-width: 1.5em;
+      overflow: hidden;
+      padding: .25em;
+      right: 0;
+      text-overflow: ellipsis;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right
+    }
+
+    .fa-layers-bottom-right {
+      bottom: 0;
+      right: 0;
+      top: auto;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: bottom right;
+      transform-origin: bottom right
+    }
+
+    .fa-layers-bottom-left {
+      bottom: 0;
+      left: 0;
+      right: auto;
+      top: auto;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: bottom left;
+      transform-origin: bottom left
+    }
+
+    .fa-layers-top-right {
+      right: 0;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right
+    }
+
+    .fa-layers-top-left {
+      left: 0;
+      right: auto;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top left;
+      transform-origin: top left
+    }
+
+    .fa-lg {
+      font-size: 1.33333em;
+      line-height: .75em;
+      vertical-align: -.0667em
+    }
+
+    .fa-xs {
+      font-size: .75em
+    }
+
+    .fa-sm {
+      font-size: .875em
+    }
+
+    .fa-1x {
+      font-size: 1em
+    }
+
+    .fa-2x {
+      font-size: 2em
+    }
+
+    .fa-3x {
+      font-size: 3em
+    }
+
+    .fa-4x {
+      font-size: 4em
+    }
+
+    .fa-5x {
+      font-size: 5em
+    }
+
+    .fa-6x {
+      font-size: 6em
+    }
+
+    .fa-7x {
+      font-size: 7em
+    }
+
+    .fa-8x {
+      font-size: 8em
+    }
+
+    .fa-9x {
+      font-size: 9em
+    }
+
+    .fa-10x {
+      font-size: 10em
+    }
+
+    .fa-fw {
+      text-align: center;
+      width: 1.25em
+    }
+
+    .fa-ul {
+      list-style-type: none;
+      margin-left: 2.5em;
+      padding-left: 0
+    }
+
+    .fa-ul>li {
+      position: relative
+    }
+
+    .fa-li {
+      left: -2em;
+      position: absolute;
+      text-align: center;
+      width: 2em;
+      line-height: inherit
+    }
+
+    .fa-border {
+      border: solid .08em #eee;
+      border-radius: .1em;
+      padding: .2em .25em .15em
+    }
+
+    .fa-pull-left {
+      float: left
+    }
+
+    .fa-pull-right {
+      float: right
+    }
+
+    .fa.fa-pull-left,
+    .fab.fa-pull-left,
+    .fal.fa-pull-left,
+    .far.fa-pull-left,
+    .fas.fa-pull-left {
+      margin-right: .3em
+    }
+
+    .fa.fa-pull-right,
+    .fab.fa-pull-right,
+    .fal.fa-pull-right,
+    .far.fa-pull-right,
+    .fas.fa-pull-right {
+      margin-left: .3em
+    }
+
+    .fa-spin {
+      -webkit-animation: fa-spin 2s infinite linear;
+      animation: fa-spin 2s infinite linear
+    }
+
+    .fa-pulse {
+      -webkit-animation: fa-spin 1s infinite steps(8);
+      animation: fa-spin 1s infinite steps(8)
+    }
+
+    @-webkit-keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    .fa-rotate-90 {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg)
+    }
+
+    .fa-rotate-180 {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg)
+    }
+
+    .fa-rotate-270 {
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg)
+    }
+
+    .fa-flip-horizontal {
+      -webkit-transform: scale(-1, 1);
+      transform: scale(-1, 1)
+    }
+
+    .fa-flip-vertical {
+      -webkit-transform: scale(1, -1);
+      transform: scale(1, -1)
+    }
+
+    .fa-flip-horizontal.fa-flip-vertical {
+      -webkit-transform: scale(-1, -1);
+      transform: scale(-1, -1)
+    }
+
+    :root .fa-flip-horizontal,
+    :root .fa-flip-vertical,
+    :root .fa-rotate-180,
+    :root .fa-rotate-270,
+    :root .fa-rotate-90 {
+      -webkit-filter: none;
+      filter: none
+    }
+
+    .fa-stack {
+      display: inline-block;
+      height: 2em;
+      position: relative;
+      width: 2em
+    }
+
+    .fa-stack-1x,
+    .fa-stack-2x {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .svg-inline--fa.fa-stack-1x {
+      height: 1em;
+      width: 1em
+    }
+
+    .svg-inline--fa.fa-stack-2x {
+      height: 2em;
+      width: 2em
+    }
+
+    .fa-inverse {
+      color: #fff
+    }
+
+    .sr-only {
+      border: 0;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px
+    }
+
+    .sr-only-focusable:active,
+    .sr-only-focusable:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto
+    }
+  </style>
+  <style type="text/css">
+    [ng\:cloak],
+    [ng-cloak],
+    [data-ng-cloak],
+    [x-ng-cloak],
+    .ng-cloak,
+    .x-ng-cloak,
+    .ng-hide:not(.ng-hide-animate) {
+      display: none !important;
+    }
+
+    ng\:form {
+      display: block;
+    }
+
+    .ng-animate-shim {
+      visibility: hidden;
+    }
+
+    .ng-anchor {
+      position: absolute;
+    }
+  </style>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tecnologías de la información</title>
+  <meta name="description" content="Plataforma de arranque para los cursos de Formación Docente.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="../../assets/images/ircfavicon.ico">
+  <!-- or, set /favicon.ico for IE10 win -->
+  <meta name="msapplication-TileColor" content="#D83434">
+
+  <!-- font -->
+  <link href="../../assets/css" rel="stylesheet">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../../assets/bootstrap.min.css">
+
+  <script src="../../assets/jquery.min.js.descarga"></script>
+
+  <!--scripts -->
+  <!--bootstrap -->
+  <script src="../../assets/bootstrap.min.js.descarga"></script>
+
+
+  <link rel="stylesheet" href="../../assets/normalize.css">
+  <link rel="stylesheet" href="../../assets/milligram.min.css">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <script src="../../assets/modernizr-2.7.1.min.js.descarga"></script>
+</head>
+
+<body>
+
+
+
+  <div id="pagina-1"></div>
+ 
+
+  <div id="pagina-2"></div>
+
+
+  <div id="pagina-2"></div>
+  <header>
+    <div class="menu-accesibilidad">
+      <!--   <ul>
+              <li><a href="" title="aumenta"><i class="fas fa-plus-circle"></i></a></li>
+              <li><a href="" title="disminuye"><i class="fas fa-minus-circle"></i></a></li>
+              <li><a href="" title="contraste"><i class="fas fa-adjust"></i></a></li>
+              <li><a href="" title="descargar"><i class="fas fa-download"></i></a></li>
+          </ul>
+          <ul>
+              <li><a href="#!/" title="inicio"><i class="fas fa-home"></i></a></li>
+              <li><a href="" title="salir"><i class="fas fa-sign-out-alt"></i></a></li>
+          </ul>-->
+    </div>
+    <div>
+      Sistemas inteligentes
+    </div>
+  </header>
+  <nav>
+    <div class="container menu-principal">
+      <div class="row">
+        <div class="column">
+          <ul class="menu">
+            <li class="unidad-activa"><a
+                href="#unidad-1"
+                title="unidad 1">U1</a></li>
+  
+          </ul>
+        </div>
+        <div class="column">
+          <!--     <ul class="menu">
+                      <li><a href="" title="personal"><i class="fas fa-users"></i></a></li>
+                      <li><a href="" title="comunicación"><i class="fas fa-comments"></i></a></li>
+                      <li><a href="" title="recursos"><i class="fas fa-book"></i></a></li>
+                      <li><a href="" title="consulta"><i class="fas fa-file-alt"></i></a></li>
+                      <li><a href="" title="herramientas"><i class="fas fa-wrench"></i></a></li>
+                  </ul>-->
+        </div>
+      </div>
+    </div>
+    <div id="submenu">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <ul id="unidad-1">
+              <li><a
+                  href="#pagina-1">Presentación
+                  y objetivo de unidad</a></li>
+              <li><a
+                  href="#pagina-2">1.1
+                  Introducción a los sistemas inteligentes </a></li>
+              <li><a
+                  href="#pagina-3">1.1.1
+                  Concepción de los sistemas inteligentes </a></li>
+              <li><a
+                  href="#pagina-4">1.2.1
+                  Importancia de los sistemas inteligentes </a></li>
+              <li><a
+                  href="#pagina-5">1.3.1
+                  Aplicación de los sistemas inteligentes</a></li>
+              <li><a
+                  href="#pagina-6">Cierre
+                  de unidad</a></li>
+              <li><a
+                  href="#pagina-7">Fuentes
+                  de consulta</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--<section id="container">
+      <article class="container" ng-view></article>       
+  </section>-->
+
+  <div id="pagina-1"></div>
+  <section class="wrapper">
+    <div class="contenido-principal">
+  
+      <article>
+        <h1><span>Unidad 1: </span>Introducción a los sistemas inteligentes</h1>
+  
+        <h2><img class="icono-link" src="../../assets/images/presentacion_unidad.svg" width="15%"> Presentación de unidad</h2>
+      </article>
+  
+  
+      <article class="row">
+  
+        <div class="column">
+  
+          <p>En esta unidad el estudiante podrá entender que son los Sistemas Inteligentes, su importancia y aplicación.
+          </p>
+  
+          <p>A lo largo de esta unidad, se hará una descripción de los orígenes e historia de la inteligencia artificial,
+            así como de algunas contribuciones que esta área ha heredado de otras disciplinas. También se discutirán
+            algunas de las definiciones más comúnmente aceptadas y los diferentes modelos que se emplean para describirla.
+          </p>
+  
+          <p>La Inteligencia Artificial (IA) es una de las ramas de las ciencias de la computación que más interés ha
+            despertado en la actualidad, debido a su enorme campo de aplicación.
+            La búsqueda de mecanismos que nos ayuden a comprender la inteligencia y realizar modelos y simulaciones de
+            estos, es algo que ha motivado a muchos científicos a elegir esta área de investigación.
+          </p>
+  
+          <p>A continuación, se presentan algunas de las definiciones iniciales de esta área.</p>
+  
+          <ul>
+            <li>Estudio de la computación que observa que una maquina sea capaz de percibir, razonar y actuar (Winston,
+              1992).</li>
+            <li>Ciencia de la obtención de máquinas que logren hacer cosas que requerirían inteligencia si las hicieran
+              los humanos (Minsky, 1968).</li>
+            <li>Nuevo esfuerzo excitante que logre que la computadora piense... máquinas con mentes, en el sentido
+              completo y literal (Haugeland, 1985).</li>
+            <li>Rama de la ciencia computacional preocupada por la automatización de la conducta inteligente (Luger and
+              Stubblefield, 1993).</li>
+            <li>Maquina Inteligente, es la que realiza el proceso de analizar, organizar y convertir los datos en
+              conocimiento, donde el conocimiento del sistema es información estructurada adquirida y aplicada para
+              reducir la ignorancia o la incertidumbre sobre una tarea específica a realizar por esta (Pajares y Santos,
+              2006).</li>
+          </ul>
+  
+          <p>En los años 50 cuando se logra realizar un sistema que tuvo cierto éxito, se llamó el Perceptrón de
+            Rossenblatt. Este era un sistema visual de reconocimiento de patrones en el cual se aunaron esfuerzos para que
+            se pudieran resolver una gama amplia de problemas, pero estas energías se diluyeron enseguida.</p>
+  
+          <p>Aproximadamente en ese tiempo, el matemático inglés Alan Turing (1912-1954) propuso una prueba con la
+            finalidad de demostrar la existencia de “inteligencia” en un dispositivo no biológico. Esta prueba conocida
+            como “test de Turing” se fundamenta en la hipótesis de, si una máquina se comporta en todos aspectos como
+            inteligente, entonces debe ser inteligente (Alan Turing, 1950). Como consecuencia de esta prueba, muchos de
+            los esfuerzos de los investigadores en ese tiempo, se enfocaron en la redacción de sistemas de inteligencia
+            artificial lingüísticos, lo que marcó el nacimiento de los conocidos como “chatbots” (robots de plática). A
+            pesar de que ya se había realizado una investigación sobre el diseño y las capacidades de las entidades no
+            biológicas, el trabajo de Alan Turing de 1950 concentró el interés de la comunidad científica en el desarrollo
+            de las “máquinas inteligentes”. Dos de las contribuciones más importantes de Alan Turing son el diseño de la
+            primera computadora capaz de jugar al ajedrez y el establecimiento de la naturaleza simbólica de la
+            computación (ITAM, 1987).</p>
+  
+          <p>El primer sistema experto o inteligente fue el denominado Dendral, un intérprete de espectrograma de masa
+            construido en 1967, pero el más influyente resultaría ser el Mycin de 1974.</p>
+  
+          <p>La inteligencia se puede ver como una “medida” que indica que tan fácil logra un sistema sus objetivos. Por
+            lo anterior, un sistema inteligente (SI) es un sistema que aprende durante su existencia como actuar para
+            alcanzar sus objetivos. (Winston, 1992).
+            Los sistemas expertos o inteligentes son actualmente considerados como uno de los productos típicos de la
+            inteligencia artificial.
+          </p>
+  
+  
+  
+  
+          <blockquote class="blockquote text-right">
+            <p style="margin-bottom:0px; color:#666; text-align:right;"> </p>
+            <p style="margin-bottom:0px; color:#666; text-align:right;" class="autor"> </p>
+          </blockquote>
+  
+  
+        </div>
+  
+      </article>
+  
+      <article class="row objetivo">
+  
+        <div class="column">
+          <h2><img class="icono-link" src="../../assets/images/objetivo.svg" width="18%"> Objetivo de unidad</h2>
+  
+          <p>Al finalizar el estudiante aprenderá los conceptos y nociones básicas de los sistemas inteligentes, se
+            informará de los avances actuales que existen en el desarrollo de la Inteligencia Artificial.</p>
+        </div>
+      </article>
+  
+      <article class="row">
+        <div class="column">
+          <h2></h2>
+  
+  
+  
+          <p class="bienvenida">¡Bienvenidos a esta unidad!</p>
+  
+        </div>
+      </article>
+  
+  
+    </div>
+  </section>
+
+  <div id="pagina-2"></div>
+  <section class="wrapper">
+    <div class="contenido-principal">
+      <article>
+        <h3>1.1 Introducción a los sistemas inteligentes </h3>
+      </article>
+  
+      <article class="row">
+        <div class="column">
+  
+          <p>El resolver problemas y la toma de decisiones basándose en los datos y el conocimiento ha sido una de las
+            causas principales del origen de los sistemas inteligentes.</p>
+  
+          <p>Los sistemas inteligentes no se cansan, ni tienen manías, no engañan, solo hay que considerar cuál es la
+            limitación de su conocimiento, desde la segunda guerra mundial los humanos hemos intentado desarrollar
+            técnicas para que los ordenadores se asemejen más en su funcionamiento a los seres humanos, ya que se tiene la
+            certeza de que serán de gran ayuda y utilidad. Los sistemas inteligentes influirán en la forma de llevar a
+            cabo las actividades en las empresas y en su estructura y forma de organizarse de manera más eficaz y
+            eficiente, anticipándose a los problemas. </p>
+  
+          <p>La representación del conocimiento experto es una de las tareas más difíciles en la construcción de un
+            sistema basado en el conocimiento, sin embargo, de forma creciente se han incorporado sistemas y procesos
+            informáticos en su diario vivir con el fin de tener una mejor calidad de vida.</p>
+  
+          <p>Existe una clasificación de los modelos de inteligencia Artificial que se basa en el objetivo y la forma en
+            que trabaja el sistema, esta clasificación de manera inicial se veía como clases independientes, sin embargo,
+            en la actualidad los sistemas mezclan características de ellas. (LATIn, 2014).</p>
+  
+  
+  
+          <!-- acordeon 1 -->
+          <article class="accordion1">
+            <p class="etiqueta-recurso"><img class="icono-link" width="15%"
+                src="../../assets/images/objetodeaprendizaje.svg"> Da clic en cada uno de los títulos para obtener más
+              información.</p>
+            <div class="panel-group sombra" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">a) Sistemas que piensan como
+                      humanos</a>
+                  </h3>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                  <div class="panel-body">
+  
+                    <ul>
+                      <li>El modelo es el funcionamiento de la mente humana.</li>
+                      <li>Se intenta establecer una teoría sobre el funcionamiento de la mente (experimentación
+                        Psicológica).</li>
+                      <li>A partir de la teoría se pueden establecer modelos computacionales.</li>
+                      <li>Influencia de las Ciencias Cognitivas. GPS (General Problem Solver, 1963) - Newell &amp; Simon
+                        no se preocupaban de cómo obtener la respuesta correcta – sino sobre porque los sistemas llegaban
+                        a dar las respuestas que daban.</li>
+                      <li>En los sistemas cognitivos, la mayoría de las investigaciones no son con computadoras sino con
+                        humanos y animales.</li>
+                    </ul>
+  
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">b) Sistemas que actúan como
+                      humanos</a>
+                  </h3>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                  <div class="panel-body">
+  
+                    <ul>
+                      <li>El modelo es el hombre; el objetivo es construir un sistema que pase por humano.</li>
+                      <li>Prueba de Turing: si un sistema la pasa es inteligente.</li>
+                      <li>Capacidades necesarias: Procesamiento del lenguaje natural, representación del conocimiento,
+                        razonamiento y aprendizaje.</li>
+                      <li>Pasar la prueba no es el objetivo primordial de la IA.</li>
+                      <li>La interacción de programas con personas hace que sea importante que éstos puedan actuar como
+                        humanos.</li>
+                    </ul>
+  
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">c) Sistemas que piensan
+                      racionalmente </a>
+                  </h3>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                  <div class="panel-body">
+  
+                    <ul>
+                      <li>Las leyes del pensamiento racional se fundamentan en la lógica (silogismos de Aristóteles)</li>
+                      <li>La lógica formal está en la base de los programas inteligentes (logicismo)</li>
+                      <li>Se presentan dos obstáculos: Es muy difícil formalizar el conocimiento y hay un gran salto entre
+                        la capacidad teórica de la lógica y su realización práctica</li>
+                      <li>Silogismos de Aristóteles</li>
+                      <li>Lógica como base del esfuerzo</li>
+                      <li>Lógica de Predicados</li>
+                    </ul>
+  
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">d) Sistemas actuantes
+                      racionales</a>
+                  </h3>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse">
+                  <div class="panel-body">
+  
+                    <ul>
+                      <li>Actuar racionalmente significa conseguir unos objetivos dadas unas creencias.</li>
+                      <li>El paradigma es el agente racional, que se aplica, por ejemplo, a muchos sistemas robóticos.
+                      </li>
+                    </ul>
+  
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </article>
+          <!-- fin acordeon 1 --><br><br>
+  
+          <p>La prueba de Turing (Alan Turing ,1950) intenta ofrecer una definición de Inteligencia Artificial que se
+            pueda evaluar. Para que un ser o máquina se considere inteligente debe lograr engañar a un evaluador de que
+            este ser o máquina se trata de un humano evaluando todas las actividades de tipo cognoscitivo que puede
+            realizar el ser humano. Si el diálogo que ocurra y el número de errores en la solución dada se acerca al
+            número de errores ocurridos en la comunicación con un ser humano, se podrá estimar -según Turing- que estamos
+            ante una máquina “inteligente”. </p>
+  
+          <p>Una persona debe establecer si sostuvo una charla con una máquina o con otra persona (Henderson, 2007).</p>
+  
+          <p>Para aprobar la prueba total de Turing, es necesario que la computadora esté dotada para poder:</p>
+  
+          <ul class="bando">
+            <li>Procesar un lenguaje natural, para así poder establecer comunicación satisfactoria, sea en español, inglés
+              o en cualquier otro idioma humano.</li>
+            <li>Representar el conocimiento, para guardar toda la información que se le haya dado antes o durante el
+              interrogatorio. Utilización de Base de Datos para receptar preguntas y luego almacenarlas.</li>
+            <li>Razonar automáticamente, utilizando la información guardada al responder preguntas y obtener nuevas
+              conclusiones o tomar decisiones.</li>
+            <li>Autoaprendizaje de la máquina, con el propósito de adaptarse a nuevas circunstancias. El autoaprendizaje
+              conlleva a la autoevaluación.</li>
+            <li>Vista, es la capacidad de percibir el objeto que se encuentra en frente suyo.</li>
+            <li>Robótica, capacidad para mover el objeto que ha sido percibido.</li>
+          </ul>
+  
+          <p>Uno de los primeros sistemas expertos conocido como “Dendral”, desarrollado por Edward Feigenbaum en el
+            Instituto de Tecnología de Carnegie (actual Instituto Carnegie de Tecnología). El trabajo de Feigenbaum se vio
+            fuertemente influenciado por el trabajo de otros importantes investigadores como John Von Newman en un
+            principio, y por Herbert Simon y Allen Newell posteriormente. En sus propias palabras Feigenbaum declaró que
+            cuando Newell anunció el desarrollo de los primeros modelos de computadora sobre el pensamiento humano y la
+            toma de decisiones a su clase, él renació; y a partir de ese momento decidió seguir el camino del estudio de
+            los procesos mentales humanos (Henderson, 2007).</p>
+  
+          <p>Dendral mostro un enorme potencial en la deducción de información sobre estructuras químicas, que, de acuerdo
+            a su propio autor, se desprendía de su conocimiento sobre química. (Feigenbaum, 1990).</p>
+  
+          <p>Los Sistemas Inteligentes han demostrado ser herramientas sumamente útiles en la resolución de problemas
+            complejos. Su capacidad de adaptación al entorno de información les permite brindar buenos resultados en
+            distintas áreas.</p>
+  
+  
+  
+  
+  
+  
+        </div>
+      </article>
+  
+  
+    </div>
+  </section>
+  
+  <div id="pagina-3"></div>
+  <section class="wrapper">
+    <div class="contenido-principal">
+      <article>
+        <h3><span>1.1.1 </span> Concepción de los sistemas inteligentes </h3>
+  
+      </article>
+  
+      <article class="row">
+        <div class="column">
+  
+          <p>La rama de la computación “machine learning”, trata de crear programas capaces de generalizar comportamientos
+            a partir de una información no estructurada suministrada en forma de ejemplos, promoviendo de esta forma un
+            proceso de creación de conocimiento. Los algoritmos que se utilizan en el machine learning, así como los
+            enfoques para su resolución, son muy variados: modelos estadísticos, teoría de la decisión, redes neuronales,
+            etc. </p>
+  
+          <p>Sin embargo, se pueden identificar dos grandes grupos: un aprendizaje supervisado que implica que alguien
+            valore el nivel de desempeño en cada interacción, de forma que el sistema va aprendiendo; y sistemas no
+            supervisados en los que no se tienen en cuenta las salidas del sistema, sino solo las entradas, de forma que
+            el sistema se dedica a reconocer patrones más que a realizar una labor de clasificación en diferentes
+            categorías.</p>
+  
+          <p>Los sistemas informáticos muestran una gran potencia para las acciones que tienen que ver con la computación.
+            Sin embargo, no hay duda de que el cerebro, tras miles de años de evolución, ha ido adquiriendo unas
+            capacidades de reconocimiento que los seres humanos utilizamos de forma inmediata e intuitiva y que no son
+            fáciles de implementar en forma de algoritmo. Esta habilidad lleva a que las personas realicen continuamente
+            interpretaciones del entorno adaptadas al contexto; cosa que los sistemas computacionales no pueden realizar.
+          </p>
+  
+          <p>Un sistema inteligente, es un sistema programado que reúne características y comportamientos asimilables al
+            de la inteligencia humana o animal. Se utiliza para sistemas y métodos que simulan aspectos de comportamiento
+            inteligente, con la intención final de aprender de la naturaleza para poder diseñar y construir arquitecturas
+            computacionales más potentes. Los sistemas inteligentes evolucionaron a partir de la inteligencia artificial.
+            Después de Dendral, el equipo de Feigenbaum inició un nuevo proyecto que se extendería de 1972 a 1980 en la
+            Universidad de Stanfort.</p>
+  
+          <p>Este sistema experto introdujo el uso de conocimiento impreciso y la posibilidad de explicar el proceso de
+            razonamiento de la herramienta. Aunque el proyecto fue inicialmente conducido por Feigenbaum, fue finalizado
+            por Shortliffe y sus colaboradores mediante el uso de Lisp. La relevancia de este sistema radica en la
+            demostración de la eficiencia de su esquema de representación del conocimiento y de sus técnicas de
+            razonamiento; mismas que ejercieron una enorme influencia en el desarrollo de sistemas posteriores basados en
+            reglas, en tanto dominios médicos como no médicos. El propósito de Mycin fue el diagnóstico de enfermedades
+            infecciosas de la sangre.</p>
+  
+          <p>La siguiente tabla recopila algunos de los primeros sistemas inteligentes (Rolston, 1990). Los sistemas
+            presentados en esta tabla nos permiten visualizar que alrededor de los años
+            70‘s se empezó a generar un enorme interés en lo que posteriormente se conoció como sistemas basados en el
+            conocimiento o sistemas inteligentes.</p>
+  
+          <figure>
+            <img class="imagen" src="./assets/01.png">
+            <figcaption>Tabla 1: Sistemas Inteligentes (Rolston, 1990)</figcaption>
+          </figure>
+  
+          <p>Los sistemas expertos son actualmente considerados como uno de los productos típicos de la inteligencia
+            artificial.</p>
+  
+          <p>Un sistema experto es “una aplicación informática que soluciona problemas complicados que de otra manera
+            exigirían ampliamente la pericia humana” (Rolston, 1990). Los sistemas expertos simulan el proceso de
+            razonamiento humanos mediante la aplicación de conocimiento e inferencia.</p>
+  
+          <p>Debido al enorme éxito que tuvieron los sistemas expertos en la década de los 80’s, empezaron a surgir
+            desarrollos conocidos como shells. </p>
+  
+          <p>Un Shell es una pieza de software que provee una interfaz para los usuarios. Un sistema experto posee entre
+            sus componentes las dos herramientas siguientes: </p>
+  
+          <ul>
+            <li><b>Base de conocimientos</b>: El conocimiento relacionado con un problema o fenómeno se codifica según una
+              notación específica que incluye reglas, predicados, redes semánticas y objetos. </li>
+            <li><b>Motor de inferencia</b>: es el mecanismo que combina los hechos y las preguntas particulares,
+              utilizando la base de conocimiento, seleccionando los datos y pasos apropiados para presentar los
+              resultados.</li>
+          </ul>
+  
+          <p>Un Shell es un “sistema experto” que posee una base de conocimientos vacía, pero acompañada de las
+            herramientas necesarias para proveer la base de conocimiento sobre el dominio del discurso de una aplicación
+            específica. Un Shell provee también al ingeniero del conocimiento (encargado de recabar la base de
+            conocimientos) de una herramienta que trae integrado algún mecanismo de representación del conocimiento, un
+            mecanismo de inferencia, elementos que faciliten la explicación del procedimiento o decisión tomados por el
+            sistema experto (componente explicativo) e incluso, algunas veces, proveen una interfaz de usuario. </p>
+  
+          <p>Algunos ambientes de desarrollo para la construcción de sistemas expertos independientes del dominio o shells
+            clásicos son (LATIn, 2014). </p>
+  
+  
+          <!-- acordeon 2 -->
+          <article class="accordion1">
+            <p class="etiqueta-recurso"><img class="icono-link" width="15%" src="./assets/objetodeaprendizaje.svg"> Da
+              clic en cada uno de los títulos para obtener más información.</p>
+            <div class="panel-group sombra" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"
+                      href="#acordeon2-collapse1">EMYCIN
+                      o Essential Mycin: </a>
+                  </h3>
+                </div>
+                <div id="acordeon2-collapse1" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <p>Esta Shell fue construida en la Universidad de Stanford como resultado del desarrollo del sistema
+                      experto MYCIN que realizaba el diagnóstico de enfermedades infecciosas de la sangre. El sistema
+                      EMYCIN fue la base para la construcción de muchos otros sistemas expertos, tales como el PUFF (que
+                      diagnostica enfermedades pulmonares) y el SACON (que trabaja con ingeniería estructural)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"
+                      href="#acordeon2-collapse2">OPS5-
+                      OPS83: </a>
+                  </h3>
+                </div>
+                <div id="acordeon2-collapse2" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Estas Shell fueron desarrolladas en C, es el lenguaje que debe ser empleado para la inserción de
+                      las reglas base y junto con el uso del encadenamiento hacia adelante, la posibilidad de insertar las
+                      reglas en un lenguaje como el C son sus principales aportaciones. Este sistema está basado en el
+                      algoritmo propietario RETE II. </p>
+  
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"
+                      href="#acordeon2-collapse3">El
+                      algoritmo RETE: </a>
+                  </h3>
+                </div>
+                <div id="acordeon2-collapse3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Es de reconocida eficacia para la comparación de hechos con los patrones de las reglas y la
+                      determinación de cuales de ellas satisfacen sus condiciones. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"
+                      href="#acordeon2-collapse4">ESDE/VM
+                      (Expert System Development Environment):</a>
+                  </h3>
+                </div>
+                <div id="acordeon2-collapse4" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Esta es una herramienta comercial creada por IBM para sus sistemas operativos VM y MVS. Esta
+                      herramienta que incluye facilidades gráficas y acceso a bases de datos fue creada para su uso con
+                      mainframes. Esta herramienta usa reglas para representar el conocimiento del tipo IF x THEN y AND.
+                      La principal ventaja de este tipo de representación es su facilidad para modificarlas y el hecho de
+                      que las reglas son un esquema muy semejante al modelo con el que los seres humanos razonamos o
+                      planteamos la solución a un problema.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"
+                      href="#acordeon2-collapse5">KEE
+                      (Knowledge Engineering Environment): </a>
+                  </h3>
+                </div>
+                <div id="acordeon2-collapse5" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Esta herramienta de la casa comercial IntelliCorp combina el uso de la programación orientada a
+                      objetos y el uso de reglas como herramientas de representación del conocimiento. </p>
+                  </div>
+                </div>
+              </div>
+  
+  
+            </div>
+          </article>
+          <!-- fin acordeon 2 --><br><br>
+  
+          <p>S1: De acuerdo s Hayes (1992), esta herramienta para el desarrollo de sistemas expertos basada en reglas
+            provee toda clase de facilidades para la introducción del conocimiento tanto por parte del ingeniero como del
+            experto sobre un cierto dominio. Este sistema incluye ya el uso del idioma inglés, de manera que traduce
+            automáticamente fragmentos de texto que se asocien con la base de conocimientos. Este sistema, además, muestra
+            dinámicamente sus líneas de razonamiento alternativas, conclusiones y reglas heurísticas consideradas. </p>
+  
+          <p>EXSYS: Considerado por largo tiempo como el líder para el desarrollo de sistemas expertos, es el resultado de
+            más de 28 años de mejora y refinamiento. Esta herramienta posee también elementos para la producción de
+            sistemas expertos interactivos en la web. </p>
+  
+          <p>Existe una enorme lista de herramientas que no han sido comentadas, entre las que se pueden mencionar: MED1,
+            NEXPERT OBJECT, GURU, HUGIN SYSTEM, ICARUS, entre otros.</p>
+  
+  
+        </div>
+      </article>
+  
+  
+    </div>
+  </section>
+
+
+  <div id="pagina-4"></div>
+  <section class="wrapper">
+    <div class="contenido-principal">
+      <article>
+        <h3><span>1.2.1</span>Importancia de los sistemas inteligentes </h3>
+      </article>
+  
+      <article class="row">
+        <div class="column">
+  
+          <p>El desarrollo de la inteligencia artificial (IA) es un tema ampliamente debatido a lo largo de las últimas
+            décadas. La intención última es la creación y diseño de entidades capaces de tomar decisiones por sí mismas
+            utilizando como paradigma la inteligencia humana. </p>
+  
+          <p>El enfoque computacional de la inteligencia artificial se fundamenta en la creación de sistemas expertos con
+            gran capacidad de cálculo, aspecto en el que son claramente imbatibles al encontrarse en un orden de desempeño
+            muy superior al de cualquier humano. Esto ha hecho que, en ciertos ámbitos, en aquellos en los que el entorno
+            está bien definido y las reglas de operación se pueden implementar de una forma lógica, como en el juego del
+            ajedrez, los resultados sean espectaculares. </p>
+  
+          <p>Desde el principio de la creación de los sistemas inteligentes se desarrollaron sistemas con alto nivel de
+            juego en ajedrez en un desafío por batir al hombre. Dicho proceso culminó el 11 de mayo del año 1997, cuando
+            el computador de IBM Deep Blue fue capaz de derrotar al campeón del mundo de ajedrez Gari Kaspárov después de
+            un torneo a seis partidas. En la actualidad, ninguna persona puede batir ni a un ordenador de tipo medio. </p>
+  
+          <p>Sin embargo, cuando se trata de identificar patrones para poder valorar situaciones, por muy sencillas que
+            sean, sus resultados se encuentran muy por debajo de los que puede ofrecer un niño de corta edad. Esta laguna
+            se está intentando superar y se están perfeccionando modelos que permiten a los sistemas computacionales
+            aprender de las experiencias pasadas, obteniendo así una forma de adaptarse al contexto.
+  
+          </p>
+  
+          <p>La importancia de los Sistemas Inteligentes radica en la nueva automatización derivada de los avances
+            tecnológicos y se ve reflejada en el impacto que tienen en el apoyo al trabajo en los diferentes sectores:
+            primarios (agricultura, ganadería, pesca, etc.), secundarios (minería, industria, artesanía, construcción,
+            etc.) y el sector de servicios secundario de forma relevante a trabajos con un alto componente cognitivo y al
+            sector servicios. </p>
+  
+          <p>Los sistemas inteligentes pueden combinar capacidades cognitivas elevadas y pueden traducirse en acciones
+            físicas (por ejemplo, mover un objeto) o en la toma de decisiones (diagnosticar una enfermedad o comprar
+            acciones de una empresa). </p>
+  
+          <p>La automatización del trabajo en el sector primario está alcanzando a tareas en las que la inteligencia
+            humana dirige la toma de decisiones, como evaluar las condiciones para la siembra o alimentar a los animales y
+            controlarlos sanitariamente. La caracterización del suelo y del medio ambiente también es un elemento en el
+            que las soluciones tecnológicas de automatización pueden prestar gran ayuda en la toma de decisiones. La
+            aparición de robots que simulan el comportamiento de las raíces y de las hojas de las plantas permitirá
+            identificar características clave como la acidez, la humedad, la composición química del suelo o la detección
+            de agentes contaminantes en el aire, factores esenciales para decidir las cosechas. Aún en fase de
+            experimentación, estos robots suponen un avance destacado en la automatización del trabajo agrícola .</p>
+  
+          <p>En el sector secundario la automatización se ha enfocado hasta ahora a la realización de tareas repetitivas o
+            peligrosas en procesos controlados como las cadenas de producción, que sustituyen el trabajo manual.
+            Actualmente el desarrollo de la robótica en entornos industriales se orienta no tanto hacia la sustitución de
+            los trabajadores como hacia el trabajo colaborativo entre humanos y robots, en el que ambos puedan aportar
+            mayor valor añadido a las actividades realizadas.</p>
+  
+          <p>Dentro del sector secundario, la minería es otra de las actividades que está aprovechando los sistemas
+            automáticos para mejorar su productividad. Las labores extractivas pueden resultar peligrosas para los
+            trabajadores, por lo que la utilización de sistemas automáticos controlados en remoto se presenta como una
+            alternativa muy eficaz para evitar accidentes.
+            Los anteriores ejemplos permiten comprobar cómo la automatización del trabajo ya está teniendo un impacto
+            relevante en sectores, sustituyendo a las personas en tareas rutinarias o peligrosas y consiguiendo mejorar la
+            productividad empresarial.
+          </p>
+  
+          <p>La importancia de los Sistemas Inteligentes se centra en el imparable ascenso de la automatización de las
+            actividades laborales, que ya no se limita a tareas rutinarias o repetitivas en ámbitos industriales, sino que
+            alcanza a actividades que requieren una capacidad cognitiva importante. Este avance de la automatización del
+            trabajo tendrá importantes consecuencias en la configuración del mercado laboral, ya que, por una parte,
+            muchos perfiles profesionales son susceptibles de ser automatizados y, por otra, también aparecerán gran
+            cantidad de nuevos tipos de trabajo. </p>
+  
+          <p>Respecto a la organización empresarial el impacto será importante, ya que los procesos de gestión deberán ser
+            repensados para hacer frente a las nuevas formas de trabajo.
+            En el nuevo entorno empresarial, que conjugará los sistemas automáticos con el trabajo manual, la gestión de
+            los recursos humanos cobrará una nueva dimensión. El trabajo colaborativo entre seres humanos y máquinas hará
+            surgir nuevos desafíos, muchos de ellos de carácter emocional, que los gestores de recursos humanos deberán
+            abordar para que la convivencia sea beneficiosa para la empresa. El cambio por la automatización de ciertas
+            actividades laborales requerirá un proceso de aprendizaje.
+          </p>
+  
+          <p>Una consecuencia de esta utilización masiva de las tecnologías en entornos concretos son los ambientes
+            inteligentes, smart factory, smart school, smart home, smart city, etc. Estos ambientes actúan en cierto modo
+            como un sistema inteligente de un nivel superior, aunque puedan estar compuestos internamente por otros
+            sistemas inteligentes.</p>
+  
+          <p>Los sistemas inteligentes permitirán afrontar desafíos del envejecimiento de la población. El envejecimiento
+            de la población en las sociedades modernas supone un mayor número de personas dependientes, lo cual es una
+            realidad a la que hay que enfrentarse de alguna manera. Este envejecimiento, que hace que cada vez haya más
+            personas con necesidades de atención especial, supone un problema económico y de recursos que puede llegar a
+            lastrar el desarrollo económico de las sociedades.</p>
+  
+          <p>Del servicio al autoservicio. La forma en la que los servicios se comercializan y se entregan se transformará
+            de forma radical, lo que afectará a todos los sectores: la banca, la alimentación, el comercio y otros. El
+            concepto general que dominará en todos ellos es el de «autoservicio», que será posible en gran medida gracias
+            a la utilización masiva de asistentes personales que se conectarán de forma automática con las empresas que
+            suministran los servicios. Así, técnicas de análisis de datos se conjugarán con sistemas inteligentes para
+            ofrecer soluciones adecuadas a los usuarios y de esta manera facilitar los procesos de compra.</p>
+  
+          <p>Por todo lo anteriormente descrito (se enuncian solo algunas razones) es que los sistemas inteligentes son
+            importantes en la evolución de la vida humana<sup>2</sup> . </p>
+  
+  
+        </div>
+      </article>
+  
+  
+  
+    </div>
+  </section>
+
+  <div id="pagina-5"></div>
+  <section class="wrapper">
+    <div class="contenido-principal">
+      <article>
+        <h3><span>1.3.1 </span>Aplicaciones de los sistemas inteligentes </h3>
+      </article>
+  
+      <article class="row">
+        <div class="column">
+  
+          <p>Reconocimiento de patrones, es una de las técnicas fundamentales de cualquier sistema machine learning es el
+            reconocimiento de patrones, que aún es un punto débil en cualquier sistema inteligente. Sin embargo, en los
+            últimos años se ha producido una mejora importante en este tipo de tecnologías y en su comercialización; un
+            ejemplo son los sistemas automáticos de identificación de caras en una foto o los sistemas de atención
+            telefónica automáticos. En el caso del reconocimiento de caras, empresas como Google, Facebook o Apple ya lo
+            incluyen en sus servicios al público. No obstante, el problema fundamental se encuentra en la identificación
+            de patrones más complejos como los de comportamiento, o en entender una conversación en lenguaje natural, lo
+            que se llama NLP (Natural Language Processing). En el primer caso, los sistemas de Big Data como Smart Steps
+            ofrecen una aproximación que está dando buenos resultados; en el segundo existen gran cantidad de empresas que
+            se han especializado en ese tipo de servicios, como Lexalytics , que permite analizar textos de la nube y
+            obtener información, como, por ejemplo, análisis de sentimientos, o Palantir , que permite analizar tuits. En
+            los últimos años se ha tratado de dar una vuelta más con el desarrollo de sistemas que sean capaces de
+            entender situaciones o conversaciones y, además, dar una solución adecuada (Figura 2.4). </p>
+  
+          <p>Se puede considerar un precursor WolframAlpha , que fue lanzado en mayo de 2009 y que en este caso va más
+            allá y trata de dar respuestas a preguntas realizadas en lenguaje natural. Otro ejemplo de este tipo de
+            herramientas es Siri , que nace en el año 2007 bajo el concepto de asistente personal basado fuertemente en
+            tecnologías semánticas. Se trató del primer asistente personal que ofrecía un porcentaje aceptable de
+            respuestas acordes al contexto y cuyo éxito llevó a Apple a adquirirlo para su incorporación en el sistema
+            operativo iOS en abril de 2010. El mayor ejemplo de desarrollo de estos sistemas inteligentes ha sido IBM
+            Watson , sistema de inteligencia artificial desarrollado por IBM que en el año 2011 fue capaz de ganar el
+            concurso de preguntas y respuestas Jeopardy a los concursantes que habían ganado los años anteriores. Se
+            consiguió de esta manera superar el hito de que un ordenador fuera capaz de entender preguntas y encontrar las
+            respuestas.</p>
+  
+          <p>Investigación médica: Actividades en las que se requiere manejar gran cantidad de información (bases de datos
+            médicas, resultados de pruebas médicas, etc.), como el diagnóstico de enfermedades, o aquellas que requieren
+            de una gran precisión, como la cirugía, son potencialmente automatizables. En el ámbito del diagnóstico médico
+            se están utilizando los denominados sistemas CAD (Computer-Aided Diagnosis), que combinan técnicas de
+            inteligencia artificial que permiten el reconocimiento de patrones con sistemas de procesado digital de
+            imágenes procedentes de pruebas médicas (TAC, radiografías, ecografías, mamografías, etc.) para ayudar a los
+            doctores en la detección de tumores, cánceres u otras enfermedades. Por ejemplo, el centro médico
+            estadounidense Memorial Sloan-Kettering, especializado en la lucha contra el cáncer, está utilizando el
+            sistema de tecnología cognitiva IBM Watson para conseguir diagnósticos y tratamientos precisos de acuerdo con
+            la información sobre el paciente específico y sobre la ingente cantidad de información almacenada por el
+            centro, que trata a más de 30.000 pacientes de cáncer al año, información de revistas científicas o incluso de
+            congresos médicos.5 La cirugía robótica es una realidad desde hace varios años. Aunque no sustituye la labor
+            de los cirujanos, facilita la realización de intervenciones con mayor precisión y de una forma menos invasiva,
+            lo que contribuye a facilitar la recuperación posoperatoria de los pacientes.</p>
+  
+          <p>Ciertas labores de apoyo en el cuidado de personas se configuran entre las actividades susceptibles de ser
+            automatizadas. Por ejemplo, los robots pueden apoyar a los trabajadores en muchas de las actividades
+            innecesarias en la atención a ancianos o niños. En países como Japón, uno de los más envejecidos del mundo, se
+            está desarrollando una ambiciosa política de incentivos fiscales para que las empresas tecnológicas
+            desarrollen robots de bajo coste con este objetivo, en un intento de paliar los efectos derivados de este
+            continuo envejecimiento de la población.</p>
+  
+          <p>Automatización del trabajo en el sector primario: La automatización del trabajo en el sector primario ha
+            estado históricamente centrada en la sustitución de actividades manuales muy fatigosas para los trabajadores
+            (arar, cosechar, etc.). Sin embargo, esta automatización está alcanzando a tareas en las que la inteligencia
+            humana dirige la toma de decisiones, como evaluar las condiciones para la siembra o alimentar a los animales y
+            controlarlos sanitariamente. </p>
+  
+          <p>Aplicaciones en la agricultura: El sector agrícola está aprovechando las posibilidades que ofrecen las
+            tecnologías de sensorización y de reconocimiento de patrones para mejorar la productividad de las cosechas. Un
+            claro ejemplo es la utilización de drones para el control de los parámetros ambientales que influyen en el
+            crecimiento de las cosechas. Estos drones, equipados con sensores de temperatura, humedad, cámaras de
+            infrarrojos, etc., son capaces de proveer de información precisa sobre el estado de las cosechas, información
+            que, tratada de forma automática por sistemas de procesado de datos e imágenes, permite a los agricultores
+            actuar con previendo ante problemas como sequías, plagas de insectos o decidir el momento óptimo de la
+            cosecha, anticipando incluso el rendimiento que se va a obtener. En grandes extensiones agrícolas los drones
+            reducen drásticamente el tiempo necesario para actuar en función de los parámetros evaluados, ya que son
+            capaces de supervisar toda la plantación de forma muy rápida y precisa.</p>
+  
+          <p>Aplicaciones en las tecnologías de la información: Detrás de la mayoría de los servicios se encuentra el
+            despliegue de tecnologías de comunicaciones que permiten la conexión permanente, sin embargo, nos centraremos
+            en tecnologías de servicio para el usuario, destacando la computación en la nube, el Internet de las cosas,
+            los ambientes inteligentes y el Big Data.</p>
+  
+          <p>Ambientes inteligentes. El Internet de las cosas, permitirá una mayor interacción con el entorno y el
+            desarrollo de ambientes inteligentes o smart. Smart city, smart home, smart school o smart vehicle. Estos
+            ambientes se caracterizan por la utilización masiva de tecnologías de conectividad y de servicios de la
+            sociedad de la información que se adaptan a las necesidades de los usuarios según el contexto. Así, en una
+            ciudad inteligente, diferentes objetos (marquesinas de autobuses, sistemas de alumbrado, balizas de
+            información...) se conectan directamente con los usuarios enviando información pertinente para la actividad
+            que estén realizando. Lo mismo ocurrirá con los objetos del resto de entornos inteligentes.</p>
+  
+          <p>Big Data. La generación de cantidades grandes de información; cantidades que no se pueden analizar utilizando
+            los enfoques clásicos. Con el nombre de Big Data se encuadran aquellas técnicas que permiten analizar en
+            tiempo real gran cantidad de datos estructurados y desestructurados que proceden de fuentes de muy diverso
+            tipo. Estas tecnologías permiten obtener un valor de la gran cantidad de datos que se están generando
+            continuamente en una sociedad cada vez más informatizada. Su aplicación es de lo más variada: conocer mejor a
+            los clientes para poder ofrecerles un mejor servicio, contrastar datos que permitan conseguir avances en el
+            conocimiento científico, encontrar fuentes de ineficiencias en los entornos fabriles, etc. Cualquiera de estos
+            usos tiene un impacto económico importante, por ejemplo, se estima que la utilización del Big Data en el
+            entorno fabril de Europa podría sumar 2,2 billones de euros al PIB europeo en 2030.</p>
+  
+          <p>Aplicaciones en el transporte y la logística: La conducción autónoma de vehículos ha sido un desafío, y
+            también un sueño, para el sector del transporte desde los inicios de la industria automovilística. Ya en 1918,
+            una empresa de Milwaukee hizo una demostración de un coche sin conductor, que era controlado por radio . A
+            pesar de los numerosos intentos de crear un coche autónomo a lo largo del siglo xx, hasta los últimos años no
+            se ha retomado con fuerza la idea de la conducción autónoma. </p>
+  
+          <p>La empresa estadounidense Google ha sido la primera en presentar, a finales de 2014, un prototipo totalmente
+            funcional de vehículo autónomo.
+            Dentro de la industria automovilística, los fabricantes japoneses Nissan y Toyota junto con la alemana
+            Mercedes están apostando con gran fuerza por el desarrollo de sistemas de automatización de la conducción. Un
+            ejemplo de este impulso es el acuerdo al que han llegado la NASA y Nissan para desarrollar un vehículo
+            autónomo que pueda ser utilizado tanto en la Tierra como en Marte A pesar de que es el caso con mayor impacto
+            mediático, la conducción autónoma no solo se limita al transporte por carretera. El desarrollo de sistemas
+            automatizados de conducción también se está experimentando en medios de transporte como las lanchas motoras,
+            con aplicación directa en el ámbito militar y de seguridad.
+          </p>
+  
+          <p>Muy ligadas al transporte, las actividades logísticas también se están beneficiando del desarrollo de
+            sistemas de automatización del trabajo. Los procesos de gestión de almacenes y control de stocks se realizan
+            cada vez más sin participación humana. La utilización de tecnologías de identificación como la RFID
+            (Radio-Frequency Identification) permite la gestión automática de las entradas y salidas de mercancía del
+            almacén, con lo que se consigue la alineación del inventario lógico con el físico. El ejemplo más claro del
+            uso de sistemas automatizados en el ámbito logístico es el de la empresa Amazon, que en 2012 adquirió la
+            empresa de robótica Kiva para instalar robots en sus almacenes de Estados Unidos con la finalidad de acelerar
+            el envío de los productos adquiridos por los clientes. </p>
+  
+          <p>Actualmente Amazon cuenta con 15.000 robots encargados de mover las mercancías desde los estantes del almacén
+            hasta el lugar donde los trabajadores se encargan de preparar los envíos. Estos robots mejoran la eficiencia
+            del proceso reduciendo el tiempo de recogida de los productos del lugar donde se encuentran almacenados y
+            aumentando el espacio de almacenamiento al posibilitar la reducción de los espacios que serían necesarios para
+            la operación manual del proceso de recogida.</p>
+  
+          <p>Aplicaciones en el sector de los viajes y el alojamiento: Las actividades relacionadas con el turismo también
+            han comenzado a utilizar sistemas que permiten la automatización del trabajo con el ánimo de ofrecer un mejor
+            servicio a los clientes y de incrementar la productividad empresarial. En la actualidad, todos los procesos de
+            la cadena de valor turística han incorporado elementos de automatización que están sustituyendo el trabajo
+            manual. A los ya conocidos sistemas on line de búsqueda de destinos, que haciendo uso de la información sobre
+            las preferencias de los usuarios recomiendan las mejores opciones disponibles, hay que unir los avances en la
+            automatización de la relación directa de los usuarios en los alojamientos. Aunque aún se tratan de
+            experiencias puntuales, la tendencia es hacia el crecimiento de la automatización en procesos de atención al
+            cliente. </p>
+  
+          <p>Lo anteriormente descrito, solo es una muestra de las aplicaciones de los sistemas inteligentes, hay un sin
+            fin y más en esta etapa en la que estamos viviendo, una sociedad cambiante que requiere gran adaptación. Es
+            uno de esos momentos en los que se tiene la sensación de que algo va a pasar y después ya nada será igual. En
+            esta sensación influyen dos tipos de aspectos: por una parte, sociales, con graves problemas, como el aumento
+            del desempleo, y por otra parte tecnológicos, con nuevos desarrollos y servicios que están cambiando nuestra
+            manera de comportarnos y de los cuales todavía estamos lejos de ver su verdadero potencial. Existe un debate
+            entre los expertos sobre las posibles relaciones entre ambos aspectos; unos opinan que existe un vínculo entre
+            ellas, otros se inclinan por pensar que es una coincidencia circunstancial en el tiempo, y otros más que las
+            nuevas tecnologías serán la solución al problema del desempleo.</p>
+  
+  
+  
+        </div>
+      </article>
+  
+  
+  
+    </div>
+  </section>
+
+
+  <div id="pagina-6"></div>
+  <section class="wrapper">
+    <div class="contenido-principal">
+      <article>
+        <h2>Cierre de unidad</h2>
+      </article>
+  
+      <article class="row">
+        <div class="column">
+  
+          <p>En el año 1956 se realizó la conferencia de Dartmouth, y en ella se ubica el nacimiento oficial de la
+            “inteligencia artificial” con ese nombre, por propuesta del científico John McCarthy. Cabe señalar que algunos
+            años antes se empezó a desarrollar esta área, por ejemplo, en 1950 Alan Turing propondría el famoso “Test de
+            Turing” que evaluaba la inteligencia de una máquina contra la de un humano.</p>
+  
+          <p>En el campo de la robótica, fue desde 1948 que el William Grey desarrolló la Machina speculatrix, unos robots
+            que, basados en circuitos analógicos semejantes a neuronas simples, demostraban que dichas neuronas en
+            conjunto podían generar comportamientos complejos. Cuando tenían la batería baja, estos robots eran capaces de
+            llegar a su estación de recarga gracias a la fototaxia, que es el movimiento que realiza algún organismo para
+            acercarse o alejarse de un estímulo luminoso.</p>
+  
+          <p>La tendencia de los sistemas inteligentes, comprendiéndola con los ejemplos previamente mencionados, es
+            actualmente más clara que nunca, principalmente en el internet de las cosas. Los sistemas computacionales
+            aparentan no tener límites en su capacidad y procesamiento, como la “nube”.</p>
+  
+          <p>En el año 2016 se trató el tema de la “Industria 4.0”, la industria interconectada, en el Foro Económico
+            Mundial de Davos. Contar con información de todo el proceso de producción, hasta su distribución, para cada
+            máquina y sensor; todo esto a una escala mundial. La información que se procesa es tal que requerimos
+            algoritmos de “Machine Learning” y el “Big Data”.</p>
+  
+          <p>De la integración de los algoritmos de inteligencia, y las máquinas robóticas, están resultando sistemas
+            inteligentes que sin duda nos presentan un futuro muy diferente que cambiará de manera rápida en poco tiempo
+            la convivencia social y el cuidado del medioambiente.</p>
+  
+          <p>Sin lugar a dudas, la automatización del trabajo que requiere cierto nivel cognitivo va a tener un papel
+            importante en la reconfiguración del empleo. Este proceso supone una reordenación del empleo desde actividades
+            que se automatizan hasta actividades en las que el factor humano tenga aún un papel esencial.</p>
+  
+          <p>Como se ha ido describiendo a lo largo de esta unidad, las tecnologías han tenido siempre una gran capacidad
+            transformadora de la sociedad. Estas transformaciones pueden ser profundas, como sucedió durante las
+            revoluciones industriales, o más suaves, como en otros momentos de la historia en los que los cambios y los
+            avances se producían de forma más gradual. </p>
+  
+          <p>Los sistemas inteligentes y robóticos se integran en casi todos los aspectos de nuestra vida creando espacios
+            inteligentes. En el ámbito al que nos refiramos, salud, trabajo, vida personal, etc., los sistemas
+            inteligentes se encontrarán en todos ellos, analizando el contexto y aportando información que pueda ser
+            pertinente al usuario.</p>
+  
+          <p>Sin embargo, aunque existan puntos de consenso entre los expertos acerca de cómo va a evolucionar el mercado
+            de trabajo e incluso la sociedad en general debido al despliegue masivo de sistemas inteligentes, se debe
+            siempre tener en cuenta que el futuro no está escrito. Las administraciones, el resto de agentes y la sociedad
+            en general seremos los que definitivamente iremos encajando los avances tecnológicos y los cambios sociales de
+            la forma que sea más interesante para nosotros.</p>
+  
+          <p>A lo largo de esta unidad pudimos identificar que existe una gran cantidad de áreas específicas en las que se
+            trabaja bajo el concepto de inteligencia artificial, cada una de esta cuenta con herramientas y/o técnicas
+            propias para lograr sus objetivos, algunas de estas se enlistan en la siguiente tabla:</p>
+  
+          <figure>
+            <img class="imagen" src="./assets/02.png">
+            <figcaption></figcaption>
+          </figure>
+  
+          <p>La educación es otro de los terrenos en los que la automatización puede desempeñar un papel relevante en un
+            futuro cercano. En países como Corea del Sur la utilización de robots en las aulas para impartir materias como
+            idiomas extranjeros, particularmente el inglés, está muy extendida desde hace años.</p>
+  
+          <p>Además, con lo visto en esta Unidad, concluimos, que la inteligencia artificial y en específico los sistemas
+            inteligentes tienen aplicaciones más cercanas a todos nosotros. Actualmente se llevan a cabo actividades de
+            investigación, innovación y desarrollo de sistemas inteligentes con un impacto socio económico importante.</p>
+  
+          <p>Entre los campos de oportunidad e interés se encuentran los de seguridad informática, diagnóstico médico,
+            finanzas, efectos especiales en películas, interfaces inteligentes y personalizadas, comprensión de
+            sentimientos y opiniones, aprendizaje basado en el análisis de datos del Big Data para la toma de decisiones
+            inteligentes, ciudades inteligentes, planeación y desarrollo urbano, cuidado del medio ambiente, simuladores
+            de sistemas complejos, juegos y educación.</p>
+  
+  
+  
+  
+  
+  
+        </div>
+      </article>
+  
+  
+  
+    </div>
+  </section>
+
+
+  <div id="pagina-7"></div>
+
+  <section class="wrapper">
+    <div class="contenido-principal">
+  
+      <article class="">
+  
+      </article>
+  
+      <article class="row">
+        <div class="column">
+  
+          <h2><img class="icono-link" src="../../assets/images/fuentes.svg" width="15%"> Fuentes de consulta</h2>
+  
+          <p>Alfaomega. ISBN: 970-15-1166-2. Mexico. Rusell &amp; Norving (2003). Inteligencia Artificial. Un enfoque
+            moderno, Segunda Edición. Prentice Hall.</p>
+  
+          <p>Benitez, R., Escudero, G., Kannan, S. y Masip, R. (2010) Inteligencia Artificial Avanzada. España: UOC.</p>
+  
+          <p>García Serrano, A. (2016) Inteligencia Artificial. Fundamentos, práctica y aplicaciones. México: Alfaomega.
+          </p>
+  
+          <p>Pajares G. y Santos M. (2006).Inteligencia Artificial e Ingeniería del Conocimiento. </p>
+  
+          <p>Ponce Cruz, P. (2014) Inteligencia Artificial con aplicaciones en la Ingeniería. México: Alfaomega.</p>
+  
+        </div>
+      </article>
+  
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <div class="logotipos">
+            <img src="../../assets/images/logos_encabezado.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script> -->
+  <script src="../../assets/fontawesome-all.min.js.descarga"></script>
+  <script src="../../assets/plugins.js.descarga"></script>
+  <script src="../../assets/main.js.descarga"></script>
+
+
+</body>
+
+</html>

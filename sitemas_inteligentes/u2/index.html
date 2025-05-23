@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<!-- saved from url=(0136)#!/#collapse1 -->
+<html ng-app="CoursesApp"
+  class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths ng-scope fontawesome-i2svg-active fontawesome-i2svg-complete"
+  lang="es"><!--<![endif]-->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style data-merge-styles="true"></style>
+  <style data-merge-styles="true"></style>
+  <style type="text/css">
+    svg:not(:root).svg-inline--fa {
+      overflow: visible
+    }
+
+    .svg-inline--fa {
+      display: inline-block;
+      font-size: inherit;
+      height: 1em;
+      overflow: visible;
+      vertical-align: -.125em
+    }
+
+    .svg-inline--fa.fa-lg {
+      vertical-align: -.225em
+    }
+
+    .svg-inline--fa.fa-w-1 {
+      width: .0625em
+    }
+
+    .svg-inline--fa.fa-w-2 {
+      width: .125em
+    }
+
+    .svg-inline--fa.fa-w-3 {
+      width: .1875em
+    }
+
+    .svg-inline--fa.fa-w-4 {
+      width: .25em
+    }
+
+    .svg-inline--fa.fa-w-5 {
+      width: .3125em
+    }
+
+    .svg-inline--fa.fa-w-6 {
+      width: .375em
+    }
+
+    .svg-inline--fa.fa-w-7 {
+      width: .4375em
+    }
+
+    .svg-inline--fa.fa-w-8 {
+      width: .5em
+    }
+
+    .svg-inline--fa.fa-w-9 {
+      width: .5625em
+    }
+
+    .svg-inline--fa.fa-w-10 {
+      width: .625em
+    }
+
+    .svg-inline--fa.fa-w-11 {
+      width: .6875em
+    }
+
+    .svg-inline--fa.fa-w-12 {
+      width: .75em
+    }
+
+    .svg-inline--fa.fa-w-13 {
+      width: .8125em
+    }
+
+    .svg-inline--fa.fa-w-14 {
+      width: .875em
+    }
+
+    .svg-inline--fa.fa-w-15 {
+      width: .9375em
+    }
+
+    .svg-inline--fa.fa-w-16 {
+      width: 1em
+    }
+
+    .svg-inline--fa.fa-w-17 {
+      width: 1.0625em
+    }
+
+    .svg-inline--fa.fa-w-18 {
+      width: 1.125em
+    }
+
+    .svg-inline--fa.fa-w-19 {
+      width: 1.1875em
+    }
+
+    .svg-inline--fa.fa-w-20 {
+      width: 1.25em
+    }
+
+    .svg-inline--fa.fa-pull-left {
+      margin-right: .3em;
+      width: auto
+    }
+
+    .svg-inline--fa.fa-pull-right {
+      margin-left: .3em;
+      width: auto
+    }
+
+    .svg-inline--fa.fa-border {
+      height: 1.5em
+    }
+
+    .svg-inline--fa.fa-li {
+      width: 2em
+    }
+
+    .svg-inline--fa.fa-fw {
+      width: 1.25em
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .fa-layers {
+      display: inline-block;
+      height: 1em;
+      position: relative;
+      text-align: center;
+      vertical-align: -.125em;
+      width: 1em
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      -webkit-transform-origin: center center;
+      transform-origin: center center
+    }
+
+    .fa-layers-counter,
+    .fa-layers-text {
+      display: inline-block;
+      position: absolute;
+      text-align: center
+    }
+
+    .fa-layers-text {
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transform-origin: center center;
+      transform-origin: center center
+    }
+
+    .fa-layers-counter {
+      background-color: #ff253a;
+      border-radius: 1em;
+      color: #fff;
+      height: 1.5em;
+      line-height: 1;
+      max-width: 5em;
+      min-width: 1.5em;
+      overflow: hidden;
+      padding: .25em;
+      right: 0;
+      text-overflow: ellipsis;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right
+    }
+
+    .fa-layers-bottom-right {
+      bottom: 0;
+      right: 0;
+      top: auto;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: bottom right;
+      transform-origin: bottom right
+    }
+
+    .fa-layers-bottom-left {
+      bottom: 0;
+      left: 0;
+      right: auto;
+      top: auto;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: bottom left;
+      transform-origin: bottom left
+    }
+
+    .fa-layers-top-right {
+      right: 0;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right
+    }
+
+    .fa-layers-top-left {
+      left: 0;
+      right: auto;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top left;
+      transform-origin: top left
+    }
+
+    .fa-lg {
+      font-size: 1.33333em;
+      line-height: .75em;
+      vertical-align: -.0667em
+    }
+
+    .fa-xs {
+      font-size: .75em
+    }
+
+    .fa-sm {
+      font-size: .875em
+    }
+
+    .fa-1x {
+      font-size: 1em
+    }
+
+    .fa-2x {
+      font-size: 2em
+    }
+
+    .fa-3x {
+      font-size: 3em
+    }
+
+    .fa-4x {
+      font-size: 4em
+    }
+
+    .fa-5x {
+      font-size: 5em
+    }
+
+    .fa-6x {
+      font-size: 6em
+    }
+
+    .fa-7x {
+      font-size: 7em
+    }
+
+    .fa-8x {
+      font-size: 8em
+    }
+
+    .fa-9x {
+      font-size: 9em
+    }
+
+    .fa-10x {
+      font-size: 10em
+    }
+
+    .fa-fw {
+      text-align: center;
+      width: 1.25em
+    }
+
+    .fa-ul {
+      list-style-type: none;
+      margin-left: 2.5em;
+      padding-left: 0
+    }
+
+    .fa-ul>li {
+      position: relative
+    }
+
+    .fa-li {
+      left: -2em;
+      position: absolute;
+      text-align: center;
+      width: 2em;
+      line-height: inherit
+    }
+
+    .fa-border {
+      border: solid .08em #eee;
+      border-radius: .1em;
+      padding: .2em .25em .15em
+    }
+
+    .fa-pull-left {
+      float: left
+    }
+
+    .fa-pull-right {
+      float: right
+    }
+
+    .fa.fa-pull-left,
+    .fab.fa-pull-left,
+    .fal.fa-pull-left,
+    .far.fa-pull-left,
+    .fas.fa-pull-left {
+      margin-right: .3em
+    }
+
+    .fa.fa-pull-right,
+    .fab.fa-pull-right,
+    .fal.fa-pull-right,
+    .far.fa-pull-right,
+    .fas.fa-pull-right {
+      margin-left: .3em
+    }
+
+    .fa-spin {
+      -webkit-animation: fa-spin 2s infinite linear;
+      animation: fa-spin 2s infinite linear
+    }
+
+    .fa-pulse {
+      -webkit-animation: fa-spin 1s infinite steps(8);
+      animation: fa-spin 1s infinite steps(8)
+    }
+
+    @-webkit-keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    .fa-rotate-90 {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg)
+    }
+
+    .fa-rotate-180 {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg)
+    }
+
+    .fa-rotate-270 {
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg)
+    }
+
+    .fa-flip-horizontal {
+      -webkit-transform: scale(-1, 1);
+      transform: scale(-1, 1)
+    }
+
+    .fa-flip-vertical {
+      -webkit-transform: scale(1, -1);
+      transform: scale(1, -1)
+    }
+
+    .fa-flip-horizontal.fa-flip-vertical {
+      -webkit-transform: scale(-1, -1);
+      transform: scale(-1, -1)
+    }
+
+    :root .fa-flip-horizontal,
+    :root .fa-flip-vertical,
+    :root .fa-rotate-180,
+    :root .fa-rotate-270,
+    :root .fa-rotate-90 {
+      -webkit-filter: none;
+      filter: none
+    }
+
+    .fa-stack {
+      display: inline-block;
+      height: 2em;
+      position: relative;
+      width: 2em
+    }
+
+    .fa-stack-1x,
+    .fa-stack-2x {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .svg-inline--fa.fa-stack-1x {
+      height: 1em;
+      width: 1em
+    }
+
+    .svg-inline--fa.fa-stack-2x {
+      height: 2em;
+      width: 2em
+    }
+
+    .fa-inverse {
+      color: #fff
+    }
+
+    .sr-only {
+      border: 0;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px
+    }
+
+    .sr-only-focusable:active,
+    .sr-only-focusable:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto
+    }
+  </style>
+  <style type="text/css">
+    [ng\:cloak],
+    [ng-cloak],
+    [data-ng-cloak],
+    [x-ng-cloak],
+    .ng-cloak,
+    .x-ng-cloak,
+    .ng-hide:not(.ng-hide-animate) {
+      display: none !important;
+    }
+
+    ng\:form {
+      display: block;
+    }
+
+    .ng-animate-shim {
+      visibility: hidden;
+    }
+
+    .ng-anchor {
+      position: absolute;
+    }
+
+    h4 {
+      margin-top: 50px !important;
+    }
+  </style>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tecnologías de la información</title>
+  <meta name="description" content="Plataforma de arranque para los cursos de Formación Docente.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="../../assets/images/ircfavicon.ico">
+  <!-- or, set /favicon.ico for IE10 win -->
+  <meta name="msapplication-TileColor" content="#D83434">
+
+  <!-- font -->
+  <link href="../../assets/css" rel="stylesheet">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../../assets/bootstrap.min.css">
+
+  <script src="../../assets/jquery.min.js.descarga"></script>
+
+  <!--scripts -->
+  <!--bootstrap -->
+  <script src="../../assets/bootstrap.min.js.descarga"></script>
+
+
+  <link rel="stylesheet" href="../../assets/normalize.css">
+  <link rel="stylesheet" href="../../assets/milligram.min.css">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <script src="../../assets/modernizr-2.7.1.min.js.descarga"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="menu-accesibilidad">
+    </div>
+    <div>
+      Sistemas Inteligentes
+    </div>
+  </header>
+
+  <nav>
+    <div class="container menu-principal">
+      <div class="row">
+        <div class="column">
+          <ul class="menu">
+
+            <li class="unidad-activa"><a href="#unidad-1" title="unidad 1">U2</a></li>
+
+          </ul>
+        </div>
+        <div class="column">
+
+        </div>
+      </div>
+    </div>
+    <div id="submenu">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <ul id="unidad-1" style="display: none;">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="pagina-1"></div>
+  <section class="wrapper">
+    <div class="contenido-principal">
+
+      <article>
+        <h1><span>Unidad 2: </span>Búsqueda</h1>
+
+        <h2><img class="icono-link" src="../../assets/images/presentacion_unidad.svg" width="15%"> Presentación de
+          unidad</h2>
+      </article>
+
+
+      <article class="row">
+
+
+        <div class="column" id="yui_3_18_1_1_1748021549449_94">
+          <p></p>
+          <p id="yui_3_18_1_1_1748021549449_93">En
+            esta unidad el estudiante podrá vincular la práctica y la teoría relacionada
+            con los <a class="autolink" title="Sistemas de Búsqueda"
+              href="https://urc.cdmx.gob.mx/LAD_A1_2025-1/mod/book/view.php?id=5664">sistemas de búsqueda</a> en una
+            inteligencia artificial.</p>
+
+          <p>Debido
+            a que la búsqueda es el núcleo de muchos procesos inteligentes, es adecuado
+            estructurar los programas de IA de forma que se facilite describir y
+            desarrollar el proceso de búsqueda. Los sistemas de producción proporcionan
+            tales estructuras. </p>
+
+          <p><b>Un
+              sistema de producción consiste en:</b> </p>
+
+          <ul>
+            <li>
+              Un conjunto de reglas.
+            </li>
+
+            <li>
+              Una o más bases de
+              datos/conocimiento.
+            </li>
+
+            <li>
+              Una estrategia de control que
+              especifique el orden en el que las reglas se comparan con la base de datos, y
+              la forma de resolver los conflictos que surjan cuando varias reglas puedan ser
+              aplicadas a la vez.
+            </li>
+
+            <li>
+              Un aplicador de reglas.
+            </li>
+          </ul>
+
+
+          <p>El
+            proceso de solución del problema puede modelarse como un sistema de producción.
+            El problema que se plantea es escoger la estructura de control apropiada para
+            el sistema de producción (base de datos, hechos, conocimiento o información
+            sobre el problema, conjunto de reglas o aplicadro) con el fin de que el proceso
+            de búsqueda sea lo más eficiente posible.</p>
+
+          <p><b>Existen
+              varias taxonomías de los sistemas de producción / búsqueda / estrategia de
+              control (J. Molina, C. Torres, 2008):</b></p>
+
+          <ul>
+            <li>Informada
+              / no informada</li>
+
+            <li>
+              Irrevocable
+              / tentativa
+            </li>
+
+            <li>
+              Hacia adelante / hacia atrás / bidireccional
+            </li>
+          </ul>
+
+
+      </article>
+
+      <article class="row objetivo">
+        <div class="column">
+          <h2><img class="icono-link" src="../../assets/images/objetivo.svg" width="18%"> Objetivo de unidad</h2>
+
+          <p>Al finalizar la unidad, el alumno podrá vincular la práctica y la teoría relacionada con los sistemas de
+            búsqueda en una
+            inteligencia artificial.</p>
+        </div>
+      </article>
+      <p class="bienvenida">¡Bienvenidos a esta unidad!</p>
+
+    </div>
+  </section>
+
+  <div id="pagina-2"></div>
+  <section class="wrapper">
+    <div class="contenido-principal">
+      <article>
+        <h2>Sistemas de Búsqueda</h2>
+      </article>
+      <article>
+        <h3>2.1Búsqueda</h3>
+      </article>
+
+      <article class="row">
+        <div class="column" id="yui_3_18_1_1_1748021903788_96">
+          <p></p>
+          <p id="yui_3_18_1_1_1748021903788_95">La
+            búsqueda en inteligencia pretende resolver los problemas o tareas complejas a
+            través de algoritmos que garanticen la solución del problema o tarea. Los
+            sistemas o las técnicas de búsqueda son una serie de esquemas de representación
+            del conocimiento, que mediante diversos algoritmos nos permite resolver
+            problemas desde el punto de vista de lA. </p>
+
+          <p style="text-align: center;"><img src="./ia.jpg"
+              alt="INTELIGENCIA ARTIFICIAL: Técnicas de Búsqueda en la Inteligencia artificial">
+          </p>
+
+          <p>A
+            continuación se profundiza en las diferentes técnicas de búsqueda:</p>
+
+          <p><br><span><br></span>
+            <b>a) Aplicar el operador a m, obtener un nuevo estado y crear un puntero que
+              permita saber que su predecesor esm.</b>
+
+          </p>
+
+          <p>
+
+            2.2 Si la profundidad de m es igual a lp regresar a 2.1. En caso contrario
+            continuar. 2.3 Expandir m (generar todos los sucesores). Para cada operador
+            aplicable y cada forma de aplicación: <br>&nbsp;<br>1.&nbsp;&nbsp;&nbsp; Crear una lista de nodos
+            llamada ABIERTA e “inicializarla”<br>con un<br>único nodo raíz, al que se le asigna el estado inicial
+            del<br>problema.<br>2.&nbsp;&nbsp;&nbsp; Hasta que ABIERTA esté vacía o se encuentre una meta o
+            se<br>devuelva fallo realizar las siguientes acciones:<br>2.1 Si ABIERTA está vacía terminar con fallo: en
+            caso<br>contrario continuar.<br>2.2 Extraer el primer nodo de ABIERTA y llamar a ese nodo m.<br>2.3 Si la
+            profundidad de m es igual a lp o si m no tiene más<br>sucesores posibles (que no hayan sido examinados
+            anteriormente) eliminarlo de<br>ABIERTA y regresar a regresar a 2. En caso contrario continuar.<br>2.4
+            Generar un
+            “nuevo” sucesor m ́ de m. e introducirlo al<br>principio de ABIERTA. , creando un puntero a m, y señalar
+            que dicha
+            rama ya ha<br>sido considerada.<br>2.4.1 Si m ́ es meta, abandonar el proceso iterativo iniciado<br>en el
+            paso 2
+            devolviendo el camino de la solución, que se obtiene recorriendo<br>los punteros de sus
+            antepasados.<br>2.4.2 Si m
+            ́se encuentra en un callejón sin salida<br>eliminarlo de ABIERTA. Se continúa el proceso iterativo en el
+            paso 2.
+          </p>
+
+
+          <h4>Búsqueda sin información del dominio </h4>
+
+          <p style="">También
+            se denominan técnicas de búsqueda ciega, porque realizan una búsqueda
+            sistemática y objetiva (en el sentido de que el control del proceso no depende
+            del problema concreto que se esté resolviendo).</p>
+
+          <p style="">Por el
+            contrario las técnicas de búsqueda heurística realizan una búsqueda
+            informada e intentan optimizar dicho proceso eligiendo los caminos que a priori
+            van a suponer un menor coste.</p>
+
+
+          <h4>Objetivos</h4>
+
+          <ul>
+            <li>
+              Encontrar el camino óptimo
+              entre la descripción del problema o estado inicial y el estado meta.
+            </li>
+
+            <li>
+              A veces basta con devolver el
+              estado meta y no es necesario conocer todo el camino.
+            </li>
+          </ul>
+
+
+
+          <h4>Características:</h4>
+
+          <ul>
+            <li>
+              No dejar (a priori) ningún
+              nodo sin explorar.
+            </li>
+
+            <li>
+              No explorar un nodo más de una
+              vez.
+            </li>
+          </ul>
+
+
+
+          <h4>Búsqueda en amplitud</h4>
+
+          <p>Es aquella estrategia de
+            control en la que se revisan todas las
+            trayectorias de una determinada longitud antes de crear una trayectoria más
+            larga. Es decir, no se genera ningún nodo de nivel N hasta que no se hayan
+            obtenido todos los del nivel N-1.</p>
+
+
+          <h4>Algoritmo de búsqueda en amplitud </h4>
+
+          <p>1.Crear una lista de nodos llamada ABIERTA e
+            “inicializarla” con un único nodo raíz, al que se le asigna el estado inicial
+            del problema.
+          </p>
+
+          <p>2.&nbsp;&nbsp;&nbsp;
+            Hasta que ABIERTA esté vacía o se encuentre
+            una meta realizar las siguientes acciones:
+          </p>
+
+          <p>2.1&nbsp; Extraer
+            el primer nodo de ABIERTA y llamar a ese nodo m.</p>
+
+          <p>2.2&nbsp; Expandir
+            m (generar todos los sucesores). Para cada operador aplicable y cada forma de
+            aplicación:<br></p>
+
+          <p>b) Si
+            el nuevo estado generado es meta, salir del proceso iterativo iniciado en 2.2 y
+            devolver dicho estado. </p>
+
+          <p>c)&nbsp;&nbsp;&nbsp;
+            Incluir el nuevo estado al final de ABIERTA
+            (una vez completado este proceso para todos los sucesores de m - cuando no se
+            haya encontrado una meta- se continúa el proceso iterativo en el paso 2).
+          </p>
+
+          <ul>
+            <li>
+              En este algoritmo la lista ABIERTA va a
+              funcionar como una cola FIFO.
+            </li>
+
+            <li>
+              Los nodos que haya en ABIERTA serán aquellos
+              que hayan sido generados, pero que todavía no han sido expandidos.
+            </li>
+
+            <li>
+              Los elementos que van a ser expandidos se toman
+              al comienzo de la lista ABIERTA.
+            </li>
+
+            <li>
+              Sus sucesores se añaden al final.
+            </li>
+
+            <li>
+              De esta forma siempre se expandirán los nodos
+              más antiguos.
+            </li>
+          </ul>
+
+
+
+          <p><strong>Ventajas:</strong> si el problema tiene
+            una solución este procedimiento garantiza el encontrarla. Si hubiera varias
+            soluciones se obtiene la de menor coste (la óptima), es decir, la que requiere
+            un menor número de pasos (si consideramos un coste uniforme de aplicación de
+            los operadores) </p>
+
+          <p><strong>Desventajas:</strong> si el nivel de
+            profundidad asociado a la solución es significativamente menor que el factor
+            de ramificación se expandirían demasiados nodos inútilmente. Por otro lado
+            la principal desventaja de este método es el espacio de almacenamiento
+            requerido. Esto lo hace prácticamente inviable para problemas complejos, como
+            suelen ser los del mundo real. </p>
+
+          <h4>Búsqueda en profundidad </h4>
+
+          <p>Es aquél procedimiento de
+            control en el que se centra en expandir un único camino desde la raíz. En el
+            caso de llegar a un callejón sin salida se retrocede hasta el nodo más
+            cercano desde donde se puede tomar una ruta alternativa para poder seguir
+            avanzando. </p>
+
+          <p>Para llevar a cabo este tipo
+            de búsqueda debe utilizarse una estructura de tipo pila (LIFO) que vaya
+            almacenando los nodos generados. Suele establecerse el llamado límite de exploración,
+            que marca la máxima longitud que puede alcanzar cualquier camino desde la
+            raíz durante el proceso de búsqueda (J. Molina, C. Torres, 2008):</p>
+
+
+          <h4>Algoritmo de búsqueda en profundidad</h4>
+
+
+          <p>1.&nbsp;&nbsp;&nbsp;
+            Crear una lista de nodos llamada ABIERTA e
+            “inicializarla” con un único nodo raíz, al que se le asigna el estado inicial
+            del problema.
+          </p>
+
+          <p>2.&nbsp;&nbsp;&nbsp;
+            Hasta que ABIERTA esté vacía o se encuentre
+            una meta realizar las siguientes acciones:
+          </p>
+
+          <p>2.1
+            Extraer el primer nodo de ABIERTA y llamar a ese nodo m.<br></p>
+
+          <p>1)
+            Aplicar el operador a m, obtener un nuevo estado y crear un puntero que permita
+            saber que su predecesor es m. </p>
+
+          <p>2) Si
+            el nuevo estado generado es meta, salir del proceso iterativo iniciado en 2.1 y
+            devolver dicho estado. </p>
+
+          <p>3)
+            Incluir el nuevo estado al principio de ABIERTA en un orden arbitrario. </p>
+
+
+          <ul>
+            <li>
+              Si algún sucesor de m es meta, abandonar el
+              proceso iterativo señalado en 2.1 devolviendo el camino de la solución que se
+              obtiene recorriendo los punteros de sus antepasados.
+            </li>
+
+            <li>
+              Si algún sucesor de m se encuentra en un
+              callejón sin salida eliminarlo de ABIERTA y continuar en 2.2
+            </li>
+          </ul>
+
+          <p><strong>Ventajas:</strong> la principal ventaja
+            de esta algoritmo radica en el reducido valor de su complejidad espacial.
+            Cuando existen múltiples soluciones posibles la eficiencia del algoritmo
+            aumenta. </p>
+
+          <p><strong>Desventajas:</strong> la dificultad
+            estriba en el tiempo requerido. El algoritmo puede dedicarse a recorrer un
+            camino demasiado largo que no conduzca a ninguna solución. Es más, si no se
+            guarda constancia de los nodos que forman el camino recorrido se podría caer
+            en ciclos y el proceso no acabaría. </p>
+
+          <p>El problema por tanto es
+            determinar cuál debe ser lp. Si éste es inferior a la longitud real del
+            camino de la solución, ésta nunca se encontraría, y si es mucho mayor sería
+            ineficiente. Esta es la razón por la que lp debería llamarse límite de
+            exploración. </p>
+
+
+
+          <h4>Búsqueda con retroceso </h4>
+          <p>Es una técnica que a
+            diferencia de los algoritmos en amplitud y en profundidad (que consideran todos
+            los sucesores) solamente expande un sucesor en cada iteración, restringiendo
+            por lo tanto el espacio de estados considerado. </p>
+
+          <p>Cuanto mejor sea el criterio
+            para limitar el número de estados considerados más eficiente será el proceso
+            de búsqueda. </p>
+
+          <p>Es decir, es como el recorrido
+            en profundidad pero nos ahorramos tener que expandir todos los nodos para
+            obtener sus sucesores. El camino sigue avanzando por ese sucesor, y si nos
+            encontramos con un callejón sin salido retrocedemos hasta el primer antepasado
+            desde el que todavía partan caminos inexplorados. </p>
+
+
+          <h4>Algoritmo de búsqueda con retroceso</h4>
+
+
+          <p><strong>Ventajas:</strong> la
+            principal ventaja de esta algoritmo respecto al de profundidad es la de
+            necesitar un menor espacio de almacenamiento. Sólo hay que recordar en cada
+            instante un sucesor del nodo seleccionado. Otra ventaja es que no se generan
+            las ramas del árbol que se encuentran después (a la derecha) de la solución.
+          </p>
+
+          <p><strong>Desventajas:</strong>
+            Vuelve a ser el problema determinar cuál debe ser lp. Para conocer su valor
+            deberíamos saber de antemano en qué nivel se encuentra la solución(J.
+            Molina, C. Torres, 2008)<em>:.</em></p>
+
+          <div class="panel panel-info">
+            <div class="panel-body">
+              <div class="tab-content">
+                <h3>Referencias</h3>
+                <div role="tabpanel" class="tab-pane active" id="settings3">
+                  <ul>
+                    <li>Benítez, A. (2007). Fundamentos de Inteligencia Artificial libro tercero. España: Escolar y
+                      mayo.</li>
+                    <li>Escolano, F. (2003). Inteligencia Artificial (Modelos, Técnicas y Áreas de Aplicación) México:
+                      Thomson.</li>
+                    <li>Marín, R. (2008). Inteligencia Artificial y sistemas inteligentes. España: McGraw-Hill.</li>
+                    <li>Nilsson, N. (2001). Inteligencia artificial (Una nueva síntesis) México: McGraw–Hill.</li>
+                    <li>Ponce, P. (2011). Inteligencia Artificial con aplicaciones a la ingeniería. España: MARCOMBO.
+                    </li>
+                    <li>SEDU. (2018). Todo sobre inteligencia artificial. Ciudad de México.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div id="pagina-3"></div>
+  <section class="wrapper">
+    <div class="contenido-principal">
+      <article>
+        <h2>Búsqueda Heuristica</h2>
+      </article>
+      <article>
+        <h3>La Búsqueda Heurística y sus propiedades</h3>
+      </article>
+
+      <article class="row">
+        <div class="no-overflow column">
+          <p>Las técnicas de búsqueda heurística disponen de
+            alguna información sobre la proximidad de cada estado a un estado objetivo, lo
+            que permite explorar en primer lugar los caminos más prometedores. </p>
+
+          <p>Las características de las técnicas &nbsp;heurísticas: </p>
+
+          <ul>
+            <li>
+              No garantizan que se encuentre una solución,
+              aunque existan soluciones.
+            </li>
+
+            <li>
+              Si encuentran una solución, no se asegura que
+              ésta tenga las mejoresas propiedades (que sea de longitud mínima o de coste
+              óptimo).
+            </li>
+
+            <li>
+              En algunas ocasiones (que, en general, no se
+              podrán determinar a priori), encontrarán una solución (aceptablemente buena)
+              en un tiempo razonable.
+            </li>
+          </ul>
+
+
+          <p>En general, las técnicas heurísticas son
+            preferibles a los métodos no informados en la solución de problemas
+            difíciles para los que una búsqueda exhaustiva necesitaría un tiempo
+            demasiado grande. Esto cubre prácticamente la totalidad de los problemas
+            reales que interesan en Inteligencia Artificial. </p>
+
+          <p>La información del problema concreto que estamos
+            intentando resolver se suele expresar por medio de heurísticas. </p>
+
+          <p>El concepto de heurística es difícil de aprender.
+            Newell, Shaw y Simon en 1963 dieron la siguiente definición: "Un proceso
+            que puede resolver un problema dado, pero que no ofrece ninguna garantía de
+            que lo hará, se llama una heurística para ese problema". </p>
+
+          <p>Si nos planteamos seguir concretando como
+            aprovechar la información sobre el problema en sistemas de producción, la siguiente
+            idea consiste en concentrar toda la información heurística en una única
+            función que se denomina función de evaluación heurística. Se trata de una
+            función que asocia a cada estado del espacio de estados una cierta cantidad
+            numérica que evalúa de algún modo lo prometedor que es ese estado para
+            acceder a un estado objetivo. Habitualmente, se denota esa función por h(e).</p>
+
+          <p>La función heurística puede tener dos
+            interpretaciones. Por una parte, la función puede ser una estimación de lo próximo
+            que se encuentra el estado de un estado objetivo. Bajo esta perspectiva, los
+            estados de menor valor heurístico son los preferidos. Pero en otros casos
+            puede suceder que lo que convenga sea maximizar esa función.</p>
+        </div>
+      </article>
+
+
+      <article>
+        <h3>Ejemplos de funciones heurísticas</h3>
+      </article>
+
+      <article class="row">
+        <div class="column">
+          <p class="Normal1"></p>
+          <p>Veamos ejemplos de heurísticas para algunos
+            problemas concretos. Para <b>el problema del 8-puzzle</b> tenemos la siguientes
+            heurísticas: </p>
+
+          <p><!--[if !supportLists]-->a)&nbsp;&nbsp;
+            <!--[endif]-->La basada en la distancia Manhattan (o distancia
+            taxi). Se asocia a cada casilla un número que es la suma de las distancias
+            horizontal y vertical a su posición en el tablero objetivo (esto es, la suma
+            de diferencias de sus coordenadas x e y). La función heurística es la suma de
+            las distancias de cada una de las casillas (excluyendo la que se encuentra
+            vacía).
+          </p>
+
+          <div  style="width: 100%; margin-bottom: 50px;">
+            <table border="1" cellspacing="0" cellpadding="0" width="72" style="margin: 0 auto; width: 150px; height: 150px;">
+              <tbody>
+                <tr>
+                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                    <p>&nbsp;</p>
+                  </td>
+                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                    <p>2</p>
+                  </td>
+                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                    <p>3</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                    <p>1</p>
+                  </td>
+                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                    <p>8</p>
+                  </td>
+                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                    <p>4</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                    <p>7</p>
+                  </td>
+                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                    <p>6</p>
+                  </td>
+                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                    <p>5</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <p>H=n(E<sub>i</sub>)=
+            2 (1 de la casilla 1 más 1 de la casilla 8)</p>
+
+          <p><!--[if !supportLists]-->b)&nbsp;&nbsp;
+            <!--[endif]-->Otra heurística, mucho más simple, consiste en
+            contar el número de casillas que están fuera de su sitio (respecto al tablero
+            objetivo). Es una heurística más pobre que la anterior, puesto que no usa la
+            información relativa al esfuerzo (número de movimientos) necesario para
+            llevar una pieza a su lugar.
+          </p>
+
+          <p><strong>Ejercicio:</strong></p>
+
+          <p>Otra heurística posible para el 8-puzzle, si el
+            estado objetivo es el recogido en la figura 1, es la siguiente: h(e) = 3 *
+            seq(e), donde seq(e) cuenta 1 si hay un dígito central en e y 2 por cada
+            dígito x no central que no es seguido (en el sentido de la agujas del reloj)
+            por su sucesor x+1 (imponemos por convenio que 8 + 1 = 1). </p>
+          <ul>
+            <li>
+              Calcular el valor de esta heurística para los
+              estados que aparecen en la tabla anterior.
+            </li>
+          </ul>
+        </div>
+      </article>
+
+
+    </div>
+  </section>
+
+  <div id="pagina-3"></div>
+  <section class="wrapper">
+    <div class="contenido-principal">
+      <article>
+        <h3>Sistemas de Búsqueda - Búsqueda</h3>
+      </article>
+
+      <article class="row">
+
+      </article>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <div class="logotipos">
+            <img src="../../assets/images/logos_encabezado.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script> -->
+  <script src="../../assets/fontawesome-all.min.js.descarga"></script>
+  <script src="../../assets/plugins.js.descarga"></script>
+  <script src="../../assets/main.js.descarga"></script>
+
+
+</body>
+
+</html>
