@@ -674,22 +674,60 @@
               alt="INTELIGENCIA ARTIFICIAL: Técnicas de Búsqueda en la Inteligencia artificial">
           </p>
 
-          <p>A
-            continuación se profundiza en las diferentes técnicas de búsqueda:</p>
+          <!-- 2. Objetivos y Características Generales -->
+          <section style="margin-top: 50px !important;">   
+            <h3 style="margin-bottom: 12px;">2. Objetivos y Características Generales</h3>
 
-          <b>a)</b> Aplicar el operador a m, obtener un nuevo estado y crear un puntero que
-          permita saber que su predecesor esm.
-          </p>
+            <h4 style="margin-top: 0px !important;">Objetivos</h4>
+            <ul>
+              <li>
+                Encontrar el camino óptimo
+                entre la descripción del problema o estado <strong>inicial</strong> y el estado <strong>meta</strong>.
+              </li>
+            
+              <li>
+                A veces basta con devolver el
+                estado <strong>meta</strong> y no es necesario conocer todo el camino.
+              </li>
+            </ul>
+            
+            <h4>Características:</h4>
+            <ul>
+              <li>
+                No dejar (a priori) ningún
+                nodo sin explorar.
+              </li>
+            
+              <li>
+                No explorar un nodo más de una
+                vez.
+              </li>
+            </ul>
+          </section>
 
-          <p>
+          <br>
 
+          <p><strong>A continuación se profundiza en las diferentes técnicas de búsqueda:</strong></p>
+
+          <p hidden>
             2.2 Si la profundidad de m es igual a lp regresar a 2.1. En caso contrario
             continuar. 2.3 Expandir m (generar todos los sucesores). Para cada operador
-            aplicable y cada forma de aplicación: <br>&nbsp;<br>1.&nbsp;&nbsp;&nbsp; Crear una lista de nodos
-            llamada ABIERTA e “inicializarla”<br>con un<br>único nodo raíz, al que se le asigna el estado inicial
-            del<br>problema.<br>2.&nbsp;&nbsp;&nbsp; Hasta que ABIERTA esté vacía o se encuentre una meta o
-            se<br>devuelva fallo realizar las siguientes acciones:<br>2.1 Si ABIERTA está vacía terminar con fallo: en
-            caso<br>contrario continuar.<br>2.2 Extraer el primer nodo de ABIERTA y llamar a ese nodo m.<br>2.3 Si la
+            aplicable y cada forma de aplicación: 
+
+            <br>&nbsp;<br>1.&nbsp;&nbsp;&nbsp; Crear una lista de nodos
+            llamada ABIERTA e “inicializarla”
+            <br>con un<br>único nodo raíz, al que se le asigna el estado inicial del<br>problema.
+
+            <br>2.&nbsp;&nbsp;&nbsp; Hasta que ABIERTA esté vacía o se encuentre una meta o
+            se<br>devuelva fallo realizar las siguientes acciones:
+
+            <br>
+            2.1 Si ABIERTA está vacía terminar con fallo: en
+            caso<br>contrario continuar.
+
+            <br>2.2 Extraer el primer nodo de ABIERTA y llamar a ese nodo m.
+            
+            <br>2.3 Si la
             profundidad de m es igual a lp o si m no tiene más<br>sucesores posibles (que no hayan sido examinados
             anteriormente) eliminarlo de<br>ABIERTA y regresar a regresar a 2. En caso contrario continuar.<br>2.4
             Generar un
@@ -703,238 +741,300 @@
             paso 2.
           </p>
 
+          <!-- Búsqueda sin información del dominio (Búsqueda Ciega) -->
+          <section>
+            <h4>3. Búsqueda sin información del dominio (Búsqueda Ciega) </h4>
 
-          <h4>Búsqueda sin información del dominio </h4>
+            <p style="">También
+              se denominan técnicas de búsqueda ciega, porque realizan una búsqueda
+              sistemática y objetiva (en el sentido de que el control del proceso no depende
+              del problema concreto que se esté resolviendo).</p>
 
-          <p style="">También
-            se denominan técnicas de búsqueda ciega, porque realizan una búsqueda
-            sistemática y objetiva (en el sentido de que el control del proceso no depende
-            del problema concreto que se esté resolviendo).</p>
+            <p style="">Por el
+              contrario las técnicas de búsqueda heurística realizan una búsqueda
+              informada e intentan optimizar dicho proceso eligiendo los caminos que a priori
+              van a suponer un menor coste.
+            </p>
+          </section>
 
-          <p style="">Por el
-            contrario las técnicas de búsqueda heurística realizan una búsqueda
-            informada e intentan optimizar dicho proceso eligiendo los caminos que a priori
-            van a suponer un menor coste.</p>
+          <hr>
 
+          <!-- Búsqueda en amplitud -->
+          <section>
+            <h4>3.1 Búsqueda en amplitud (Breadth-First Search)</h4>
 
-          <h4>Objetivos</h4>
+            <p>Es aquella estrategia de
+              control en la que se revisan todas las
+              trayectorias de una determinada longitud antes de crear una trayectoria más
+              larga. Es decir, no se genera ningún nodo de nivel N hasta que no se hayan
+              obtenido todos los del nivel N-1.
+            </p>
+          </section>
 
-          <ul>
-            <li>
-              Encontrar el camino óptimo
-              entre la descripción del problema o estado inicial y el estado meta.
-            </li>
+          <!-- Algoritmo de búsqueda en amplitud  -->
+          <section>
+            <h4>Algoritmo de búsqueda en amplitud </h4>
 
-            <li>
-              A veces basta con devolver el
-              estado meta y no es necesario conocer todo el camino.
-            </li>
-          </ul>
+            <ol class="cascading">
+              <li><strong>1. </strong>
+                Crear una lista de nodos llamada <b>ABIERTA</b> e
+                “inicializarla” con un único nodo raíz, al que se le asigna el estado inicial
+                del problema.
+              </li>
 
+              <li><strong>2. </strong>
+                Hasta que <b>ABIERTA</b> esté vacía o se encuentre
+                una meta realizar las siguientes acciones:
 
+                <ol class="cascading">
+                  <li><strong>2.1. </strong>
+                    Extraer
+                    el primer nodo de <b>ABIERTA</b> y llamar a ese nodo <code>m</code>.
+                  </li>
 
-          <h4>Características:</h4>
+                  <li>
+                    <strong>2.2. </strong>
+                    Expandir
+                    <code>m</code> (generar todos los sucesores). Para cada operador aplicable y cada forma de
+                    aplicación:
 
-          <ul>
-            <li>
-              No dejar (a priori) ningún
-              nodo sin explorar.
-            </li>
+                    <ol class="cascading">
+                      <li><strong>a)</strong>
+                        Aplicar el operador a <code>m</code>, obtener un nuevo estado y crear un puntero que
+                        permita saber que su predecesor es <code>m</code>
+                      </li>
 
-            <li>
-              No explorar un nodo más de una
-              vez.
-            </li>
-          </ul>
+                      <li><strong>b)</strong>
+                        Si
+                        el nuevo estado generado es meta, salir del proceso iterativo iniciado en paso <em>2</em> y
+                        devolver dicho estado.
+                      </li>
 
+                      <li>
+                        <strong>c)</strong>
+                        Incluir el nuevo estado al final de <b>ABIERTA</b>
+                        (una vez completado este proceso para todos los sucesores de <code>m</code> - cuando no se
+                        haya encontrado una meta- se continúa el proceso iterativo en el paso <em>2</em>).
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+              </li>
+            </ol>
 
+            <h5>Consideraciones del Algoritmo</h5>
 
-          <h4>Búsqueda en amplitud</h4>
+            <ul>
+              <li>
+                En este algoritmo la lista <b>ABIERTA</b> va a
+                funcionar como una cola FIFO (First-In, First-Out).
+              </li>
 
-          <p>Es aquella estrategia de
-            control en la que se revisan todas las
-            trayectorias de una determinada longitud antes de crear una trayectoria más
-            larga. Es decir, no se genera ningún nodo de nivel N hasta que no se hayan
-            obtenido todos los del nivel N-1.</p>
+              <li>
+                Los nodos que haya en <b>ABIERTA</b> serán aquellos
+                que hayan sido generados, pero que todavía no han sido expandidos.
+              </li>
 
+              <li>
+                Los elementos que van a ser expandidos se toman
+                al comienzo de la lista <b>ABIERTA</b>.
+              </li>
 
-          <h4>Algoritmo de búsqueda en amplitud </h4>
+              <li>
+                Sus sucesores se añaden al final.
+              </li>
 
-          <p>1.Crear una lista de nodos llamada ABIERTA e
-            “inicializarla” con un único nodo raíz, al que se le asigna el estado inicial
-            del problema.
-          </p>
-
-          <p>2.&nbsp;&nbsp;&nbsp;
-            Hasta que ABIERTA esté vacía o se encuentre
-            una meta realizar las siguientes acciones:
-          </p>
-
-          <p>2.1&nbsp; Extraer
-            el primer nodo de ABIERTA y llamar a ese nodo m.</p>
-
-          <p>2.2&nbsp; Expandir
-            m (generar todos los sucesores). Para cada operador aplicable y cada forma de
-            aplicación:<br></p>
-
-          <p>b) Si
-            el nuevo estado generado es meta, salir del proceso iterativo iniciado en 2.2 y
-            devolver dicho estado. </p>
-
-          <p>c)&nbsp;&nbsp;&nbsp;
-            Incluir el nuevo estado al final de ABIERTA
-            (una vez completado este proceso para todos los sucesores de m - cuando no se
-            haya encontrado una meta- se continúa el proceso iterativo en el paso 2).
-          </p>
-
-          <ul>
-            <li>
-              En este algoritmo la lista ABIERTA va a
-              funcionar como una cola FIFO.
-            </li>
-
-            <li>
-              Los nodos que haya en ABIERTA serán aquellos
-              que hayan sido generados, pero que todavía no han sido expandidos.
-            </li>
-
-            <li>
-              Los elementos que van a ser expandidos se toman
-              al comienzo de la lista ABIERTA.
-            </li>
-
-            <li>
-              Sus sucesores se añaden al final.
-            </li>
-
-            <li>
-              De esta forma siempre se expandirán los nodos
-              más antiguos.
-            </li>
-          </ul>
-
+              <li>
+                De esta forma siempre se expandirán los nodos
+                más antiguos.
+              </li>
+            </ul>
 
 
-          <p><strong>Ventajas:</strong> si el problema tiene
-            una solución este procedimiento garantiza el encontrarla. Si hubiera varias
-            soluciones se obtiene la de menor coste (la óptima), es decir, la que requiere
-            un menor número de pasos (si consideramos un coste uniforme de aplicación de
-            los operadores) </p>
+            <p><strong>Ventajas:</strong> si el problema tiene
+              una solución este procedimiento garantiza el encontrarla. Si hubiera varias
+              soluciones se obtiene la de menor coste (la óptima), es decir, la que requiere
+              un menor número de pasos (si consideramos un coste uniforme de aplicación de
+              los operadores)
+            </p>
 
-          <p><strong>Desventajas:</strong> si el nivel de
-            profundidad asociado a la solución es significativamente menor que el factor
-            de ramificación se expandirían demasiados nodos inútilmente. Por otro lado
-            la principal desventaja de este método es el espacio de almacenamiento
-            requerido. Esto lo hace prácticamente inviable para problemas complejos, como
-            suelen ser los del mundo real. </p>
+            <p><strong>Desventajas:</strong> si el nivel de
+              profundidad asociado a la solución es significativamente menor que el factor
+              de ramificación se expandirían demasiados nodos inútilmente. Por otro lado
+              la principal desventaja de este método es el espacio de almacenamiento
+              requerido. Esto lo hace prácticamente inviable para problemas complejos, como
+              suelen ser los del mundo real.
+            </p>
+          </section>
 
-          <h4>Búsqueda en profundidad </h4>
+          <hr>
 
-          <p>Es aquél procedimiento de
-            control en el que se centra en expandir un único camino desde la raíz. En el
-            caso de llegar a un callejón sin salida se retrocede hasta el nodo más
-            cercano desde donde se puede tomar una ruta alternativa para poder seguir
-            avanzando. </p>
+          <!-- Búsqueda en profundidad -->
+          <section>
+            <h4>3.2 Búsqueda en profundidad (Depth-First Search) </h4>
 
-          <p>Para llevar a cabo este tipo
-            de búsqueda debe utilizarse una estructura de tipo pila (LIFO) que vaya
-            almacenando los nodos generados. Suele establecerse el llamado límite de exploración,
-            que marca la máxima longitud que puede alcanzar cualquier camino desde la
-            raíz durante el proceso de búsqueda (J. Molina, C. Torres, 2008):</p>
+            <p>Es aquél procedimiento de
+              control en el que se centra en expandir un único camino desde la raíz. En el
+              caso de llegar a un callejón sin salida se retrocede hasta el nodo más
+              cercano desde donde se puede tomar una ruta alternativa para poder seguir
+              avanzando.
+            </p>
 
+            <p>Para llevar a cabo este tipo
+              de búsqueda debe utilizarse una estructura de tipo pila (LIFO - Last-In, First-Out) que vaya
+              almacenando los nodos generados. Suele establecerse el llamado límite de exploración (<code>lp</code>),
+              que marca la máxima longitud que puede alcanzar cualquier camino desde la
+              raíz durante el proceso de búsqueda (J. Molina, C. Torres, 2008):
+            </p>
+          </section>
 
-          <h4>Algoritmo de búsqueda en profundidad</h4>
+          <hr>
 
+          <!-- Algoritmo de búsqueda en profundidad -->
+          <section>
+            <h4>Algoritmo de búsqueda en profundidad</h4>
 
-          <p>1.&nbsp;&nbsp;&nbsp;
-            Crear una lista de nodos llamada ABIERTA e
-            “inicializarla” con un único nodo raíz, al que se le asigna el estado inicial
-            del problema.
-          </p>
+            <ol class="cascading">
+              <li><strong>1. </strong>
+                Crear una lista de nodos llamada <strong>ABIERTA</strong> e
+                “inicializarla” con un único nodo raíz, al que se le asigna el estado inicial
+                del problema.
+              </li>
 
-          <p>2.&nbsp;&nbsp;&nbsp;
-            Hasta que ABIERTA esté vacía o se encuentre
-            una meta realizar las siguientes acciones:
-          </p>
-
-          <p>2.1
-            Extraer el primer nodo de ABIERTA y llamar a ese nodo m.<br></p>
-
-          <p>1)
-            Aplicar el operador a m, obtener un nuevo estado y crear un puntero que permita
-            saber que su predecesor es m. </p>
-
-          <p>2) Si
-            el nuevo estado generado es meta, salir del proceso iterativo iniciado en 2.1 y
-            devolver dicho estado. </p>
-
-          <p>3)
-            Incluir el nuevo estado al principio de ABIERTA en un orden arbitrario. </p>
+              <li><strong>2. </strong>
+                Hasta que <strong>ABIERTA</strong> esté vacía o se encuentre
+                una meta realizar las siguientes acciones:
 
 
-          <ul>
-            <li>
-              Si algún sucesor de m es meta, abandonar el
-              proceso iterativo señalado en 2.1 devolviendo el camino de la solución que se
-              obtiene recorriendo los punteros de sus antepasados.
-            </li>
-
-            <li>
-              Si algún sucesor de m se encuentra en un
-              callejón sin salida eliminarlo de ABIERTA y continuar en 2.2
-            </li>
-          </ul>
-
-          <p><strong>Ventajas:</strong> la principal ventaja
-            de esta algoritmo radica en el reducido valor de su complejidad espacial.
-            Cuando existen múltiples soluciones posibles la eficiencia del algoritmo
-            aumenta. </p>
-
-          <p><strong>Desventajas:</strong> la dificultad
-            estriba en el tiempo requerido. El algoritmo puede dedicarse a recorrer un
-            camino demasiado largo que no conduzca a ninguna solución. Es más, si no se
-            guarda constancia de los nodos que forman el camino recorrido se podría caer
-            en ciclos y el proceso no acabaría. </p>
-
-          <p>El problema por tanto es
-            determinar cuál debe ser lp. Si éste es inferior a la longitud real del
-            camino de la solución, ésta nunca se encontraría, y si es mucho mayor sería
-            ineficiente. Esta es la razón por la que lp debería llamarse límite de
-            exploración. </p>
+                <ol class="cascading">
+                  <li><strong>2.1. </strong>
+                    Extraer el primer nodo de <strong>ABIERTA</strong> y llamar a ese nodo <code>m</code>.
+                  </li>
 
 
+                  <li><strong>2.2. </strong>
+                    Si la profundidad de <code>m</code> es igual a <code>lp</code> o si <code>m</code> no tiene más
+                    sucesores posibles (que no hayan sido examinados
+                    anteriormente), eliminarlo de <strong>ABIERTA</strong> y regresar al paso 2. En caso contrario,
+                    continuar.
+                  </li>
 
-          <h4>Búsqueda con retroceso </h4>
-          <p>Es una técnica que a
-            diferencia de los algoritmos en amplitud y en profundidad (que consideran todos
-            los sucesores) solamente expande un sucesor en cada iteración, restringiendo
-            por lo tanto el espacio de estados considerado. </p>
+                  <li><strong>2.3. </strong>
+                    Expandir <code>m</code> (generar todos los sucesores). Para cada operador aplicable y cada forma de
+                    aplicación:
 
-          <p>Cuanto mejor sea el criterio
-            para limitar el número de estados considerados más eficiente será el proceso
-            de búsqueda. </p>
+                    <ol class="cascading">
+                      <li><strong>a)</strong>
+                        Aplicar el operador a <code>m</code>, obtener un nuevo estado y crear un puntero que permita
+                        saber que su predecesor es <code>m</code>.
+                      </li>
 
-          <p>Es decir, es como el recorrido
-            en profundidad pero nos ahorramos tener que expandir todos los nodos para
-            obtener sus sucesores. El camino sigue avanzando por ese sucesor, y si nos
-            encontramos con un callejón sin salido retrocedemos hasta el primer antepasado
-            desde el que todavía partan caminos inexplorados. </p>
+                      <li>
+                        <strong>b)</strong>
+                        Si el nuevo estado generado meta, salir del proceso iterativo iniciado en el paso 2.1 y devolver
+                        dicho estado.
+                      </li>
+
+                      <li>
+                        <strong>c)</strong>
+                        Incluir el nuevo estado al principio de <strong>ABIERTA</strong> en un orden arbitrario.
+
+                        <ul>
+                          <li>
+                            Si algún sucesor de <code>m</code> es meta, abandonar el
+                            proceso iterativo señalado en <em>2.1</em> devolviendo el camino de la solución que se
+                            obtiene recorriendo los punteros de sus antepasados.
+                          </li>
+
+                          <li>
+                            Si algún sucesor de <code>m</code> se encuentra en un
+                            callejón sin salida eliminarlo de <strong>ABIERTA</strong> y continuar en <em>2.2</em>
+                          </li>
+                        </ul>
+
+                      </li>
+                    </ol>
 
 
-          <h4>Algoritmo de búsqueda con retroceso</h4>
+                  </li>
+                </ol>
+              </li>
 
+              <!-- Ventajas y desventajas -->
+              <p>
+                <strong>Ventajas:</strong> la principal ventaja
+                de esta algoritmo radica en el reducido valor de su complejidad espacial.
+                Cuando existen múltiples soluciones posibles la eficiencia del algoritmo
+                aumenta.
+              </p>
 
-          <p><strong>Ventajas:</strong> la
-            principal ventaja de esta algoritmo respecto al de profundidad es la de
-            necesitar un menor espacio de almacenamiento. Sólo hay que recordar en cada
-            instante un sucesor del nodo seleccionado. Otra ventaja es que no se generan
-            las ramas del árbol que se encuentran después (a la derecha) de la solución.
-          </p>
+              <p>
+                <strong>Desventajas:</strong> la dificultad
+                estriba en el tiempo requerido. El algoritmo puede dedicarse a recorrer un
+                camino demasiado largo que no conduzca a ninguna solución. Es más, si no se
+                guarda constancia de los nodos que forman el camino recorrido se podría caer
+                en ciclos y el proceso no acabaría.
+              </p>
 
-          <p><strong>Desventajas:</strong>
-            Vuelve a ser el problema determinar cuál debe ser lp. Para conocer su valor
-            deberíamos saber de antemano en qué nivel se encuentra la solución(J.
-            Molina, C. Torres, 2008)<em>:.</em></p>
+              <h5>El Problema del Límite de Exploración (<code>lp</code>)</h5>
+              <p>
+                El problema por tanto es
+                determinar cuál debe ser lp. Si éste es inferior a la longitud real del
+                camino de la solución, ésta nunca se encontraría, y si es mucho mayor sería
+                ineficiente. Esta es la razón por la que <code>lp</code> debería llamarse límite de
+                exploración.
+              </p>
+          </section>
+
+          <hr>
+
+          <!-- Búsqueda con retroceso -->
+          <section>
+            <h4>3.3 Búsqueda con retroceso (Backtracking)</h4>
+
+            <p>Es una técnica que a
+              diferencia de los algoritmos en amplitud y en profundidad (que consideran todos
+              los sucesores) solamente expande un sucesor en cada iteración, restringiendo
+              por lo tanto el espacio de estados considerado. </p>
+
+            <p>Cuanto mejor sea el criterio
+              para limitar el número de estados considerados más eficiente será el proceso
+              de búsqueda.
+            </p>
+
+            <p>Es decir, es como el recorrido
+              en profundidad pero nos ahorramos tener que expandir todos los nodos para
+              obtener sus sucesores. El camino sigue avanzando por ese sucesor, y si nos
+              encontramos con un callejón sin salido retrocedemos hasta el primer antepasado
+              desde el que todavía partan caminos inexplorados.
+            </p>
+          </section>
+
+          <hr>
+
+          <!-- Algoritmo de búsqueda con retroceso -->
+          <section>
+            <h4>Algoritmo de búsqueda con retroceso</h4>
+
+            <p>
+              <small>(Nota: El texto original no proporciona los pasos detallados para este algoritmo. Se recomienda
+                añadir los pasos aquí
+                para una explicación completa.)</small>
+            </p>
+
+            <p><strong>Ventajas:</strong> la
+              principal ventaja de esta algoritmo respecto al de profundidad es la de
+              necesitar un menor espacio de almacenamiento. Sólo hay que recordar en cada
+              instante un sucesor del nodo seleccionado. Otra ventaja es que no se generan
+              las ramas del árbol que se encuentran después (a la derecha) de la solución.
+            </p>
+
+            <p><strong>Desventajas:</strong>
+              Vuelve a ser el problema determinar cuál debe ser <code>lp</code>. Para conocer su valor
+              deberíamos saber de antemano en qué nivel se encuentra la solución(J.
+              Molina, C. Torres, 2008)<em>:.</em>
+            </p>
+          </section>
 
         </div>
       </article>
@@ -1829,26 +1929,26 @@
               todos los problemas pudieran ser apropiados para la técnica, y se recomienda en general tomar en cuenta
               las
               siguientes características del mismo antes de intentar usarla:</span>
-            </p>
+          </p>
 
-            <ul>
-              <li>
-                Su espacio de búsqueda (i.e., sus posibles soluciones) debe estar delimitado dentro
-                de un
-                cierto rango.
-              </li>
+          <ul>
+            <li>
+              Su espacio de búsqueda (i.e., sus posibles soluciones) debe estar delimitado dentro
+              de un
+              cierto rango.
+            </li>
 
-              <li>
-                Debe poderse definir una función de aptitud que nos indique qué tan buena o mala es
-                una
-                cierta respuesta.
-              </li>
+            <li>
+              Debe poderse definir una función de aptitud que nos indique qué tan buena o mala es
+              una
+              cierta respuesta.
+            </li>
 
-              <li>
-                Las soluciones deben codificarse de una forma que resulte relativamente fácil de
-                implementar en la computadora.
-              </li>
-            </ul>
+            <li>
+              Las soluciones deben codificarse de una forma que resulte relativamente fácil de
+              implementar en la computadora.
+            </li>
+          </ul>
 
           <p class="Normal1"><span>El primer punto es muy importante, y lo más recomendable es intentar resolver
               problemas que
@@ -1857,7 +1957,7 @@
               técnica con espacios de búsqueda continuos, pero preferentemente cuando exista un rango de soluciones
               relativamente pequeño. </span>
           </p>
-        
+
           <p class="Normal1"><span>La función de aptitud no es más que la función objetivo de nuestro problema de
               optimización.
               El algoritmo genético únicamente maximiza, pero la minimización puede realizarse fácilmente utilizando el
@@ -1869,7 +1969,7 @@
               mayor
               rapidez.</span>
           </p>
-          
+
           <p class="Normal1"><span>La codificación más común de las soluciones es a través de cadenas binarias, aunque
               se han
               utilizado también números reales y letras. El primero de estos esquemas ha gozado de mucha popularidad
@@ -1877,7 +1977,7 @@
               que es el que propuso originalmente Holland, y además porque resulta muy sencillo de implementar.
             </span>
           </p>
-          
+
           <p>Como información para completar lo explicado en la secuencia sobre algoritmo genético, el desarrollo de
             software
             basados en A.G es importante para terminar de comprender la importancia de este con respecto a las búsquedas
@@ -1903,10 +2003,10 @@
                 <div role="tabpanel" class="tab-pane active">
                   <ul>
                     <li>
-                        Facultad de ciencias y sistemas. (2011). Desarrollo de software con
-                        algorítmicos genéticos. Sitio web: <a
-                          href="https://es.slideshare.net/uni_fcys_sistemas/desarollo-de-sofware-con-algoritmos-genticos"
-                          class="_blanktarget">https://es.slideshare.net/uni_fcys_sistemas/desarollo-de-sofware-con-algoritmos-genticos</a>
+                      Facultad de ciencias y sistemas. (2011). Desarrollo de software con
+                      algorítmicos genéticos. Sitio web: <a
+                        href="https://es.slideshare.net/uni_fcys_sistemas/desarollo-de-sofware-con-algoritmos-genticos"
+                        class="_blanktarget">https://es.slideshare.net/uni_fcys_sistemas/desarollo-de-sofware-con-algoritmos-genticos</a>
                     </li>
                   </ul>
                 </div>
@@ -1941,16 +2041,28 @@
 
       code:not(.no-code) {
         color: #000;
+        color: #a2a9b0;
         background-color: rgb(201, 193, 193);
+        background-color: #333537;
       }
 
-      article.title-spacing {
+      article.title-spacing, .title-spacing {
         margin-top: 16px;
         margin-bottom: 0;
 
         h3 {
           margin-bottom: 8px;
         }
+      }
+
+      ol.cascading {
+        list-style-type: none;
+
+      }
+
+      ul li,
+      ol li {
+        text-wrap: pretty;
       }
     }
   </style>
