@@ -433,7 +433,7 @@ blockquote {
 /* plantilla */
 header {
   height: 200px;
-  background: url(./header.png);
+  background: url(./images/header.png);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
