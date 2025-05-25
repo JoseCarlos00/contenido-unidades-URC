@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0136)#!/#collapse1 -->
 <html ng-app="CoursesApp"
   class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths ng-scope fontawesome-i2svg-active fontawesome-i2svg-complete"
-  lang="es"><!--<![endif]-->
+  lang="es">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <style data-merge-styles="true"></style>
   <style data-merge-styles="true"></style>
   <style type="text/css">
     svg:not(:root).svg-inline--fa {
@@ -483,8 +481,10 @@
     h4 {
       margin-top: 50px !important;
     }
+
   </style>
 
+  <link rel="stylesheet" href="../../assets/all.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Tecnologías de la información</title>
   <meta name="description" content="Plataforma de arranque para los cursos de Formación Docente.">
@@ -500,17 +500,10 @@
   <!-- bootstrap -->
   <link rel="stylesheet" href="../../assets/bootstrap.min.css">
 
-  <script src="../../assets/jquery.min.js.descarga"></script>
-
-  <!--scripts -->
-  <!--bootstrap -->
-  <script src="../../assets/bootstrap.min.js.descarga"></script>
-
-
   <link rel="stylesheet" href="../../assets/normalize.css">
   <link rel="stylesheet" href="../../assets/milligram.min.css">
   <link rel="stylesheet" href="../../assets/styles.css">
-  <script src="../../assets/modernizr-2.7.1.min.js.descarga"></script>
+  <!-- <script src="../../assets/modernizr-2.7.1.min.js.descarga"></script> -->
 
 
   <link rel="stylesheet" href="../../highlight/vs.css">
@@ -519,10 +512,25 @@
 
 <body>
 
+  <a id="backToTop" href="#" role="button" style="">
+      <svg class="svg-inline--fa fa-w-18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor"
+          d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z" />
+      </svg>
+    </a>
+
   <header>
     <div class="menu-accesibilidad">
       <ul>
-        <li><a href="../../index.html" title="inicio"><i class="fas fa-home"></i></a></li>
+        <li><a href="../../index.html" title="inicio">
+          <svg class="svg-inline--fa fa-w-18" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="home"
+            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path fill="currentColor"
+              d="M488 312.7V456c0 13.3-10.7 24-24 24H348c-6.6 0-12-5.4-12-12V356c0-6.6-5.4-12-12-12h-72c-6.6 0-12 5.4-12 12v112c0 6.6-5.4 12-12 12H112c-13.3 0-24-10.7-24-24V312.7c0-3.6 1.6-7 4.4-9.3l188-154.8c4.4-3.6 10.8-3.6 15.3 0l188 154.8c2.7 2.3 4.3 5.7 4.3 9.3zm83.6-60.9L488 182.9V44.4c0-6.6-5.4-12-12-12h-56c-6.6 0-12 5.4-12 12V117l-89.5-73.7c-17.7-14.6-43.3-14.6-61 0L4.4 251.8c-5.1 4.2-5.8 11.8-1.6 16.9l25.5 31c4.2 5.1 11.8 5.8 16.9 1.6l235.2-193.7c4.4-3.6 10.8-3.6 15.3 0l235.2 193.7c5.1 4.2 12.7 3.5 16.9-1.6l25.5-31c4.2-5.2 3.4-12.7-1.7-16.9z">
+            </path>
+          </svg>
+        </a>
+        </li>
       </ul>
     </div>
     <div>
@@ -536,7 +544,7 @@
         <div class="column">
           <ul class="menu">
 
-            <li class="unidad-activa"><a href="#unidad-1" title="unidad 1">U2</a></li>
+            <li class="unidad-activa"><a href="#unidad-2" title="unidad 1">U2</a></li>
 
           </ul>
         </div>
@@ -549,7 +557,7 @@
       <div class="container">
         <div class="row">
           <div class="column">
-            <ul id="unidad-1" style="display: none;">
+            <ul id="unidad-2" style="display: none;">
 
           </div>
         </div>
@@ -573,8 +581,7 @@
         <div class="column" id="yui_3_18_1_1_1748021549449_94">
           <p id="yui_3_18_1_1_1748021549449_93">En
             esta unidad el estudiante podrá vincular la práctica y la teoría relacionada
-            con los <a class="autolink" title="Sistemas de Búsqueda"
-              href="#pagina-2">sistemas de búsqueda</a> en una
+            con los <a class="autolink" title="Sistemas de Búsqueda" href="#pagina-2">sistemas de búsqueda</a> en una
             inteligencia artificial.</p>
 
           <p>Debido
@@ -614,7 +621,7 @@
             proceso de solución del problema puede modelarse como un sistema de producción.
             El problema que se plantea es escoger la estructura de control apropiada para
             el sistema de producción (base de datos, hechos, conocimiento o información
-            sobre el problema, conjunto de reglas o aplicadro) con el fin de que el proceso
+            sobre el problema, conjunto de reglas o aplicador) con el fin de que el proceso
             de búsqueda sea lo más eficiente posible.</p>
 
           <p><b>Existen
@@ -678,7 +685,7 @@
           </p>
 
           <!-- 2. Objetivos y Características Generales -->
-          <section style="margin-top: 50px !important;">   
+          <section style="margin-top: 50px !important;">
             <h3 style="margin-bottom: 12px;">2. Objetivos y Características Generales</h3>
 
             <h4 style="margin-top: 0px !important;">Objetivos</h4>
@@ -687,20 +694,20 @@
                 Encontrar el camino óptimo
                 entre la descripción del problema o estado <strong>inicial</strong> y el estado <strong>meta</strong>.
               </li>
-            
+
               <li>
                 A veces basta con devolver el
                 estado <strong>meta</strong> y no es necesario conocer todo el camino.
               </li>
             </ul>
-            
+
             <h4>Características:</h4>
             <ul>
               <li>
                 No dejar (a priori) ningún
                 nodo sin explorar.
               </li>
-            
+
               <li>
                 No explorar un nodo más de una
                 vez.
@@ -715,7 +722,7 @@
           <p hidden>
             2.2 Si la profundidad de m es igual a lp regresar a 2.1. En caso contrario
             continuar. 2.3 Expandir m (generar todos los sucesores). Para cada operador
-            aplicable y cada forma de aplicación: 
+            aplicable y cada forma de aplicación:
 
             <br>&nbsp;<br>1.&nbsp;&nbsp;&nbsp; Crear una lista de nodos
             llamada ABIERTA e “inicializarla”
@@ -729,7 +736,7 @@
             caso<br>contrario continuar.
 
             <br>2.2 Extraer el primer nodo de ABIERTA y llamar a ese nodo m.
-            
+
             <br>2.3 Si la
             profundidad de m es igual a lp o si m no tiene más<br>sucesores posibles (que no hayan sido examinados
             anteriormente) eliminarlo de<br>ABIERTA y regresar a regresar a 2. En caso contrario continuar.<br>2.4
@@ -927,29 +934,29 @@
                     aplicación:
 
                     <ol class="cascading">
-                      <li><strong>a)</strong>
+                      <li style="font-size: 110%;"><strong>a)</strong>
                         Aplicar el operador a <code>m</code>, obtener un nuevo estado y crear un puntero que permita
                         saber que su predecesor es <code>m</code>.
                       </li>
 
-                      <li>
+                      <li style="font-size: 110%;">
                         <strong>b)</strong>
                         Si el nuevo estado generado meta, salir del proceso iterativo iniciado en el paso 2.1 y devolver
                         dicho estado.
                       </li>
 
-                      <li>
+                      <li style="font-size: 110%;">
                         <strong>c)</strong>
                         Incluir el nuevo estado al principio de <strong>ABIERTA</strong> en un orden arbitrario.
 
                         <ul>
-                          <li>
+                          <li style="font-size: 110%;">
                             Si algún sucesor de <code>m</code> es meta, abandonar el
                             proceso iterativo señalado en <em>2.1</em> devolviendo el camino de la solución que se
                             obtiene recorriendo los punteros de sus antepasados.
                           </li>
 
-                          <li>
+                          <li style="font-size: 110%;">
                             Si algún sucesor de <code>m</code> se encuentra en un
                             callejón sin salida eliminarlo de <strong>ABIERTA</strong> y continuar en <em>2.2</em>
                           </li>
@@ -982,7 +989,7 @@
               <h5>El Problema del Límite de Exploración (<code>lp</code>)</h5>
               <p>
                 El problema por tanto es
-                determinar cuál debe ser lp. Si éste es inferior a la longitud real del
+                determinar cuál debe ser <code>lp</code>. Si éste es inferior a la longitud real del
                 camino de la solución, ésta nunca se encontraría, y si es mucho mayor sería
                 ineficiente. Esta es la razón por la que <code>lp</code> debería llamarse límite de
                 exploración.
@@ -1073,7 +1080,7 @@
   <section class="wrapper">
     <div class="contenido-principal">
       <article>
-        <h2>Búsqueda Heuristica</h2>
+        <h2>Búsqueda Heurística</h2>
       </article>
 
       <article class="title-spacing">
@@ -1086,7 +1093,7 @@
             alguna información sobre la proximidad de cada estado a un estado objetivo, lo
             que permite explorar en primer lugar los caminos más prometedores. </p>
 
-          <p>Las características de las técnicas &nbsp;heurísticas: </p>
+          <p><strong>Las características de las técnicas heurísticas:</strong></p>
 
           <ul>
             <li>
@@ -1096,7 +1103,7 @@
 
             <li>
               Si encuentran una solución, no se asegura que
-              ésta tenga las mejoresas propiedades (que sea de longitud mínima o de coste
+              ésta tenga las mejores propiedades (que sea de longitud mínima o de coste
               óptimo).
             </li>
 
@@ -1128,7 +1135,7 @@
             función que se denomina función de evaluación heurística. Se trata de una
             función que asocia a cada estado del espacio de estados una cierta cantidad
             numérica que evalúa de algún modo lo prometedor que es ese estado para
-            acceder a un estado objetivo. Habitualmente, se denota esa función por h(e).</p>
+            acceder a un estado objetivo. Habitualmente, se denota esa función por <code>h(e)</code>.</p>
 
           <p>La función heurística puede tener dos
             interpretaciones. Por una parte, la función puede ser una estimación de lo próximo
@@ -1149,78 +1156,89 @@
             problemas concretos. Para <b>el problema del 8-puzzle</b> tenemos la siguientes
             heurísticas: </p>
 
-          <p><!--[if !supportLists]--><strong>a)</strong>&nbsp;&nbsp;
-            <!--[endif]-->La basada en la distancia Manhattan (o distancia
-            taxi). Se asocia a cada casilla un número que es la suma de las distancias
-            horizontal y vertical a su posición en el tablero objetivo (esto es, la suma
-            de diferencias de sus coordenadas x e y). La función heurística es la suma de
-            las distancias de cada una de las casillas (excluyendo la que se encuentra
-            vacía).
-          </p>
+          <ol class="cascading">
+            <li><strong>a)</strong>
+              La basada en la distancia Manhattan (o distancia
+              taxi). Se asocia a cada casilla un número que es la suma de las distancias
+              horizontal y vertical a su posición en el tablero objetivo (esto es, la suma
+              de diferencias de sus coordenadas <code>x</code> e <code>y</code>). La función heurística es la suma de
+              las distancias de cada una de las casillas (excluyendo la que se encuentra
+              vacía).
 
-          <div style="width: 100%; margin-bottom: 50px;">
-            <table border="1" cellspacing="0" cellpadding="0" width="72"
-              style="margin: 0 auto; width: 150px; height: 150px;">
-              <tbody>
-                <tr>
-                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
-                  </td>
-                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
-                    <p style="padding-top: 12px; margin-bottom: -12px;">2</p>
-                  </td>
-                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
-                    <p style="padding-top: 12px; margin-bottom: -12px;">3</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
-                    <p style="padding-top: 12px; margin-bottom: -12px;">1</p>
-                  </td>
-                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
-                    <p style="padding-top: 12px; margin-bottom: -12px;">8</p>
-                  </td>
-                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
-                    <p style="padding-top: 12px; margin-bottom: -12px;">4</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
-                    <p style="padding-top: 12px; margin-bottom: -12px;">7</p>
-                  </td>
-                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
-                    <p style="padding-top: 12px; margin-bottom: -12px;">6</p>
-                  </td>
-                  <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
-                    <p style="padding-top: 12px; margin-bottom: -12px;">5</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+              <div style="width: 100%; margin-bottom: 50px;">
+                <table border="1" cellspacing="0" cellpadding="0" width="72"
+                  style="margin: 0 auto; width: 150px; height: 150px;">
+                  <tbody>
+                    <tr>
+                      <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                      </td>
+                      <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                        <p style="padding-top: 12px; margin-bottom: -12px;">2</p>
+                      </td>
+                      <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                        <p style="padding-top: 12px; margin-bottom: -12px;">3</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                        <p style="padding-top: 12px; margin-bottom: -12px;">1</p>
+                      </td>
+                      <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                        <p style="padding-top: 12px; margin-bottom: -12px;">8</p>
+                      </td>
+                      <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                        <p style="padding-top: 12px; margin-bottom: -12px;">4</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                        <p style="padding-top: 12px; margin-bottom: -12px;">7</p>
+                      </td>
+                      <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                        <p style="padding-top: 12px; margin-bottom: -12px;">6</p>
+                      </td>
+                      <td width="12" style="height: 12px; padding: 0; text-align: center;" valign="top">
+                        <p style="padding-top: 12px; margin-bottom: -12px;">5</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
 
-          </div>
+                <div class="text-center">
+                  <small>Figura 1: 8-puzzle</small>
+                </div>
+                <div class="text-center mt-4">
+                  <p><code>H = n(E<sub>i</sub>) = 2 (1 de la casilla 1 más 1 de la casilla 8)</code></p>
+                </div>
+              </div>
+            </li>
 
-          <p><code>H=n(E<sub>i</sub>)=
-          2 (1 de la casilla 1 más 1 de la casilla 8)</code></p>
+            <li>
+              <strong>b)</strong>
+              Otra heurística, mucho más simple, consiste en
+              contar el número de casillas que están fuera de su sitio (respecto al tablero
+              objetivo). Es una heurística más pobre que la anterior, puesto que no usa la
+              información relativa al esfuerzo (número de movimientos) necesario para
+              llevar una pieza a su lugar.
+            </li>
+          </ol>
 
-          <p><!--[if !supportLists]--><strong>b)</strong>&nbsp;&nbsp;
-            <!--[endif]-->Otra heurística, mucho más simple, consiste en
-            contar el número de casillas que están fuera de su sitio (respecto al tablero
-            objetivo). Es una heurística más pobre que la anterior, puesto que no usa la
-            información relativa al esfuerzo (número de movimientos) necesario para
-            llevar una pieza a su lugar.
-          </p>
 
-          <p><strong>Ejercicio:</strong></p>
+          <p>
+            <strong>Ejercicio:</strong>
+            <br>
 
-          <p>Otra heurística posible para el 8-puzzle, si el
+            Otra heurística posible para el 8-puzzle, si el
             estado objetivo es el recogido en la <i>figura 1</i>, es la siguiente: <code>h(e) = 3 *
             seq(e)</code>, donde <code>seq(e)</code> cuenta 1 si hay un dígito central en <code>e</code> y 2 por cada
             dígito <code>x</code> no central que no es seguido (en el sentido de la agujas del reloj)
-            por su sucesor <code>x+1</code> (imponemos por convenio que <code>8 + 1 = 1</code>). </p>
+            por su sucesor <code>x+1</code> (imponemos por convenio que <code>8 + 1 = 1</code>).
+          </p>
+
           <ul>
             <li>
               Calcular el valor de esta heurística para los
-              estados que aparecen en la tabla anterior.
+              estados que aparecen en la tabla a figura 1.
             </li>
           </ul>
         </div>
@@ -1233,22 +1251,29 @@
       <article class="row">
         <div class="column">
 
+          
+          
+
           <ul>
-            <li>
-              <strong>Estado inicial:</strong> un viajante se encuentra en una
-              capital de provincia.
-            </li>
-
-            <li>
-              <strong>Estado meta:</strong> quiere viajar a otra capital por la
-              mejor ruta posible (la más corta).
-            </li>
-
-            <li>
-              <strong>Medios:</strong> Las capitales de provincia colindantes
-              están unidas por carreteras; se dispone de un mapa con la disposición de las
-              provincias y sus "coordenadas" en kilómetros respecto al
-              "centro" (por ejemplo, Madrid, con coordenadas (0,0)).
+            <li><strong>El problema del viajante</strong>
+              <ul>
+                <li>
+                  <strong>Estado inicial:</strong> un viajante se encuentra en una
+                  capital de provincia.
+                </li>
+              
+                <li>
+                  <strong>Estado meta:</strong> quiere viajar a otra capital por la
+                  mejor ruta posible (la más corta).
+                </li>
+              
+                <li>
+                  <strong>Medios:</strong> Las capitales de provincia colindantes
+                  están unidas por carreteras; se dispone de un mapa con la disposición de las
+                  provincias y sus "coordenadas" en kilómetros respecto al
+                  "centro" (por ejemplo, Madrid, con coordenadas (0,0)).
+                </li>
+                </ul>
             </li>
 
             <li>
@@ -1274,10 +1299,38 @@
           </ul>
 
           <figure style="text-align: center;">
-            <img src="./map1.png" alt="" style="font-size: 0.9375rem;">
+            <img src="./map1.svg" alt="Ilustración 1 Mapa del Problema del Viajero" width="500">
 
             <figcaption>Ilustración 1 Mapa del Problema del Viajero</figcaption>
           </figure>
+
+
+          <ul>
+            <li>
+              Cuatro alternativas en la primera etapa: Cáceres, Palencia, Zaragoza y Valencia.
+            </li>
+
+            <li>
+              <strong>Función heurística considerando la distancia aérea:</strong>
+              
+              <ul>
+                <li>
+                  <code>Distancia (Madrid, Santander) = Distancia(Madrid, Palencia) + Distancia
+                  aérea (Palencia, Santander)</code> que es más pequeña que la obtenida a través de Cáceres 
+                </li>
+
+                <li>
+                  Distancia
+                  <code>(Madrid,Santander) = Distancia(Madrid, Cáceres) + Distancia aérea (Cáceres, Santander)</code>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Función heurística considerando distancias parciales:</strong> <code>Distancia (Madrid, Santander) = Distancia(Madrid,
+              Palencia) + Distancia (Palencia, Santander)</code>
+            </li>
+          </ul>
         </div>
       </article>
 
@@ -1409,32 +1462,47 @@
           <ol>
             <li>Se
               genera una población inicial de individuos (soluciones), usualmente de manera
-              aleatoria.</li>
+              aleatoria.
+            </li>
+
             <li><strong>Fase de
                 evaluación</strong>: se evalúan los individuos de la población
-              con la función fitness.</li>
+              con la función fitness.
+            </li>
+
             <li><strong>Fase de
-                selección</strong>: se seleccionan los mejores individuos.</li>
+                selección</strong>: se seleccionan los mejores individuos.
+            </li>
+
             <li><strong>Fase de
                 reproducción</strong>: se cruzan los individuos seleccionados
               mediante la función de cruce, dando lugar a una nueva generación que va a
-              sustituir a la anterior.&nbsp;</li>
+              sustituir a la anterior.
+            </li>
+
             <li><strong>Fase de
                 mutación</strong>: se introducen mutaciones (pequeños cambios) en ciertos
-              individuos de la nueva población de manera aleatoria.</li>
+              individuos de la nueva población de manera aleatoria.
+            </li>
+
             <li><strong>Tenemos
                 una nueva generación, generalmente, con soluciones mejores que la anterior.
-                Volvemos al punto 2.</strong></li>
+                Volvemos al punto 2.</strong>
+              </li>
           </ol>
 
           <p>Los
             algoritmos genéticos finalizan o bien cuando alcanzan un número de generaciones
-            concreto o cuando cumplen una condición de parada (M, Gestal, 2013).</p>
+            concreto o cuando cumplen una condición de parada (M, Gestal, 2013).
+          </p>
 
-          <p>A continuación, para ejemplificar, diagrama de flujo de un algoritmo genético.</p>
+          <p>
+            A continuación, para ejemplificar, diagrama de flujo de un algoritmo genético.
+          </p>
 
           <figure style="text-align: center;">
-            <img src="./diagran1.png" alt="Ilustración 2 Diagrama de flujo de un algoritmo genético">
+            <img src="./Diagram.svg" alt="Ilustración 2 Diagrama de flujo de un algoritmo genético">
+            
             <figcaption>Ilustración 2 Diagrama de flujo de un algoritmo genético</figcaption>
           </figure>
         </div>
@@ -1449,7 +1517,7 @@
         <div class="no-overflow column">
           <p>El hombre es el sistema del que mejor se
             conoce el cómo lleva a cabo las tareas con las que estamos familiarizados y por
-            lo tanto tiene sentido fijarse en él para buscar pistas de cómo&nbsp; crear inteligencia artificial. Si lo
+            lo tanto tiene sentido fijarse en él para buscar pistas de cómo crear inteligencia artificial. Si lo
             que se
             quiere es escribir programas que simulen el comportamiento humano ante una
             tarea, la forma de medir el éxito está en que el comportamiento del programa
@@ -1552,8 +1620,8 @@
 
       <article class="row">
         <div class="no-overflow column">
-          <p class="Normal1">Los <a class="autolink" title="Algoritmos Genéticos"
-              href="#pagina-4">Algoritmos Genéticos</a> (AGs) son
+          <p class="Normal1">Los <a class="autolink" title="Algoritmos Genéticos" href="#pagina-4">Algoritmos
+              Genéticos</a> (AGs) son
             métodos
             adaptativos que pueden usarse para resolver problemas de búsqueda y optimización. Están basados en el
             proceso
@@ -1561,8 +1629,8 @@
             naturaleza de
             acorde con los principios de la selección natural y la supervivencia de los más fuertes, postulados por
             Darwin. Por
-            imitación de este proceso, los <a class="autolink" title="Algoritmos Genéticos"
-              href="#pagina-4">Algoritmos Genéticos</a> son
+            imitación de este proceso, los <a class="autolink" title="Algoritmos Genéticos" href="#pagina-4">Algoritmos
+              Genéticos</a> son
             capaces de ir
             creando soluciones para problemas del mundo real. La evolución de dichas soluciones hacia valores óptimos
             del
@@ -1709,7 +1777,7 @@
       <article class="row">
         <div class="no-overflow column">
           <p class="Normal1">El Algoritmo Genético Simple, también denominado Canónico, se necesita una codificación o
-            representación del problema, que resulte adecuada al mismo. Además se requiere una función de ajuste o´
+            representación del problema, que resulte adecuada al mismo. Además se requiere una función de ajuste ó
             adaptación
             al problema, la cual asigna un número real a cada posible solución codificada. Durante la ejecución del
             algoritmo de
@@ -1725,14 +1793,14 @@
           </p>
 
           <div>
-            <pre class="theme-base16-ashes-min  text-sm relative overflow-hidden max-w-full tab-size h-full"><span class="hljs mb-0 p-4 block min-h-full overflow-auto"><code class="no-code"><span class="hljs-variable constant_">BEGIN</span> <span class="hljs-comment">/* Algoritmo Genético Simple */</span>
+            <pre class=""><span><code class="no-code"><span class="hljs-variable constant_">BEGIN</span> <span class="hljs-comment">/* Algoritmo Genético Simple */</span>
   <span class="hljs-title class_">Generar</span> una población inicial.
   <span class="hljs-title class_">Computar</span> la función de evaluación de cada individuo.
 
   <span class="hljs-variable constant_">WHILE</span> <span class="hljs-variable constant_">NOT</span> <span class="hljs-title class_">Terminado</span> <span class="hljs-variable constant_">DO</span>
 
   <span class="hljs-variable constant_">BEGIN</span> <span class="hljs-comment">/* Producir nueva generación */</span>
-    <span class="hljs-variable constant_">FOR</span> <span class="hljs-title class_">Tama</span>ño˜ población/<span class="hljs-number">2</span> <span class="hljs-variable constant_">DO</span>
+    <span class="hljs-variable constant_">FOR</span> <span class="hljs-title class_">Tamaño población</span>/<span class="hljs-number">2</span> <span class="hljs-variable constant_">DO</span>
 
     <span class="hljs-variable constant_">BEGIN</span> <span class="hljs-comment">/*Ciclo Reproductivo */</span>
 
@@ -1753,7 +1821,8 @@
       <span class="hljs-variable constant_">END</span>
       <span class="hljs-variable constant_">IF</span> la población ha convergido <span class="hljs-variable constant_">THEN</span> <span class="hljs-title class_">Terminado</span>:= <span class="hljs-variable constant_">TRUE</span>
   <span class="hljs-variable constant_">END</span>
-<span class="hljs-variable constant_">END</span></code></span></pre>
+<span class="hljs-variable constant_">END</span></code></span>
+            </pre>
           </div>
 
 
@@ -1761,7 +1830,7 @@
 
           <div>
             <pre
-              class="theme-base16-ashes shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full"><span class="hljs mb-0 p-4 block min-h-full overflow-auto"><code class="no-code"><span class="hljs-variable constant_">INICIO</span>
+              ><span><code class="no-code"><span class="hljs-variable constant_">INICIO</span>
     <span class="hljs-comment">// Generar población inicial</span>
     <span class="hljs-title class_">Generar</span> una población inicial de individuos.
                   
@@ -1771,7 +1840,7 @@
     <span class="hljs-variable constant_">MIENTRAS</span> <span class="hljs-variable constant_">NO</span> se cumpla la condición de parada <span class="hljs-attr">HACER</span>:
                   
         <span class="hljs-comment">// Iniciar nueva generación</span>
-        <span class="hljs-variable constant_">PARA</span> i = <span class="hljs-number">1</span> <span class="hljs-title function_">HASTA</span> (<span class="hljs-title class_">Tama</span>ño de la población / <span class="hljs-number">2</span>) <span class="hljs-attr">HACER</span>:
+        <span class="hljs-variable constant_">PARA</span> i = <span class="hljs-number">1</span> <span class="hljs-title function_">HASTA</span> (<span class="hljs-title class_">Tamaño de la población</span> / <span class="hljs-number">2</span>) <span class="hljs-attr">HACER</span>:
                   
             <span class="hljs-comment">// Selección</span>
             <span class="hljs-title class_">Seleccionar</span> dos individuos de la población actual.
@@ -1798,7 +1867,8 @@
                   
     <span class="hljs-variable constant_">FIN</span> <span class="hljs-variable constant_">MIENTRAS</span>
                   
-<span class="hljs-variable constant_">FIN</span></code></span><small class="bg-black/30 absolute top-0 right-0 uppercase font-bold text-xs rounded-bl-md px-2 py-1"></pre>
+<span class="hljs-variable constant_">FIN</span></code></span>
+            </pre>
           </div>
 
         </div>
@@ -1850,8 +1920,8 @@
 
       <article class="row">
         <div class="no-overflow column">
-          <p class="Normal1">Los <a class="autolink" title="Algoritmos Genéticos"
-              href="#pagina-4">Algoritmos Genéticos</a> (AGs) son
+          <p class="Normal1">Los <a class="autolink" title="Algoritmos Genéticos" href="#pagina-4">Algoritmos
+              Genéticos</a> (AGs) son
             métodos
             adaptativos que pueden usarse para resolver problemas de búsqueda y optimización. Están basados en el
             proceso
@@ -1859,8 +1929,8 @@
             naturaleza de
             acorde con los principios de la selección natural y la supervivencia de los más fuertes, postulados por
             Darwin. Por
-            imitación de este proceso, los <a class="autolink" title="Algoritmos Genéticos"
-              href="#pagina-4">Algoritmos Genéticos</a> son
+            imitación de este proceso, los <a class="autolink" title="Algoritmos Genéticos" href="#pagina-4">Algoritmos
+              Genéticos</a> son
             capaces de ir
             creando soluciones para problemas del mundo real. La evolución de dichas soluciones hacia valores óptimos
             del
@@ -2034,22 +2104,22 @@
   </footer>
 
   <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script> -->
-  <script src="../../assets/fontawesome-all.min.js.descarga"></script>
-  <script src="../../assets/plugins.js.descarga"></script>
-  <script src="../../assets/main.js.descarga"></script>
-
+  <!-- <script src="../../assets/fontawesome-all.min.js.descarga"></script> -->
+  <!-- <script src="../../assets/plugins.js.descarga"></script> -->
+  <!-- <script src="../../assets/main.js.descarga"></script> -->
 
   <style>
     .wrapper {
-
       code:not(.no-code) {
+        font-family: 'Courier New', Courier, monospace;
         color: #a2a9b0;
         color: #000;
         background-color: #333537;
         background-color: rgb(201, 193, 193);
       }
 
-      article.title-spacing, .title-spacing {
+      article.title-spacing,
+      .title-spacing {
         margin-top: 16px;
         margin-bottom: 0;
 
