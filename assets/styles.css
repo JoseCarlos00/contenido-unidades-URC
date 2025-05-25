@@ -732,20 +732,3 @@ a.button:hover {
     max-width: 60%;
   }
 }
-
-#backToTop {
-  height: auto;
-  border: 1px solid #fff;
-  padding: 0 10px;
-  position: fixed;
-  right: 2rem;
-  bottom: 8rem;
-  color: #fff;
-  text-shadow: none;
-  background: #9f2340;
-  padding: 4px 8px;
-  border: 0;
-  box-shadow: none;
-  outline: none;
-  border-radius: 5px;
-}
