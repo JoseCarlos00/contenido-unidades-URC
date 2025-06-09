@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+<html ng-app="CoursesApp"
+  class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths ng-scope fontawesome-i2svg-active fontawesome-i2svg-complete"
+  lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style data-merge-styles="true"></style>
+  <style type="text/css">
+    svg:not(:root).svg-inline--fa {
+      overflow: visible
+    }
+
+    .svg-inline--fa {
+      display: inline-block;
+      font-size: inherit;
+      height: 1em;
+      overflow: visible;
+      vertical-align: -.125em
+    }
+
+    .svg-inline--fa.fa-lg {
+      vertical-align: -.225em
+    }
+
+    .svg-inline--fa.fa-w-1 {
+      width: .0625em
+    }
+
+    .svg-inline--fa.fa-w-2 {
+      width: .125em
+    }
+
+    .svg-inline--fa.fa-w-3 {
+      width: .1875em
+    }
+
+    .svg-inline--fa.fa-w-4 {
+      width: .25em
+    }
+
+    .svg-inline--fa.fa-w-5 {
+      width: .3125em
+    }
+
+    .svg-inline--fa.fa-w-6 {
+      width: .375em
+    }
+
+    .svg-inline--fa.fa-w-7 {
+      width: .4375em
+    }
+
+    .svg-inline--fa.fa-w-8 {
+      width: .5em
+    }
+
+    .svg-inline--fa.fa-w-9 {
+      width: .5625em
+    }
+
+    .svg-inline--fa.fa-w-10 {
+      width: .625em
+    }
+
+    .svg-inline--fa.fa-w-11 {
+      width: .6875em
+    }
+
+    .svg-inline--fa.fa-w-12 {
+      width: .75em
+    }
+
+    .svg-inline--fa.fa-w-13 {
+      width: .8125em
+    }
+
+    .svg-inline--fa.fa-w-14 {
+      width: .875em
+    }
+
+    .svg-inline--fa.fa-w-15 {
+      width: .9375em
+    }
+
+    .svg-inline--fa.fa-w-16 {
+      width: 1em
+    }
+
+    .svg-inline--fa.fa-w-17 {
+      width: 1.0625em
+    }
+
+    .svg-inline--fa.fa-w-18 {
+      width: 1.125em
+    }
+
+    .svg-inline--fa.fa-w-19 {
+      width: 1.1875em
+    }
+
+    .svg-inline--fa.fa-w-20 {
+      width: 1.25em
+    }
+
+    .svg-inline--fa.fa-pull-left {
+      margin-right: .3em;
+      width: auto
+    }
+
+    .svg-inline--fa.fa-pull-right {
+      margin-left: .3em;
+      width: auto
+    }
+
+    .svg-inline--fa.fa-border {
+      height: 1.5em
+    }
+
+    .svg-inline--fa.fa-li {
+      width: 2em
+    }
+
+    .svg-inline--fa.fa-fw {
+      width: 1.25em
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .fa-layers {
+      display: inline-block;
+      height: 1em;
+      position: relative;
+      text-align: center;
+      vertical-align: -.125em;
+      width: 1em
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      -webkit-transform-origin: center center;
+      transform-origin: center center
+    }
+
+    .fa-layers-counter,
+    .fa-layers-text {
+      display: inline-block;
+      position: absolute;
+      text-align: center
+    }
+
+    .fa-layers-text {
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transform-origin: center center;
+      transform-origin: center center
+    }
+
+    .fa-layers-counter {
+      background-color: #ff253a;
+      border-radius: 1em;
+      color: #fff;
+      height: 1.5em;
+      line-height: 1;
+      max-width: 5em;
+      min-width: 1.5em;
+      overflow: hidden;
+      padding: .25em;
+      right: 0;
+      text-overflow: ellipsis;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right
+    }
+
+    .fa-layers-bottom-right {
+      bottom: 0;
+      right: 0;
+      top: auto;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: bottom right;
+      transform-origin: bottom right
+    }
+
+    .fa-layers-bottom-left {
+      bottom: 0;
+      left: 0;
+      right: auto;
+      top: auto;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: bottom left;
+      transform-origin: bottom left
+    }
+
+    .fa-layers-top-right {
+      right: 0;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right
+    }
+
+    .fa-layers-top-left {
+      left: 0;
+      right: auto;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top left;
+      transform-origin: top left
+    }
+
+    .fa-lg {
+      font-size: 1.33333em;
+      line-height: .75em;
+      vertical-align: -.0667em
+    }
+
+    .fa-xs {
+      font-size: .75em
+    }
+
+    .fa-sm {
+      font-size: .875em
+    }
+
+    .fa-1x {
+      font-size: 1em
+    }
+
+    .fa-2x {
+      font-size: 2em
+    }
+
+    .fa-3x {
+      font-size: 3em
+    }
+
+    .fa-4x {
+      font-size: 4em
+    }
+
+    .fa-5x {
+      font-size: 5em
+    }
+
+    .fa-6x {
+      font-size: 6em
+    }
+
+    .fa-7x {
+      font-size: 7em
+    }
+
+    .fa-8x {
+      font-size: 8em
+    }
+
+    .fa-9x {
+      font-size: 9em
+    }
+
+    .fa-10x {
+      font-size: 10em
+    }
+
+    .fa-fw {
+      text-align: center;
+      width: 1.25em
+    }
+
+    .fa-ul {
+      list-style-type: none;
+      margin-left: 2.5em;
+      padding-left: 0
+    }
+
+    .fa-ul>li {
+      position: relative
+    }
+
+    .fa-li {
+      left: -2em;
+      position: absolute;
+      text-align: center;
+      width: 2em;
+      line-height: inherit
+    }
+
+    .fa-border {
+      border: solid .08em #eee;
+      border-radius: .1em;
+      padding: .2em .25em .15em
+    }
+
+    .fa-pull-left {
+      float: left
+    }
+
+    .fa-pull-right {
+      float: right
+    }
+
+    .fa.fa-pull-left,
+    .fab.fa-pull-left,
+    .fal.fa-pull-left,
+    .far.fa-pull-left,
+    .fas.fa-pull-left {
+      margin-right: .3em
+    }
+
+    .fa.fa-pull-right,
+    .fab.fa-pull-right,
+    .fal.fa-pull-right,
+    .far.fa-pull-right,
+    .fas.fa-pull-right {
+      margin-left: .3em
+    }
+
+    .fa-spin {
+      -webkit-animation: fa-spin 2s infinite linear;
+      animation: fa-spin 2s infinite linear
+    }
+
+    .fa-pulse {
+      -webkit-animation: fa-spin 1s infinite steps(8);
+      animation: fa-spin 1s infinite steps(8)
+    }
+
+    @-webkit-keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    .fa-rotate-90 {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg)
+    }
+
+    .fa-rotate-180 {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg)
+    }
+
+    .fa-rotate-270 {
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg)
+    }
+
+    .fa-flip-horizontal {
+      -webkit-transform: scale(-1, 1);
+      transform: scale(-1, 1)
+    }
+
+    .fa-flip-vertical {
+      -webkit-transform: scale(1, -1);
+      transform: scale(1, -1)
+    }
+
+    .fa-flip-horizontal.fa-flip-vertical {
+      -webkit-transform: scale(-1, -1);
+      transform: scale(-1, -1)
+    }
+
+    :root .fa-flip-horizontal,
+    :root .fa-flip-vertical,
+    :root .fa-rotate-180,
+    :root .fa-rotate-270,
+    :root .fa-rotate-90 {
+      -webkit-filter: none;
+      filter: none
+    }
+
+    .fa-stack {
+      display: inline-block;
+      height: 2em;
+      position: relative;
+      width: 2em
+    }
+
+    .fa-stack-1x,
+    .fa-stack-2x {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .svg-inline--fa.fa-stack-1x {
+      height: 1em;
+      width: 1em
+    }
+
+    .svg-inline--fa.fa-stack-2x {
+      height: 2em;
+      width: 2em
+    }
+
+    .fa-inverse {
+      color: #fff
+    }
+
+    .sr-only {
+      border: 0;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px
+    }
+
+    .sr-only-focusable:active,
+    .sr-only-focusable:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto
+    }
+  </style>
+  <style type="text/css">
+    [ng\:cloak],
+    [ng-cloak],
+    [data-ng-cloak],
+    [x-ng-cloak],
+    .ng-cloak,
+    .x-ng-cloak,
+    .ng-hide:not(.ng-hide-animate) {
+      display: none !important;
+    }
+
+    ng\:form {
+      display: block;
+    }
+
+    .ng-animate-shim {
+      visibility: hidden;
+    }
+
+    .ng-anchor {
+      position: absolute;
+    }
+
+    h4 {
+      margin-top: 50px !important;
+    }
+  </style>
+
+  <link rel="stylesheet" href="../../assets/all.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tecnologías de la información</title>
+  <meta name="description" content="Plataforma de arranque para los cursos de Formación Docente.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="../../assets/images/ircfavicon.ico">
+  <!-- or, set /favicon.ico for IE10 win -->
+  <meta name="msapplication-TileColor" content="#D83434">
+
+  <!-- font -->
+  <link href="../../assets/css" rel="stylesheet">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../../assets/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../../assets/normalize.css">
+  <link rel="stylesheet" href="../../assets/milligram.min.css">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <!-- <script src="../../assets/modernizr-2.7.1.min.js.descarga"></script> -->
+
+
+  <link rel="stylesheet" href="../../highlight/vs.css">
+  <link rel="stylesheet" href="../../highlight/default.min.css">
+
+  <!-- Custom Element import -->
+  <script type="module" src="../../components/components.js"></script>
+
+  <!-- Link a MathJax -->
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+
+  <back-to-top></back-to-top>
+
+  <header>
+    <div class="menu-accesibilidad">
+      <ul>
+        <li><a href="../../index.html" title="inicio">
+            <svg class="svg-inline--fa fa-w-18" aria-hidden="true" data-fa-processed="" data-prefix="fas"
+              data-icon="home" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor"
+                d="M488 312.7V456c0 13.3-10.7 24-24 24H348c-6.6 0-12-5.4-12-12V356c0-6.6-5.4-12-12-12h-72c-6.6 0-12 5.4-12 12v112c0 6.6-5.4 12-12 12H112c-13.3 0-24-10.7-24-24V312.7c0-3.6 1.6-7 4.4-9.3l188-154.8c4.4-3.6 10.8-3.6 15.3 0l188 154.8c2.7 2.3 4.3 5.7 4.3 9.3zm83.6-60.9L488 182.9V44.4c0-6.6-5.4-12-12-12h-56c-6.6 0-12 5.4-12 12V117l-89.5-73.7c-17.7-14.6-43.3-14.6-61 0L4.4 251.8c-5.1 4.2-5.8 11.8-1.6 16.9l25.5 31c4.2 5.1 11.8 5.8 16.9 1.6l235.2-193.7c4.4-3.6 10.8-3.6 15.3 0l235.2 193.7c5.1 4.2 12.7 3.5 16.9-1.6l25.5-31c4.2-5.2 3.4-12.7-1.7-16.9z">
+              </path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      Sistemas Inteligentes
+    </div>
+  </header>
+
+  <nav>
+    <div class="container menu-principal">
+      <div class="row">
+        <div class="column">
+          <ul class="menu">
+
+            <li class="unidad-activa"><a href="#unidad-3" title="unidad 3">U3</a></li>
+
+          </ul>
+        </div>
+        <div class="column">
+
+        </div>
+      </div>
+    </div>
+    <div id="submenu">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <ul id="unidad-3" style="display: none;">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="pagina-1"></div>
+  <section class="wrapper">
+    <div class="contenido-principal">
+
+      <article class="title-spacing">
+        <h1 style="margin-bottom: 50 !important;" ;"><span>Unidad 3: </span>Representación y Manejo del Conocimiento
+        </h1>
+      </article>
+
+      <article class="row">
+        <div class="column" id="yui_3_18_1_1_1748021549449_94">
+
+          <h2>Representación del Conocimiento en Inteligencia Artificial</h2>
+          <h4>Tabla de Contenidos</h4>
+
+          <ul>
+            <li><a title="1. Representación del Conocimiento en Inteligencia Artificial"
+                class="font-weight-bold text-decoration-none" href="#ch61">1. Representación del Conocimiento en
+                Inteligencia
+                Artificial</a></li>
+            <li><a title="2. Tipos de conocimiento" class="font-weight-bold text-decoration-none" href="#ch62">2. Tipos
+                de
+                conocimiento</a></li>
+            <li><a title="3. Formas de Representación del conocimiento" class="font-weight-bold text-decoration-none"
+                href="#ch63">3. Formas de Representación del conocimiento</a></li>
+            <li><a title="4. Referencias" class="font-weight-bold text-decoration-none" href="#ch64">4. Referencias</a>
+            </li>
+          </ul>
+      </article>
+
+      <article class="title-spacing">
+        <h3>1. Representación del Conocimiento en Inteligencia Artificial</h3>
+      </article>
+
+      <!-- 1. Representación del Conocimiento en Inteligencia Artificial -->
+      <div id="ch61"></div>
+      <article class="row">
+        <div class="book_chapter pt-3 column">
+          <p id="yui_3_18_1_1_1749423853912_33">Es el proceso de transformación de éste a un dominio o un lenguaje
+            simbólico
+            para ser procesado en un computador.
+          </p>
+
+          <p id="yui_3_18_1_1_1749423853912_36">Es un área de la inteligencia artificial cuyo objetivo fundamental es
+            representar el conocimiento de una manera que facilite la inferencia (sacar conclusiones) a partir de dicho
+            conocimiento.
+          </p>
+
+          <p>Es una combinación de estructuras de datos (que nos permiten representar mediante un formalismo determinado
+            las
+            "verdades" relevantes en algún dominio) asociadas con mecanismos interpretativos que nos permiten manipular
+            el
+            conocimiento representado a fin de crear soluciones a problemas nuevos.
+          </p>
+
+          <p><b>Metodología de Representación del Conocimiento</b></p>
+
+          <ul type="disc" style="margin-left: 12px;">
+            <li>Hechos Las verdades que se quieren representar.</li>
+            <li>Representación En un determinado formalismo, las entidades que queremos manipular.</li>
+          </ul>
+
+          <p><strong>La Ontología:</strong> Es la forma de representar los conceptos de interés de un determinado
+            dominio o conocimiento, análogo
+            a una base de datos.
+          </p>
+
+          <p><b>Característica Representación del Conocimiento en Inteligencia Artificial</b></p>
+
+          <ol style="margin-left: 12px;">
+            <li>
+              Cobertura, significa que la representación del conocimiento cubre la información en anchura y profundidad.
+            </li>
+            <li>
+              Comprensible por humanos. La representación del conocimiento es vista como un lenguaje natural, así que la
+              lógica
+              debería fluir libremente.
+            </li>
+            <li>
+              Consistencia. Siendo consistente, la representación del conocimiento puede eliminar conocimiento
+              redundante o
+              conflictivo.
+            </li>
+            <li>
+              Eficiencia.
+            </li>
+            <li>
+              Facilidad de modificación y actualización.
+            </li>
+            <li>
+              Soporte de la actividad inteligente que usa la base de conocimiento.
+          </ol>
+
+          <p><b>Propiedades del Conocimiento en Inteligencia Artificial</b></p>
+
+          <ul type="disc">
+            <li>Voluminoso</li>
+            <li>Difícil de caracterizar con precisión</li>
+            <li>Incierto/impreciso</li>
+            <li>Cambia constantemente</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="title-spacing">
+        <h3>2. Tipos de conocimiento</h3>
+      </article>
+
+      <!-- 2. Tipos de conocimiento -->
+      <div id="ch62"></div>
+      <article class="row">
+        <div class="book_chapter pt-3 column">
+          <h5>Conocimiento Declarativo</h5>
+          <p>Son hechos sobre objetos o situaciones. Posee mayor capacidad expresiva, menor capacidad creativa o
+            computacional. Es conocimiento pasivo, expresado como sentencias acerca de los hechos del mundo que nos
+            rodea (el
+            saber que hacer).
+          </p>
+
+          <p>Puede ser representado con modelos relacionales y esquemas basados en lógica. Los modelos relacionales
+            pueden
+            representar el conocimiento en forma de árboles, grafos o redes semánticas.
+          </p>
+
+          <p>Los esquemas de representación lógica incluyen el uso de lógica proposicional y lógica de predicados.</p>
+
+
+          <p><b>Conocimiento Declarativo</b></p>
+
+          <ol class="cascading" style="margin-left: 12px;">
+            <li>
+              <strong>a) Conocimiento Relacional</strong>
+              <br>
+              Conjunto de relaciones expresables mediante tablas (como en una Base de Datos). Hemos de aportar
+              procedimientos
+              que lo enriquezcan Motor de inferencia genera conocimiento a partir de información.
+            </li>
+
+            <li>
+              <strong>b) Conocimiento Heredable</strong>
+              <br>
+              Estructuración jerárquica del conocimiento (taxonomía jerárquica). Se trata de construir un árbol o grafo
+              de
+              conceptos basado en la generalización y/o especialización.
+            </li>
+
+            <li>
+              <strong>c) Conocimiento Inferible</strong>
+              <br>
+              Conocimiento descrito mediante lógica. Se puede utilizar la semántica de los operadores y el Modus Ponens
+              para
+              inferir nuevo conocimiento.
+            </li>
+          </ol>
+
+
+
+          <p><strong>Conocimiento Procedimental</strong></p>
+
+          <p>Es aquel conocimiento compilado que se refiere a la forma de realizar una cierta tarea (el saber cómo
+            hacerlo).
+            Por ejemplo, los pasos necesarios para resolver una ecuación algebraica son expresados como conocimiento
+            procedimental.</p>
+
+          <p>Los modelos procedimentales y sus esquemas de representación almacenan conocimiento en la forma de cómo
+            hacer las
+            cosas.</p>
+
+          <p>Pueden estar caracterizados por gramáticas formales, usualmente implantadas por sistemas o lenguajes
+            procedimentales y <a class="autolink" title="Sistemas Basados en Reglas" href="#pagina-3">sistemas basados
+              en
+              reglas</a>
+            (sistemas
+            de producción). Por ejemplo, los pasos necesarios para resolver una ecuación algebraica son expresados como
+            conocimiento procedimental.</p>
+
+
+          <p><b>Conocimiento Heurístico </b></p>
+
+
+          <p>Es un tipo especial de conocimiento usado por los humanos para resolver problemas complejos. El adjetivo
+            heurístico significa medio para descubrir. Está relacionado con la palabra griega heuriskein que significa
+            descubrir, encontrar.</p>
+
+          <p>Se entiende por heurístico a un criterio, estrategia, método o truco utilizado para simplificar la solución
+            de
+            problemas.</p>
+
+
+          <p><b>Técnicas de Representación </b></p>
+
+          <ul type="disc">
+            <li>Marcos</li>
+          </ul>
+
+          <ul type="disc">
+            <li>Reglas</li>
+          </ul>
+
+          <ul type="disc">
+            <li>Etiquetado</li>
+          </ul>
+
+          <ul type="disc">
+            <li>Redes Semánticas</li>
+          </ul>
+
+
+          <p><b>Propiedades del Sistema de Representación </b></p>
+
+          <ul type="disc">
+            <li>Capacidad Expresiva</li>
+          </ul>
+
+          <ul type="disc">
+            <li>Capacidad Deductiva</li>
+          </ul>
+
+          <ul type="disc">
+            <li>Eficiencia Deductiva</li>
+          </ul>
+
+          <ul type="disc">
+            <li>Eficiencia en la Adquisición</li>
+          </ul>
+
+
+          <p><b>La Representación del Conocimiento en Inteligencia Artificial ha de ser capaz </b></p>
+
+          <ol class="cascading" style="margin-left: 12px;">
+            <li>
+              a) Captar generalizaciones.
+            </li>
+            <li>
+              b) Ser comprensible.
+            </li>
+            <li>
+              c) Fácilmente modificable, incrementable.
+            </li>
+            <li>
+              d) Ser usado en diversas situaciones y propósitos.
+            </li>
+            <li>
+              e) Permitir diversos grados de detalle.
+            </li>
+            <li>
+              f) Permitir la incertidumbre, imprecisión.
+            </li>
+            <li>
+              g) Representar distinciones importantes.
+            </li>
+            <li>
+              h) Focalizar el conocimiento relevante.
+            </li>
+          </ol>
+
+
+          <p>Todo problema es más sencillo de resolver si disponemos de conocimiento específico sobre él. Este
+            conocimiento
+            dependiente del dominio se combina con el conocimiento general sobre cómo resolver problemas.</p>
+
+
+          <p>Este conocimiento ha de permitir guiar los mecanismos de inteligencia artificial para obtener soluciones de
+            manera más eficientes.</p>
+          <p class="Normal1"><b></b></p>
+
+        </div>
+      </article>
+
+      <article class="title-spacing">
+        <h3>3. Formas de Representación del conocimiento</h3>
+      </article>
+
+      <!-- 3. Formas de Representación del conocimiento -->
+      <div id="ch63"></div>
+      <article class="row">
+        <div class="book_chapter pt-3 column">
+          <p class="Normal1">Una vez que se adquiere (del especialista) el conocimiento, es necesario encontrar una
+            representación simbólica, clara, precisa y completa del mismo. Para ello podemos mencionar que existen
+            diversas
+            formas de representar el conocimiento, como las siguientes:
+          </p>
+
+          <p class="Normal1"><b>Representación del Conocimiento</b></p>
+          <ul>
+            <li> Tripletas OAV</li>
+            <li> Redes Semánticas</li>
+            <li> Frames</li>
+            <li> Reglas</li>
+          </ul>
+
+          <p class="Normal1"></p>
+          <p class="Normal1"><b>Tripletas Objetivo-Atributo-Valor (OAV).</b> Permiten derivar una representación gráfica
+            del
+            conocimiento organizada en tres niveles: objeto compuesto de atributos que contienen valores. Ejemplo
+          </p>
+
+          <p class="Normal1"><img src="./5.jpg" width="487" height="218"
+              style="display: block; margin-left: auto; margin-right: auto;">
+          </p>
+
+          <p class="Normal1"><b>Redes Semánticas.</b> Ofrecen un esquema más general y desestructurado que las tripletas
+            OAV.
+            Donde cada nodo representa cualquier concepto u objeto, y los arcos representan relaciones que existen entre
+            dichos
+            conceptos. Ejemplo:
+          </p>
+
+          <p class="Normal1"><img src="./6.jpg" width="512" height="118"
+              style="display: block; margin-left: auto; margin-right: auto;">
+          </p>
+
+          <p class="Normal1"><b>Frames (Marcos).</b> Un frame es una plantilla de objetos que contiene un conjunto de
+            slots. Cada
+            slot puede ser de alguno de los siguientes tipos: <strong>1)</strong> un atributo simple con un valor
+            opcional de default;
+            <strong>2)</strong> un
+            procedimiento; <strong>3)</strong> una restricción; <strong>4)</strong> un apuntador a otro frame. En
+            programación ofrece uno de los mecanismos
+            de
+            estructuración más poderosos y flexibles que existen en Inteligencia Artificial, e.g. puede implementar
+            cualquier
+            esquema de representación del conocimiento e incluso diversos paradigmas de programación como orientado a
+            objetos,
+            orientado a accesos, etc. Algunos idiomas de Lisp, como CommonLisp y CLOS ofrecen frames. Sin embargo, la
+            complejidad de programar con frames puede fácilmente tornarse inadmisible e ineficiente cuando se posee poca
+            habilidad, disciplina y conocimientos avanzados de programación con frames.
+          </p>
+          <p class="Normal1"><img src="./7.jpg" width="556" height="222"
+              style="display: block; margin-left: auto; margin-right: auto;">
+          </p>
+          <p class="Normal1"></p>
+        </div>
+      </article>
+
+      <!-- Referencias -->
+      <div id="ch64"></div>
+      <article class="row">
+        <div class="column">
+          <div class="panel panel-info">
+            <div class="panel-body">
+              <div class="tab-content">
+                <h3>4. Referencias</h3>
+                <div role="tabpanel" class="tab-pane active">
+                  <ul>
+                    <li>Benítez, A. (2007). <i>Fundamentos de Inteligencia Artificial libro tercero</i>. España: Escolar
+                      y mayo.</li>
+                  </ul>
+
+                  <ul>
+                    <li>Escolano, F. (2003). <i>Inteligencia Artificial (Modelos, Técnicas y Áreas de Aplicación)</i>
+                      México: Thomson.
+                    </li>
+                  </ul>
+
+                  <ul>
+                    <li>Marín, R. (2008). <i>Inteligencia Artificial y sistemas inteligentes</i>. España: McGraw-Hill.
+                    </li>
+                  </ul>
+
+                  <ul>
+                    <li>Nilsson, N. (2001).&nbsp; <i>Inteligencia artificial (Una nueva síntesis)</i> México:
+                      McGraw–Hill.</li>
+                  </ul>
+
+                  <ul>
+                    <li>Ponce, P. (2011). <i>Inteligencia Artificial con aplicaciones a la ingeniería.</i> España:
+                      MARCOMBO.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+  <div id="pagina-2"></div>
+  <section class="wrapper">
+    <div class="contenido-principal">
+
+      <article class="title-spacing">
+        <h2>Representación del Conocimiento en Inteligencia Artificial NUEVO</h2>
+        <h3>1. Formas de Representación del conocimiento</h3>
+      </article>
+
+
+      <article class="row">
+        <div class="chapter column" id="yui_3_18_1_1_1749427433238_19">
+          <div class="book_chapter pt-3" id="ch65">
+            <p><b>Formas de Representación del conocimiento</b></p>
+
+            <p>Una vez que se adquiere (del especialista) el conocimiento, es necesario encontrar una representación
+              simbólica,
+              clara, precisa y completa del mismo. Para ello podemos mencionar que existen diversas formas de
+              representar el
+              conocimiento, como las siguientes:
+            </p>
+
+            <p><b>Representación del Conocimiento</b></p>
+            <ul style="margin-left: 12px;">
+              <li> Tripletas OAV</li>
+              <li> Redes Semánticas</li>
+              <li> Frames</li>
+              <li> Reglas</li>
+            </ul>
+
+            <p><b>Tripletas Objetivo-Atributo-Valor (OAV).</b> Permiten derivar una representación gráfica del
+              conocimiento
+              organizada en tres niveles: objeto compuesto de atributos que contienen valores. Ejemplo</p>
+
+            <p>
+              <img src="./5.jpg" width="487" height="218"
+                style="display: block; margin-left: auto; margin-right: auto;">
+            </p>
+
+            <p><b>Redes Semánticas.</b> Ofrecen un esquema más general y desestructurado que las tripletas OAV. Donde
+              cada nodo
+              representa cualquier concepto u objeto, y los arcos representan relaciones que existen entre dichos
+              conceptos.
+              Ejemplo:
+            </p>
+            <p>
+              <img src="./6.jpg" width="599" height="138"
+                style="display: block; margin-left: auto; margin-right: auto;">
+            </p>
+
+            <p><b>Frames (Marcos).</b></p>
+            <p>Un frame es una plantilla de objetos que contiene un conjunto de slots. Cada slot puede ser de alguno de
+              los siguientes tipos:</p>
+
+            <ol class="cascading" style="margin-left: 12px;">
+              <li>1) Un atributo simple con un valor opcional de default.</li>
+              <li>2) Un procedimiento.</li>
+              <li>3) Una restricción</li>
+              <li>4) Un apuntador a otro frame.</li>
+            </ol>
+
+            <p>En programación ofrece uno de los mecanismos de estructuración más poderosos y flexibles que
+              existen en
+              Inteligencia Artificial, e.g. puede implementar cualquier esquema de representación del conocimiento e
+              incluso
+              diversos paradigmas de programación como orientado a objetos, orientado a accesos, etc.</p>
+
+            <p>Algunos idiomas de Lisp, como CommonLisp y CLOS ofrecen frames. Sin embargo, la complejidad de programar
+              con
+              frames puede fácilmente tornarse inadmisible e ineficiente cuando se posee poca habilidad, disciplina y
+              conocimientos avanzados de programación con frames.</p>
+
+            <figure>
+              <img src="./x3.jpg" width="454" height="288">
+
+              <figcaption>Recuperado: <a
+                  href="http://www.estudiargratis.com.ar/visual-basic/imagenes/frame-groupbox-visual-basic.jpg">http://www.estudiargratis.com.ar/visual-basic/imagenes/frame-groupbox-visual-basic.jpg</a>
+              </figcaption>
+            </figure>
+
+
+            <p>A continuación se te proporciona un recurso en el que encontrarás las formas de representar los
+              conocimientos que
+              hemos adquirido a lo largo de nuestra vida, la transmisión del conocimiento es parte fundamental para
+              continuar
+              enriqueciendo el nuestro, pero para ello, es importante saber cómo plasmarlo.
+            </p>
+
+            <p>Nombre: Técnicas y lenguajes para la representación del conocimiento.</p>
+
+            <div class="panel panel-info">
+              <div class="panel-body"><!-- Nav tabs -->
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="home">
+                    <p class="content"><img src="./j2.png" width="722" height="439"></p>
+                  </div>
+                  <div role="tabpanel" class="tab-pane active" id="messages">
+                    <p class="content"><img src="./j3.png" width="662" height="435"></p>
+                  </div>
+                  <div role="tabpanel" class="tab-pane active" id="settings">
+                    <p class="content"><img src="./j4.png" width="732" height="94"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div id="pagina-3"></div>
+  <section class="wrapper">
+    <div class="contenido-principal">
+      <article class="row">
+        <div class="column" id="yui_3_18_1_1_1748021549449_94">
+
+          <h2>Representación del Conocimiento en Inteligencia Artificial</h2>
+          <h4>Tabla de Contenidos</h4>
+          <ul id="yui_3_18_1_1_1749428684720_24">
+            <li id="yui_3_18_1_1_1749428684720_23"><a title="1. Sistemas Basados en Reglas"
+                class="font-weight-bold text-decoration-none" href="#ch67">1. Sistemas Basados en Reglas</a></li>
+            <li id="yui_3_18_1_1_1749428684720_28"><a title="2. El Motor de Inferencia"
+                class="font-weight-bold text-decoration-none" href="#ch68">2. El Motor de Inferencia</a></li>
+            <li id="yui_3_18_1_1_1749428684720_29"><a title="3. Elementos básicos"
+                class="font-weight-bold text-decoration-none" href="#ch69">3. Elementos básicos</a></li>
+            <li id="yui_3_18_1_1_1749428684720_30"><a title="4. Referencias"
+                class="font-weight-bold text-decoration-none" href="#ch70">4. Referencias</a></li>
+          </ul>
+      </article>
+
+      <article class="title-spacing">
+        <h3>1. Sistemas Basados en Reglas</h3>
+      </article>
+
+      <article class="row">
+        <div class="book_chapter pt-3 column" id="ch67">
+          <p class="Normal1">Hay muchos casos en los que podemos resolver situaciones complejas haciendo uso de reglas
+            deterministas, hasta el punto de su uso consigue sistemas automáticos que se comportan como humanos expertos
+            en un
+            dominio particular permitiendo tomar decisiones delicadas, por ejemplo: en sistemas de control de tráfico,
+            transacciones bancarias, o diagnóstico de enfermedades.
+          </p>
+
+
+          <p class="Normal1">Entre las opciones disponibles, los sistemas basados en reglas se han convertido en una de
+            las
+            herramientas más eficientes para tratar de manera eficiente una buena colección de problemas, ya que las
+            reglas
+            deterministas constituyen la más sencilla de las metodologías utilizadas en sistemas expertos.
+          </p>
+
+          <p class="Normal1">En estos sistemas, la base de conocimiento de la que se parte contiene las variables y el
+            conjunto
+            de reglas que definen el problema, y el motor de inferencia es capaz de extraer conclusiones aplicando
+            métodos de la
+            lógica clásica sobre esta base.
+          </p>
+
+          <p class="Normal1">Una regla en este contexto es una proposición lógica que relaciona dos o más objetos del
+            dominio e
+            incluye dos partes, la premisa y la conclusión, que se suele escribir normalmente como “Si premisa, entonces
+            conclusión”. Cada una de estas partes es una expresión lógica con una o más afirmaciones objeto-valor
+            conectadas
+            mediante operadores lógicos (y, o, o no).
+          </p>
+
+        </div>
+      </article>
+
+      <article class="title-spacing">
+        <h3>2. El Motor de Inferencia</h3>
+      </article>
+      <article class="row">
+        <div class="book_chapter pt-3" id="ch68">
+          <p class="Normal1">Como hemos comentado, las bases de conocimiento se conforman a partir de dos tipos de
+            elementos
+            básicos, por una parte los datos (también conocidos como hechos o evidencias), y por otra el conocimiento
+            (representado por el conjunto de reglas que rigen las relaciones entre los datos). Pero una vez tenemos esta
+            información almacenada, necesitamos un mecanismo para manipular automáticamente sus componentes y extraer
+            conclusiones.
+          </p>
+
+
+          <p class="Normal1">A este mecanismo se le denomina motor de inferencia, que a partir de la base de
+            conocimiento
+            obtiene nuevas conclusiones, ampliando de esta forma el conjunto de hechos de la propia base de conocimiento
+            Por
+            ejemplo, si la premisa de una regla es cierta, entonces aplicando la regla lógica de Modus Ponens, la
+            conclusión de
+            la regla debe ser también cierta, y de esta forma los datos iniciales se incrementan incorporando las nuevas
+            conclusiones.
+          </p>
+
+          <p class="Normal1">Por ello, tanto los hechos iniciales o datos de partida como las conclusiones derivadas de
+            ellos
+            forman parte de los hechos o datos de que se dispone en un instante dado, obteniendo un proceso dinámico en
+            el que
+            el conocimiento se va generando por etapas.
+          </p>
+
+          <p class="Normal1">Para obtener conclusiones, se pueden utilizar diferentes tipos de reglas y estrategias de
+            inferencia y control, pero nosotros mostraremos aquí las más básicas y universales: Modus Ponens y Modus
+            Tollens
+            como sistemas básicos de inferencia, y encadenamiento de reglas hacia adelante y encadenamiento de reglas
+            hacia
+            atrás (orientado por objetivos), como estrategias de inferencia.
+          </p>
+
+
+          <p class="Normal1"><b>El encadenamiento de reglas hacia delante</b></p>
+
+          <p class="Normal1">Puede utilizarse cuando las premisas de algunas reglas coinciden con las conclusiones de
+            otras, de
+            forma que al aplicarlas sucesivamente sobre los hechos iniciales podemos obtener nuevos hechos.</p>
+          <p class="Normal1">A medida que obtenemos más hechos, podemos repetir el proceso hasta que no pueden obtenerse
+            más
+            conclusiones.
+          </p>
+
+          <p class="Normal1"><b>El encadenamiento de reglas hacia atrás</b></p>
+
+
+          <p class="Normal1">Parte del hecho que se quiere concluir y se mira qué reglas lo tienen como conclusión, se
+            toman las
+            premisas de estas reglas y se consideran como objetivos parciales que se quieren verificar.</p>
+
+          <p class="Normal1">Por un proceso de comparación con los hechos de la base de conocimiento un proceso de
+            <strong>backtracking</strong>,
+            se va decidiendo cuáles de los objetivos parciales se van cumpliendo y cuáles quedan pendientes<b>.</b>
+          </p>
+
+        </div>
+      </article>
+
+
+      <article class="title-spacing">
+        <h3>3. Elementos básicos</h3>
+      </article>
+      <article class="row">
+        <div class="book_chapter pt-3 column" id="ch69">
+          <p class="Normal1">En un sistema basado en reglas existen dos elementos básicos que sirven para la
+            representación del
+            conocimiento:
+          </p>
+
+          <p class="Normal1"><strong>Conocimiento</strong></p>
+          <ul type="disc" style="margin-left: 12px;">
+            <li>Atributos</li>
+            <li>Reglas</li>
+          </ul>
+
+          <p class="Normal1"><b>Atributos.</b> Un atributo es un símbolo que sirve para representar un conocimiento
+            factual,
+            i.e. aserción o hecho. Un atributo puede tener un valor indefinido, i.e. UNKNOWN, así como uno o más
+            valores, i.e.
+            multivalor.
+          </p>
+          <code class="Normal1">NAME: auto</code>
+          <br>
+          <code class="Normal1">TYPE: symbol</code>
+          <br>
+          <code class="Normal1">CHOICES/EXPECT: sedan, van, vagoneta</code>
+          <br>
+          <code class="Normal1">PROMPT: "¿Qué tipo de carro desea comprar?"</code>
+          <br>
+          <code class="Normal1">PLURAL/MULTI: yes</code>
+          <br>
+          <code class="Normal1">DEFAULT: sedan</code>
+          <br>
+          <br>
+          <p class="Normal1"><b>Tipos. </b>Existen diversos tipos de atributos que puede proporcionar un lenguaje o
+            shell, como
+            son: símbolos, cadenas y caracteres, numéricos (enteros y reales) y booleanos.</p>
+
+          <p class="Normal1"><b>Símbolo vs. Cadena:</b> El símbolo es un elemento muy común de procesamiento en sistemas
+            expertos, tanto que ha llegado a constituir lo que se conoce como <b>Programación Simbólica</b>, donde
+            expresiones
+            tales como:
+          </p>
+
+          <ol class="cascading" style="margin-left: 12px;">
+            <li>1) \(X=12\)</li>
+            <li>2) \(Ecuación=2^x+5^x\)</li>
+            <li>3) \(N=Juan\)</li>
+          </ol>
+
+
+          <p class="Normal1">Establecen una forma muy particular de interpretarse: si los atributos X, Ecuación y N son
+            de tipo
+            símbolo, los valores "\(12\)", "\(2^x+5^x\)" y "\(Juan\)" se almacenarán como expresiones
+            simbólicas.
+          </p>
+
+          <p class="Normal1">La manipulación simbólica contrasta con el procesamiento numérico basado en algoritmos. Por
+            ejemplo, el procesamiento numérico de la expresión \(2^x+5^x\) requiere que \(x\) tenga un
+            valor para
+            obtener luego otro valor numérico, sin embargo, el procesamiento simbólico puede mantener el valor de x como
+            una
+            incógnita y manipular dicha ecuación, por ejemplo, una simplificación algebraica o despeje, para obtener
+            otra
+            representación simbólica derivada, e.g. \(7^x\). En otras palabras, en programación convencional los
+            símbolos
+            son mnemónicos que sirven para representar códigos de operaciones y localidades de memoria, pero en
+            programación
+            simbólica sirven para representar cosas, conceptos y conocimiento.
+          </p>
+
+
+          <p class="Normal1">Otro ejemplo es la diferenciación entre variables y valores. Mientras que en programación
+            convencional la expresión \(x = y\) copia el valor de la variable \(x\), en programación simbólica significa
+            que x
+            representa ahora al símbolo "\(y\)". Con la finalidad de evitar confusiones, las variables se representarán
+            con
+            mayúsculas, de tal forma que si tenemos:
+          </p>
+
+          <ol class="cascading" style="margin-left: 12px;">
+            <li>1) \(x = y\)</li>
+            <li>2) \(x = y\)</li>
+          </ol>
+
+          <p class="Normal1">Donde: <strong>1)</strong> relaciona dos símbolos y <strong>2)</strong> almacena el símbolo
+            "\(y\)" en la variable \(x\).</p>
+
+
+          <p class="Normal1"><b>El Símbolo = No es Igual.</b> La expresión (1) no permite entonces asignar un valor sino
+            comparar dos símbolos, y la expresión (2) se asigna un valor. Ambas usan el mismo símbolo =, una para
+            comparar
+            (equivale al == de C) y otra para asignar. Analicemos otras posibilidades:
+          </p>
+          <ol class="cascading" style="margin-left: 12px;">
+            <li>1) \(X = Y\)</li>
+            <li>2) \(X = Y + 2\)</li>
+          </ol>
+
+          <p class="Normal1">En (1) ambas son variables, y pueden interpretarse de dos formas: (a) como una asignación,
+            e.g. se
+            asigna el valor del atributo Y al valor del atributo X, o (b) como una comparación, e.g. comprobar si ambos
+            valores
+            son iguales. Esto dependerá del contexto de la expresión, e.g. si es una premisa, o una conclusión de una
+            regla, o
+            un hecho.</p>
+
+          <p class="Normal1">En (2) existe también cierta ambigüedad, puede significar varias cosas: (a) la variable
+            \(X\)
+            almacena
+            el símbolo "\(Y+2\)"; (b) \(X\) almacena el resultado de evaluar numéricamente la expresión \(Y+2\); (c) la
+            expresión es
+            falsa o
+            verdadera dependiendo de si \(X\) es igual al valor de \(Y+2\).
+          </p>
+
+
+          <p class="Normal1"><b>Atributos Multivalor.</b> Cuando se especifica un atributo de tipo PLURAL o MULTI, es
+            posible
+            que llegue a tener múltiples valores al mismo tiempo, e.g. <code>auto={sedan, vagoneta}</code>.</p>
+
+
+          <code class="Normal1"><b>Preguntas y Valores Default.</b> Del ejemplo:</code><br>
+          <code class="Normal1"><i>NAME: auto </i></code><br>
+          <code class="Normal1"><i>PROMPT: "¿Qué tipo de carro desea comprar?" </i></code><br>
+          <code class="Normal1"><i>DEFAULT: sedan</i></code><br><br>
+
+
+          <p>De donde tenemos que al encontrar la máquina de inferencias un atributo con valor desconocido, i.e.
+            UNKNOWN, se
+            busca su declaración PROMPT para desplegar al usuario el texto de la pregunta y esperar una respuesta, en
+            caso
+            contrario, se asume el valor de default.</p>
+          </p>
+        </div>
+      </article>
+
+      <article class="row">
+        <div class="column" id="ch70">
+          <div class="panel panel-info">
+            <div class="panel-body">
+              <div class="tab-content">
+                <h3>4. Referencias</h3>
+                <div role="tabpanel" class="tab-pane active">
+                  <ul>
+                    <li>Benítez, A. (2007). <i>Fundamentos de Inteligencia Artificial libro tercero</i>. España: Escolar
+                      y mayo.</li>
+                  </ul>
+
+                  <ul>
+                    <li>Escolano, F. (2003). <i>Inteligencia Artificial (Modelos, Técnicas y Áreas de Aplicación)</i>
+                      México: Thomson.
+                    </li>
+                  </ul>
+
+                  <ul>
+                    <li>Marín, R. (2008). <i>Inteligencia Artificial y sistemas inteligentes</i>. España: McGraw-Hill.
+                    </li>
+                  </ul>
+
+                  <ul>
+                    <li>Nilsson, N. (2001).&nbsp; <i>Inteligencia artificial (Una nueva síntesis)</i> México:
+                      McGraw–Hill.</li>
+                  </ul>
+
+                  <ul>
+                    <li>Ponce, P. (2011). <i>Inteligencia Artificial con aplicaciones a la ingeniería.</i> España:
+                      MARCOMBO.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div id="pagina-4"></div>
+  <section class="wrapper">
+    <div class="contenido-principal">
+
+      <article class="row">
+        <div class="column" id="yui_3_18_1_1_1748021549449_94">
+
+          <h2>Sistemas Basados en Reglas NUEVO</h2>
+      </article>
+
+      <article class="title-spacing">
+        <h3>1. Sistemas Basados en Reglas</h3>
+      </article>
+
+      <article class="row">
+        <div class="book_chapter pt-3 column" id="ch71">
+          <p>En un sistema basado en reglas existen dos elementos básicos que sirven para la representación del
+            conocimiento:
+          </p>
+
+          <p class="Normal1"><strong>Conocimiento</strong></p>
+          <ul type="disc" style="margin-left: 12px;">
+            <li>Atributos</li>
+            <li>Reglas</li>
+          </ul>
+
+          <p class="Normal1"><b>Atributos.</b> Un atributo es un símbolo que sirve para representar un conocimiento
+            factual,
+            i.e. aserción o hecho. Un atributo puede tener un valor indefinido, i.e. UNKNOWN, así como uno o más
+            valores, i.e.
+            multivalor.
+          </p>
+          <code class="Normal1">NAME: auto</code>
+          <br>
+          <code class="Normal1">TYPE: symbol</code>
+          <br>
+          <code class="Normal1">CHOICES/EXPECT: sedan, van, vagoneta</code>
+          <br>
+          <code class="Normal1">PROMPT: "¿Qué tipo de carro desea comprar?"</code>
+          <br>
+          <code class="Normal1">PLURAL/MULTI: yes</code>
+          <br>
+          <code class="Normal1">DEFAULT: sedan</code>
+          <br>
+          <br>
+          <p class="Normal1"><b>Tipos. </b>Existen diversos tipos de atributos que puede proporcionar un lenguaje o
+            shell, como
+            son: símbolos, cadenas y caracteres, numéricos (enteros y reales) y booleanos.</p>
+
+          <p class="Normal1"><b>Símbolo vs. Cadena:</b> El símbolo es un elemento muy común de procesamiento en sistemas
+            expertos, tanto que ha llegado a constituir lo que se conoce como <b>Programación Simbólica</b>, donde
+            expresiones
+            tales como:
+          </p>
+
+          <ol class="cascading" style="margin-left: 12px;">
+            <li>1) \(X=12\)</li>
+            <li>2) \(Ecuación=2^x+5^x\)</li>
+            <li>3) \(N=Juan\)</li>
+          </ol>
+
+          <p class="Normal1">Establecen una forma muy particular de interpretarse: si los atributos X, Ecuación y N son
+            de tipo
+            símbolo, los valores "\(12\)", "\(2^x+5^x\)" y "\(Juan\)" se almacenarán como expresiones
+            simbólicas.
+          </p>
+
+          <p class="Normal1">La manipulación simbólica contrasta con el procesamiento numérico basado en algoritmos. Por
+            ejemplo, el procesamiento numérico de la expresión \(2^x+5^x\) requiere que \(x\) tenga un
+            valor para
+            obtener luego otro valor numérico, sin embargo, el procesamiento simbólico puede mantener el valor de x como
+            una
+            incógnita y manipular dicha ecuación, por ejemplo, una simplificación algebraica o despeje, para obtener
+            otra
+            representación simbólica derivada, e.g. \(7^x\). En otras palabras, en programación convencional los
+            símbolos
+            son mnemónicos que sirven para representar códigos de operaciones y localidades de memoria, pero en
+            programación
+            simbólica sirven para representar cosas, conceptos y conocimiento.
+          </p>
+
+
+          <p class="Normal1">Otro ejemplo es la diferenciación entre variables y valores. Mientras que en programación
+            convencional la expresión \(x = y\) copia el valor de la variable \(x\), en programación simbólica significa
+            que x
+            representa ahora al símbolo "\(y\)". Con la finalidad de evitar confusiones, las variables se representarán
+            con
+            mayúsculas, de tal forma que si tenemos:
+          </p>
+
+          <ol class="cascading" style="margin-left: 12px;">
+            <li>1) \(x = y\)</li>
+            <li>2) \(x = y\)</li>
+          </ol>
+
+          <p class="Normal1">Donde: <strong>1)</strong> relaciona dos símbolos y <strong>2)</strong> almacena el símbolo
+            "\(y\)" en la variable \(x\).</p>
+
+
+          <p class="Normal1"><b>El Símbolo = No es Igual.</b> La expresión (1) no permite entonces asignar un valor sino
+            comparar dos símbolos, y la expresión (2) se asigna un valor. Ambas usan el mismo símbolo =, una para
+            comparar
+            (equivale al == de C) y otra para asignar. Analicemos otras posibilidades:
+          </p>
+          <ol class="cascading" style="margin-left: 12px;">
+            <li>1) \(X = Y\)</li>
+            <li>2) \(X = Y + 2\)</li>
+          </ol>
+
+          <p class="Normal1">En (1) ambas son variables, y pueden interpretarse de dos formas: (a) como una asignación,
+            e.g. se
+            asigna el valor del atributo Y al valor del atributo X, o (b) como una comparación, e.g. comprobar si ambos
+            valores
+            son iguales. Esto dependerá del contexto de la expresión, e.g. si es una premisa, o una conclusión de una
+            regla, o
+            un hecho.</p>
+
+          <p class="Normal1">En (2) existe también cierta ambigüedad, puede significar varias cosas: (a) la variable
+            \(X\)
+            almacena
+            el símbolo "\(Y+2\)"; (b) \(X\) almacena el resultado de evaluar numéricamente la expresión \(Y+2\); (c) la
+            expresión es
+            falsa o
+            verdadera dependiendo de si \(X\) es igual al valor de \(Y+2\).
+          </p>
+
+
+          <p class="Normal1"><b>Atributos Multivalor.</b> Cuando se especifica un atributo de tipo PLURAL o MULTI, es
+            posible
+            que llegue a tener múltiples valores al mismo tiempo, e.g. <code>auto={sedan, vagoneta}</code>.</p>
+
+
+          <code class="Normal1"><b>Preguntas y Valores Default.</b> Del ejemplo:</code><br>
+          <code class="Normal1"><i>NAME: auto </i></code><br>
+          <code class="Normal1"><i>PROMPT: "¿Qué tipo de carro desea comprar?" </i></code><br>
+          <code class="Normal1"><i>DEFAULT: sedan</i></code><br><br>
+
+
+          <p>De donde tenemos que al encontrar la máquina de inferencias un atributo con valor desconocido, i.e.
+            UNKNOWN, se
+            busca su declaración PROMPT para desplegar al usuario el texto de la pregunta y esperar una respuesta, en
+            caso
+            contrario, se asume el valor de default.
+          </p>
+
+
+          <p>La presentación del conocimiento y su explicación para esta secuencia se completa de manera
+            práctica-teórica con
+            ejemplos que se pueden encontrar en la siguiente página. Cada uno con un aporte de conocimiento especial al
+            tema.
+          </p>
+
+          <p>Nombre: <a class="autolink" title="Sistemas Basados en Reglas"
+              href="https://urc.cdmx.gob.mx/LAD_A1_2025-1/mod/book/view.php?id=5680" target="_blank"
+              rel="noopener noreferrer">Sistemas basados en reglas</a>
+          </p>
+          <p>Link: <a href="http://www.cs.us.es/~fsancho/?e=103%20" target="_blank"
+              rel="noopener noreferrer">http://www.cs.us.es/~fsancho/?e=103</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="row">
+        <div class="column">
+          <div class="panel panel-info">
+            <div class="panel-body">
+              <div class="tab-content">
+                <h3>4. Referencias</h3>
+                <div role="tabpanel" class="tab-pane active">
+                  <ul>
+                    <li>
+                      Sancho, F. (2017). <a class="autolink" title="Sistemas Basados en Reglas"
+                        href="https://urc.cdmx.gob.mx/LAD_A1_2025-1/mod/book/view.php?id=5680">Sistemas basados en
+                        reglas</a>. Sitio web: <a href="http://www.cs.us.es/~fsancho/?e=103" class="_blanktarget"
+                        target="_blank" rel="noopener noreferrer">http://www.cs.us.es/~fsancho/?e=103</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div id="pagina-5"></div>
+  <section class="wrapper">
+    <div class="contenido-principal">
+      <article class="row">
+        <div class="column" id="yui_3_18_1_1_1748021549449_94">
+
+          <h2>Diferencia entre información y conocimiento/h2>
+            <h4>Tabla de Contenidos</h4>
+            <ul>
+              <li><a title="1. Diferencia entre información y conocimiento"
+                  class="font-weight-bold text-decoration-none" href="#ch73">1. Diferencia entre información y
+                  conocimiento</a></li>
+              <li><a title="2. Esquema de representación" class="font-weight-bold text-decoration-none" href="#ch74">2.
+                  Esquema de
+                  representación</a></li>
+              <li><a title="3. Diferencia entre dato, información y conocimiento"
+                  class="font-weight-bold text-decoration-none" href="#ch75">3. Diferencia entre dato, información y
+                  conocimiento</a></li>
+              <li><a title="4. Referencias" class="font-weight-bold text-decoration-none" href="#ch76">4.
+                  Referencias</a></li>
+            </ul>
+      </article>
+
+      <article class="title-spacing">
+        <h3>1. Diferencia entre información y conocimiento</h3>
+      </article>
+      <article class="row">
+        <div class="book_chapter pt-3 column" id="ch73">
+          <p class="Normal1">Todo problema es más sencillo de resolver si disponemos de conocimiento específico sobre
+            él, este
+            conocimiento dependiente del dominio se combina con el conocimiento general sobre cómo resolver problemas.
+          </p>
+
+          <p class="Normal1">Este conocimiento ha de permitir guiar a los mecanismos de IA para obtener soluciones de
+            manera más
+            eficiente y nos enfrentamos a los problemas de:
+          </p>
+
+          <ol class="cascading" style="margin-left: 12px;">
+            <li>
+              a) ¿Cómo escoger el formalismo de representación que nos permita hacer una traducción fácil
+              del
+              mundo real a la representación?
+            </li>
+
+            <li>
+              b) ¿Cómo ha de ser esa representación para que pueda ser utilizada de forma eficiente?
+            </li>
+          </ol>
+
+
+          <p class="Normal1">Llamaremos información al conjunto de datos básicos, sin interpretar, que se obtienen como
+            entrada
+            del sistema. Por ejemplo: Los datos numéricos que aparecen en una analítica de sangre o los datos de los
+            sensores de
+            una planta química.
+          </p>
+
+
+          <p class="Normal1">Llamaremos conocimiento al conjunto de datos de primer orden, que modelan de forma
+            estructurada la
+            experiencia que se tiene sobre un cierto dominio o que surgen de interpretar los datos básicos. Por ejemplo:
+            La
+            interpretación de los valores de la analítica de sangre o de los sensores de la planta química para decir si
+            son
+            normales, altos o bajos, preocupantes, peligrosos o el conjunto de estructuras de datos y métodos para
+            diagnosticar
+            a pacientes a partir de la interpretación del análisis de sangre, o para ayudar en la toma de decisiones de
+            que
+            hacer en la planta química
+          </p>
+
+
+
+          <p class="Normal1">Los sistemas de IA necesitan diferentes tipos de conocimiento que no suelen estar
+            disponibles en
+            bases de datos y otras fuentes de información:
+          </p>
+
+
+          <ol class="cascading" style="margin-left: 12px;">
+            <li>
+              a) Conocimiento sobre los objetos en un entorno y posibles relaciones entre ellos
+            </li>
+
+            <li>
+              b) Conocimiento sobre los procesos en los que interviene o que le son útiles
+            </li>
+            <li>
+              c) Conocimiento difícil de representar como datos básicos, como la intencionalidad, la causalidad,
+              los
+              objetivos, información temporal, conocimiento que para los humanos es “de sentido común”, etc.
+            </li>
+          </ol>
+
+          <p class="Normal1">Intuitivamente podemos decir que: <strong><i>Conocimiento = Información +
+                Interpretación</i></strong></p>
+
+          <p class="Normal1">Para representar algo necesitamos saber:</p>
+          <ul style="margin-left: 12px;">
+            <li>Su forma o estructura</li>
+            <li>Que uso le dan los seres inteligentes</li>
+            <li>Que uso le dará una inteligencia artificial</li>
+            <li>Como adquirir el conocimiento</li>
+            <li>Como almacenarlo y manipularlo</li>
+          </ul>
+
+          <p class="Normal1">Por desgracia no hay respuestas completas para todas estas preguntas desde el punto de
+            vista
+            biológico o neurofisiológico.
+          </p>
+
+
+          <p class="Normal1">Construiremos modelos que simulen la adquisición, estructuración y manipulación del
+            conocimiento y
+            que nos permitan crear sistemas artificiales inteligentes.
+          </p>
+        </div>
+      </article>
+
+      <!-- 2. Esquema de representación -->
+      <article class="title-spacing">
+        <h3>2. Esquema de representación</h3>
+      </article>
+      <article class="row">
+        <div class="book_chapter pt-3 column" id="ch74">
+          <p class="Normal1">Un esquema de representación es un instrumento para codificar la realidad en un ordenador
+          </p>
+
+          <p class="Normal1">Es importante distinguir entre:</p>
+          <ul style="margin-left: 12px;">
+            <li>El mundo real (lo que queremos representar) → Dominio</li>
+            <li>Su representación → uno o más esquemas de representación</li>
+          </ul>
+
+
+          <p class="Normal1">Desde un punto de vista informático un esquema de representación puede ser descrito como
+            una
+            combinación de:
+          </p>
+
+          <ol class="cascading" style="margin-left: 12px;">
+            <li>
+              a) Estructuras de datos que codifican el problema en curso con el que se enfrenta el <span>agente → Parte
+                estática.</span>
+            </li>
+
+            <li>
+              b) Estructuras de datos que almacenan conocimiento referente al entorno en el que se desarrolla el
+              problema y procedimientos que manipulan las estructuras de forma consistente con una interpretación
+              plausible de las mismas → Parte dinámica.
+            </li>
+          </ol>
+
+
+          <p class="Normal1"><b>La parte estática está formada por:</b></p>
+          <ul>
+            <li>Estructura de datos que codifica el problema</li>
+            <li>Operaciones que permiten crear, modificar y destruir elementos en la estructura</li>
+            <li>Predicados que dan un mecanismo para consultar esta estructura de datos</li>
+            <li>Semántica de la estructura: se necesita definir la relación entre la realidad y la representación</li>
+          </ul>
+
+          <p class="Normal1">&nbsp;&nbsp; &nbsp;Escogida.</p>
+          <p class="Normal1" align="center"><b>R(Elemento_estructura, Mundo Real)</b></p>
+
+          <p class="Normal1"><b>La parte dinámica está formada por:</b></p>
+
+          <ul>
+            <li>
+              Estructuras de datos que almacenan conocimiento referente al entorno/dominio en el que se desarrolla el
+              problema
+            </li>
+
+            <li>
+              Procedimientos que permiten:
+
+              <ul>
+                <li>
+                  Interpretar los datos del problema (de la parte estática) a partir del conocimiento del dominio (de la
+                  parte dinámica)
+                </li>
+
+                <li>
+                  Controlar el uso de los datos: estrategias de control
+                </li>
+
+                <li>Adquirir nuevo conocimiento</li>
+              </ul>
+            </li>
+          </ul>
+
+
+          <p class="Normal1">Se ha de tener siempre en cuenta que nuestra representación siempre es incompleta, debido
+            a:
+          </p>
+          <ul>
+            <li>
+              Modificaciones: el mundo es cambiante, pero nuestras representaciones son de un instante
+            </li>
+
+            <li>
+              Volumen: mucho (demasiado) conocimiento a representar → representación parcial
+            </li>
+
+            <li>
+              Complejidad: La realidad tiene una gran riqueza en detalles
+            </li>
+          </ul>
+
+          <p class="Normal1">El problema de modificación del mundo está ligado a los procedimientos de adquisición y
+            mantenimiento de la representación (Frame Problem).</p>
+
+          <p class="Normal1">Los problemas de volumen y complejidad de la realidad están relacionados con la
+            granularidad de la
+            representación.</p>
+
+
+          <p class="Normal1"><b>Propiedades de un sistema de representación</b></p>
+
+
+          <p class="Normal1">Un sistema de representación debe poseer las siguientes propiedades</p>
+
+          <ol class="cascading">
+            <li>
+              1. <b>Ligados a la representación</b>
+
+              <ol class="cascading">
+                <li>
+                  <b>a.</b> Adecuación Representacional: habilidad para representar todas las clases de
+                  conocimiento
+                  que son necesarias en aquel dominio
+                </li>
+
+
+                <li>
+                  <b>b.</b> Adecuación Inferencial: habilidad de manipular estructuras de representación de
+                  tal
+                  manera que devengan o generen nuevas estructuras que correspondan a nuevos conocimientos inferidos de
+                  los
+                  anteriores
+                </li>
+              </ol>
+            </li>
+
+            <li>
+              2. <b>Ligados al uso de la representación</b>
+
+              <ol class="cascading">
+                <li>
+                  <b>a. Eficiencia Inferencial:</b> capacidad del sistema para incorporar información
+                  adicional a la
+                  estructura de representación, llamada metaconocimiento, que puede emplearse para focalizar la
+                  atención
+                  de los mecanismos de inferencia con el fin de optimizar los cómputos.
+                </li>
+
+                <li>
+                  <strong>b. Eficiencia en la Adquisición:</strong> capacidad de incorporar fácilmente nueva
+                  información. Idealmente el sistema por sí
+                  mismo deberá ser capaz de controlar la adquisición de nueva información y su posterior representación
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+      </article>
+
+      <!-- 3. Diferencia entre dato, información y conocimiento -->
+      <article class="title-spacing">
+        <h3>3. Diferencia entre dato, información y conocimiento</h3>
+      </article>
+      <article class="row">
+        <div class="book_chapter pt-3 column" id="ch75">
+          <p class="Normal1">Para poder usar información, primero debemos comprenderla. El proceso de comprensión es una
+            asimilación de la información en la estructura compleja de nuestro conocimiento. La información debe pasar a
+            ser
+            parte de nuestro conocimiento antes de poder ser usada.
+          </p>
+
+
+          <p class="Normal1">Por ejemplo, cuando queremos conocer alguna ciudad extranjera, podemos comenzar estudiando
+            el mapa
+            de la ciudad. Estudiando el mapa, al comienzo nosotros memorizamos la disposición principal de la ciudad. A
+            medida
+            que el estudio avanza, asimilamos la información provista por el mapa en nuestra mente. Cuando, más tarde,
+            viajamos
+            a la ciudad, usamos la información asimilada como conocimiento para encontrar nuestro camino.
+          </p>
+
+          <p class="Normal1">Una vez que la información es correctamente asimilada, puede ser usada como conocimiento.
+            Toda
+            información puede asimilarse transformándose en conocimiento.
+          </p>
+
+
+          <p class="Normal1"><b>La información se expresa a sí misma</b></p>
+
+          <p class="Normal1">Aplicamos los resultados del conocimiento a una acción o en la creación de nueva
+            información. Hay
+            siempre una parte del conocimiento usado, expresado en el resultado.
+          </p>
+
+          <p class="Normal1">Usando el lenguaje, expresamos conocimiento que pertenece al lenguaje. La estructura de las
+            oraciones y la selección de palabras que usamos llevan información acerca del lenguaje.
+          </p>
+
+          <p class="Normal1">Cuando construimos una casa, expresamos parte del conocimiento acerca de la construcción de
+            casas
+            en la casa en sí misma.
+          </p>
+
+          <p class="Normal1">Una vez que tenemos un entendimiento básico de un lenguaje extranjero, podemos extender
+            nuestro
+            conocimiento sobre el lenguaje oyéndolo o leyéndolo.
+          </p>
+
+          <p class="Normal1">Esto es posible porque parte del conocimiento del lenguaje está expresado en la aplicación
+            del
+            lenguaje que leemos.
+          </p>
+          <p class="Normal1">El hecho que la información es expresada por sus aplicaciones es la mayor contribución a su
+            propagación.
+          </p>
+
+
+          <p class="Normal1"><b>El conocimiento es información</b></p>
+
+          <p class="Normal1">La información asimilada se transforma en conocimiento. El uso del conocimiento causa la
+            expresión
+            del conocimiento usado junto con el resultado. Hasta el conocimiento innato es expresado en nuestras
+            acciones, si no
+            fuera así, no sería posible investigar este conocimiento en el comportamiento de los niños.
+          </p>
+
+          <p class="Normal1">Esto ilustra que una mutua traducción es posible entre información y conocimiento. La
+            diferencia
+            entre conocimiento e información radica en las circunstancias más que en la naturaleza de ésta.
+          </p>
+
+          <p class="Normal1">Como una primera aproximación, podemos sugerir que todo lo que pueda ser comunicado es
+            información.
+            Debido a que nosotros comunicamos conocimiento continuamente, no debemos extender esta noción de información
+            para
+            incluir comportamiento.
+          </p>
+
+          <p class="Normal1">Pero, información y conocimiento no son sinónimos. La información es el término general y
+            el
+            conocimiento es información bajo determinadas condiciones. Cuando la información se encuentra en las
+            condiciones
+            adecuadas para propagarse, la llamamos conocimiento.</p>
+
+        </div>
+      </article>
+
+      <div id="ch76"></div>
+      <article class="row">
+        <div class="column">
+          <div class="panel panel-info">
+            <div class="panel-body">
+              <div class="tab-content">
+                <h3>4. Referencias</h3>
+                <div role="tabpanel" class="tab-pane active">
+                  <ul>
+                    <li>Benítez, A. (2007). <i>Fundamentos de Inteligencia Artificial libro tercero</i>. España: Escolar
+                      y mayo.</li>
+                  </ul>
+
+                  <ul>
+                    <li>Escolano, F. (2003). <i>Inteligencia Artificial (Modelos, Técnicas y Áreas de Aplicación)</i>
+                      México: Thomson.
+                    </li>
+                  </ul>
+
+                  <ul>
+                    <li>Marín, R. (2008). <i>Inteligencia Artificial y sistemas inteligentes</i>. España: McGraw-Hill.
+                    </li>
+                  </ul>
+
+                  <ul>
+                    <li>Nilsson, N. (2001).&nbsp; <i>Inteligencia artificial (Una nueva síntesis)</i> México:
+                      McGraw–Hill.</li>
+                  </ul>
+
+                  <ul>
+                    <li>Ponce, P. (2011). <i>Inteligencia Artificial con aplicaciones a la ingeniería.</i> España:
+                      MARCOMBO.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+      </article>
+
+    </div>
+  </section>
+
+
+
+  <footer is="my-footer"></footer>
+
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script> -->
+  <!-- <script src="../../assets/fontawesome-all.min.js.descarga"></script> -->
+  <!-- <script src="../../assets/plugins.js.descarga"></script> -->
+  <!-- <script src="../../assets/main.js.descarga"></script> -->
+
+  <style>
+    .wrapper {
+      code:not(.no-code) {
+        font-family: 'Courier New', Courier, monospace;
+        color: #a2a9b0;
+        color: #000;
+        background-color: #333537;
+        background-color: rgb(201, 193, 193);
+      }
+
+      article.title-spacing,
+      .title-spacing {
+        margin-top: 16px;
+        margin-bottom: 0;
+
+        h3 {
+          margin-bottom: 8px;
+        }
+      }
+
+      ol.cascading {
+        list-style-type: none;
+      }
+
+      ul li,
+      ol li {
+        text-wrap: pretty;
+      }
+
+      .column a {
+        color: #9f2340;
+        text-decoration: none;
+        background-color: transparent;
+      }
+    }
+  </style>
+</body>
+
+</html>
