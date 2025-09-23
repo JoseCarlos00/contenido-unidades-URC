@@ -451,9 +451,10 @@ header div:nth-child(1) ul {
 }
 header div:nth-child(1) ul:last-child {
   margin-right: 20px;
-  border-left: 1px solid #465973;
+  border-right: 1px solid #465973;
+  margin-right: 10px;
   margin-left: 10px;
-  padding-left: 10px;
+  padding-right: 10px;
 }
 header div ul > li {
   list-style-type: none;
@@ -692,7 +693,7 @@ a.button:hover {
   }
   /* menu accesibilidad */
   header div:nth-child(1) {
-    text-align: right;
+    text-align: left;
   }
   header div:nth-child(1) {
     background: rgba(255, 255, 255, 0.3);
